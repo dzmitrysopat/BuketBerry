@@ -269,11 +269,12 @@ div.swiper-button-prev:hover{
 }
 
 section > h2{
-    color: #029F8c;
+    /* color: #029F8c; */
     text-decoration: underline;
 }
 
 section.contacts{
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -288,7 +289,7 @@ a.contact-card{
     border: 2px solid #ddd;
     border-radius: 10px;
     text-align: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     transition: all .4s;
 }
 
@@ -304,12 +305,17 @@ a.contact-card:hover > .skill-item > .skill-description > h5{
 a.contact-card:nth-child(1):hover{
     background: #833ab4;
     background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
-    border: 2px solid linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+    /* border: 2px solid inherit; */
 }
 
 a.contact-card:nth-child(2):hover{
     background-color: #0088cc;
     border: 2px solid #0088cc;
+}
+
+a.contact-card:nth-child(3):hover{
+    background-color: #029F8c;
+    border: 2px solid #029F8c;
 }
 
 h5{
