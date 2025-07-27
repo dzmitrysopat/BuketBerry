@@ -181,6 +181,17 @@ article#catalog{
     color: #8d8e8d;
 }
 
+.btns > .link-btn:first-child{
+    border: 2px solid #f7941d;
+    background-color: #f7941d;
+}
+
+.btns > .link-btn:first-child:hover{
+    color: #f7941d;
+    border: 2px solid #f7941d;
+    background-color: #fff;
+}
+
 .btns > button.active{
     color: #f7941d;
 }
@@ -229,4 +240,71 @@ div.swiper-button-prev:hover{
 #catalog > .link-btn > i{
     color: #fff;
     font-size: 25px;
+}
+
+#contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+section.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+a.contact-card{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 20px;
+    transition: all .4s;
+}
+
+a.contact-card:hover > .skill-item > i,
+a.contact-card:hover > .skill-item > .skill-description > h4{
+    color: #fff;
+}
+
+a.contact-card:hover > .skill-item > .skill-description > h5{
+    color: #ffffffb9;
+}
+
+a.contact-card:nth-child(1):hover{
+    background: #833ab4;
+    background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+    border: 2px solid linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+}
+
+a.contact-card:nth-child(2):hover{
+    background-color: #0088cc;
+    border: 2px solid #0088cc;
+}
+
+h5{
+    color: #8d8e8d;
+} 
+
+.skill-item{
+    gap: 10px;
+    /* padding: 15px; */
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.skill-item > i{
+    font-size: 40px;
+}
+
+.delivery{
+    max-width: 400px;
 }
