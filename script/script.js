@@ -30,3 +30,16 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+function show(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.add("active");
+    document.querySelector('.man').classList.add("hide");
+    document.querySelector('.woman').classList.remove("hide");
+}
+
+function hide(){
+    document.getElementById("man").classList.add("active");
+    document.getElementById("woman").classList.remove("active");
+    document.querySelector('.man').classList.remove("hide");
+    document.querySelector('.woman').classList.add("hide");
+}

@@ -175,7 +175,7 @@ article#catalog{
 .btns > button{
     border: none;
     background-color: inherit;
-    font-size: 17px;
+    font-size: 20px;
     cursor: pointer;
     font-weight: 500;
     color: #8d8e8d;
@@ -212,4 +212,21 @@ div.swiper-button-prev:hover{
 
 .hide{
     display: none !important;
+}
+
+#catalog > .link-btn{
+    border: none;
+    background: #833ab4;
+    background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+    transition: all .4s;
+}
+
+#catalog > .link-btn:hover{
+    color: #fff;
+    opacity: 0.6;
+}
+
+#catalog > .link-btn > i{
+    color: #fff;
+    font-size: 25px;
 }
