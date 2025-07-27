@@ -3,59 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buket Berry - Букетная мастерская</title>
-    <link rel="shortcut icon" href="./media/img/favicon.ico" type="image/x-icon">
+    <title>Ваша Букетная Мастерская - Buket Berry</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="shortcut icon" href="./media/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header id="header">
-        <a href="./index.html" id="logo">
-            <img src="./media/img/favicon.ico" alt="">
-            Buket Berry
-        </a>
+    <header>
+        <a href="./index.html" id="logoLink">
+            <img src="./media/img/favicon.ico" alt="">Buket Berry</a>
         <nav>
-            <a href="#aboutAnchor">О нас</a>
-            <a href="#catalogAnchor">Каталог</a>
-            <a href="#contactsAnchor">Контакты</a>
-            <a href="#clientsAnchor">Заказчикам</a>
-            <a href="#paymentsAnchor">Оплата</a>
+            <a href="">О нас</a>
+            <a href="">Наши работы</a>
+            <a href="">Контакты</a>
+            <a href="">Оплата</a>
+            <a href="">Заказчикам</a>
         </nav>
     </header>
     <div class="anchor" id="aboutAnchor"></div>
     <main>
         <article id="about">
-            <h2>О нас</h2>
-            <section>
-                <div>
-                <h1>Букетная мастерская 💐</h1>
+            <!-- <h2>О нас</h2> -->
+            <section id="information">
+                <h1>Ваша Букетная Мастерская</h1>
                 <hr>
                 <p class="description">
-                    Привет! 🖐️ Меня зовут Илона и именно я создаю авторские букеты и подарки для Вас
-                    <br>
-                    И помогаю выразить ваши чувства ❤️
+                    Привет! 👋 Меня зовут Илона 😊 <br> 
+                    Именно я создаю для Вас букеты и подарки вашей мечты! <br>
+                    И Помогаю выразить Вам Ваши чувства 💖
                 </p>
+                <div class="btns">
+                    <a href="" class="link-btn">Сделать заказ</a>
+                    <a href="#catalogAnchor" class="link-btn">Наши работы</a>
                 </div>
-            <img src="./media/myself/Ilona.png" alt="">
             </section>
+            <img src="./media/myself/Ilona.png" alt="">
         </article>
+
         <div class="anchor" id="catalogAnchor"></div>
         <article id="catalog">
-            <h2>Каталог букетов</h2>
+            <h2>Наши работы</h2>
+            <div class="btns">
+                <button>Для него</button>
+                <button>Для неё</button>
+            </div>
+            <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img src="./media/compositions/mans/01.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/02.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/03.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/04.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/05.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/06.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/07.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/08.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/09.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/010.webp" alt="" class="swiper-slide">
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>
         </article>
+
         <div class="anchor" id="contactsAnchor"></div>
         <article id="contacts">
             <h2>Контакты</h2>
         </article>
-        <div class="anchor" id="clientsAnchor"></div>
-        <article id="client">
-            <h2>Клиентам</h2>
-        </article>
-        <div class="anchor" id="paymentsAnchor"></div>
-        <article id="payments">
+
+        <div class="anchor" id="paymentAnchor"></div>
+        <article id="payment">
             <h2>Оплата</h2>
         </article>
+
+        <div class="anchor" id="clientsAanchor"></div>
+        <article id="clients">
+            <h2>Заказчикам</h2>
+        </article>
     </main>
-    <footer id="footer"></footer>
+    <footer>Copyright © 2025. All rights are reserved</footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>

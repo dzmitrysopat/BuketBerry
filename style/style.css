@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
-/* #029F8c */ /* #dddddd */ /* #383838 */ /* #f7941d */ /*#ff6b6b */ #8d8e8d 
-
 *{
-    font-family: "comfortaa", sans-serif;
+    font-family: 'comfortaa', sans-serif;
     text-decoration: none;
     color: #383838;
-    padding: 0;
     margin: 0;
+    padding: 0;
     /* outline: 2px solid lightgreen; */
 }
 
@@ -16,43 +14,36 @@ html {
 }
 
 body{
-    display: flex;
     flex: 1;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     max-width: 1400px;
     overflow-x: hidden;
-    flex-direction: column;
     background-color: #fafafa;
 }
 
 header{
-    display: flex;
-    position: sticky;
-    align-items: center;
-    justify-content: space-between;
     top: 0;
     padding: 2% 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-a#logo{
-    font-family: "comfortaa", sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    color: #029F8c;
-    text-align: center;
-    text-decoration: none;
+a#logoLink{
     display: flex;
     gap: 15px;
-    align-items: center;
-    transition: all .4s;  
+    font-weight: 700;
+    font-size: 1.9rem;
+    align-items:end;
+    color: #029F8c;
+
 }
 
-#logo:hover{
-    opacity: 0.7;
-}
-
-a > img{
-    width: 35px;
+a#logoLink > img{
+    max-width: 50px;
 }
 
 nav{
@@ -64,11 +55,7 @@ nav{
 }
 
 nav > a{
-    font-family: "comfortaa", sans-serif;
-    text-decoration: none;
     color: #029F8c;
-    font-size: 20px;
-    font-weight: 500;
     transition: all .4s;
 	position: relative;
     cursor: pointer;
@@ -97,48 +84,109 @@ nav > a.active-link:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
-main{
+nav a.active-link,
+nav a.active-link >i{
+    color: #f7941d;
+}
+
+#about{
+    display: flex;
+    /* gap: 300px; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#information{
+    max-width: 440px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
 }
 
-h2{
-    font-family: "comfortaa", sans-serif;
-    color: #029F8c;
-}
-
-section{
-    display: flex;
-    align-items: center;
-}
-
-div{
-    display: flex;
-    flex-direction: column;
+p.description{
+    font-size: 18px;
+    color: #8d8e8d;
 }
 
 h1{
-    font-family: 'comfortaa', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
 }
 
-hr{
-    height: 2px;
-    width: 100px;
-    border: 0px;
-    border-radius: 50px;
-    background-color: #808080;
+h2{
+    font-size: 2.2rem;
 }
 
-div > p{
-    font-family: "comfortaa", sans-serif;
+h3{
+    font-size: 17px;
     color: #8d8e8d;
 }
 
-img{
+hr{
+    height: 2px;
+    border: none;
+    background-color: #8d8e8d;
+    border-radius: 50px;
+}
+
+#about > img{
     max-height: 45vh;
     border-radius: 50%;
 }
 
+.btns{
+    display: flex;
+    gap: 15px;
+}
+
+.link-btn{
+    padding: 15px 40px;
+    width: fit-content;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    background-color: #029F8c;
+    border: 2px solid #029F8c;
+    border-radius: 18px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.link-btn:hover{
+    background-color: inherit;
+    color: #029F8c;
+}
+
+article > h2{
+    text-align: center;
+}
+
+article#catalog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns > button{
+    border: none;
+    background-color: inherit;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #8d8e8d;
+}
+
+.btns > button.active{
+    color: #f7941d;
+}
+
+.swiper {
+  width: 600px;
+  height: 800px;
+}
+
+.swiper-slide{
+    height: 800px;
+}
