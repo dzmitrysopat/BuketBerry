@@ -234,6 +234,7 @@ div.swiper-button-prev:hover{
 }
 
 #catalog > .link-btn{
+    margin-top: 10px;
     border: none;
     background: #833ab4;
     background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
@@ -251,11 +252,25 @@ div.swiper-button-prev:hover{
 }
 
 #contacts{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-    gap: 15px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 15px;
+}
+
+#contacts > section{
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 350px;
+}
+
+section > h2{
+    color: #029F8c;
+    text-decoration: underline;
 }
 
 section.contacts{
@@ -315,4 +330,10 @@ h5{
 
 .delivery{
     max-width: 400px;
+}
+
+#payment > .contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
