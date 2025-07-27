@@ -251,7 +251,7 @@ div.swiper-button-prev:hover{
     font-size: 25px;
 }
 
-#contacts{
+#clients{
     align-self: center;
     display: grid;
     grid-template-columns: repeat(4, 300px);
@@ -260,7 +260,7 @@ div.swiper-button-prev:hover{
     grid-row-gap: 15px;
 }
 
-#contacts > section{
+#clients > section{
     padding: 15px 20px;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -276,7 +276,7 @@ section > h2{
 section.contacts{
     margin-top: 25px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
 }
 
@@ -338,7 +338,7 @@ h5{
     max-width: 400px;
 }
 
-#payment > .contacts{
+#contacts > .contacts{
     display: flex;
     flex-direction: row;
     justify-content: center;
