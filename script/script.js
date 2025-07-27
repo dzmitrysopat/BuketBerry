@@ -1,7 +1,9 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
 
   // If we need pagination
   pagination: {
@@ -18,5 +20,13 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+    autoplay: {
+        delay: 5000,
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
 });
 

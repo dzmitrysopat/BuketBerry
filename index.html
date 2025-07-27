@@ -15,11 +15,11 @@
         <a href="./index.html" id="logoLink">
             <img src="./media/img/favicon.ico" alt="">Buket Berry</a>
         <nav>
-            <a href="">О нас</a>
-            <a href="">Наши работы</a>
-            <a href="">Контакты</a>
-            <a href="">Оплата</a>
-            <a href="">Заказчикам</a>
+            <a href="#aboutAnchor">О нас</a>
+            <a href="#catalogAnchor">Наши работы</a>
+            <a href="#contactsAnchor">Контакты</a>
+            <a href="#paymentAnchor">Оплата</a>
+            <a href="#clientsAnchor">Заказчикам</a>
         </nav>
     </header>
     <div class="anchor" id="aboutAnchor"></div>
@@ -46,24 +46,48 @@
         <article id="catalog">
             <h2>Наши работы</h2>
             <div class="btns">
-                <button>Для него</button>
-                <button>Для неё</button>
+                <button class="active" id="man" onclick="hide()">Для него</button>
+                <button class="" id="woman" onclick="show()">Для неё</button>
             </div>
             <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper man active">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
             <img src="./media/compositions/mans/01.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/09.webp" alt="" class="swiper-slide">
             <img src="./media/compositions/mans/02.webp" alt="" class="swiper-slide">
             <img src="./media/compositions/mans/03.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/010.webp" alt="" class="swiper-slide">
             <img src="./media/compositions/mans/04.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/08.webp" alt="" class="swiper-slide">
             <img src="./media/compositions/mans/05.webp" alt="" class="swiper-slide">
             <img src="./media/compositions/mans/06.webp" alt="" class="swiper-slide">
             <img src="./media/compositions/mans/07.webp" alt="" class="swiper-slide">
-            <img src="./media/compositions/mans/08.webp" alt="" class="swiper-slide">
-            <img src="./media/compositions/mans/09.webp" alt="" class="swiper-slide">
-            <img src="./media/compositions/mans/010.webp" alt="" class="swiper-slide">
+            
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="swiper woman hide">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img src="./media/compositions/woman/01.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/02.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/03.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/04.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/05.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/06.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/07.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/08.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/09.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/010.webp" alt="" class="swiper-slide">
+            
         </div>
 
         <!-- If we need navigation buttons -->
