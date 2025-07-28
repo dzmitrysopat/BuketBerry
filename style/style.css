@@ -154,6 +154,12 @@ p.description{
     color: #8d8e8d;
 }
 
+section.description > .link-btn:hover{
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #029F8c;
+}
+
 h1, p.about{
     color: #fff;
     font-size: 5rem;
@@ -260,7 +266,6 @@ div.info>p{
     height: 270px;
     /* filter: grayscale(1); */
 }
-
 
 article#catalog{
     display: flex;
