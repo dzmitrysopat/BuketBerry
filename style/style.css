@@ -25,7 +25,7 @@ body{
 
 header{
     top: 0;
-    padding: 1% 1%;
+    padding: 1% 2%;
     z-index: 3;
     background-color: #FEF6ED;
     position: sticky;
@@ -97,6 +97,8 @@ nav a.active-link >i{
 }
 
 main{
+    margin: 0 auto;
+    max-width: 1400px;
     /* position: relative; */
     display: flex;
     flex-direction: column;
@@ -105,7 +107,7 @@ main{
 
 #banner{
     padding: 5%;
-    height: 65vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,6 +233,25 @@ article#catalog{
     cursor: pointer;
     font-weight: 500;
     color: #8d8e8d;
+    width: 150px;
+    padding: 2% 1%;
+}
+
+#man.active{
+    border: 2px solid #d07d6f;
+    border-radius: 18px;
+    background-color: #d07d6f;
+    padding: 2% 1%;
+    color: #fff;
+}
+
+#woman.active{
+        border: 2px solid #029F8c;
+    border-radius: 18px;
+    background-color: #029F8c;
+    padding: 2% 1%;
+    color: #fff;
+}
 }
 
 .btns > .link-btn:first-child{
@@ -250,7 +271,7 @@ article#catalog{
 
 .swiper {
     width: 1400px;
-    height: 600px;
+    height: 500px;
 }
 
 .swiper-slide{
