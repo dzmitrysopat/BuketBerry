@@ -137,9 +137,9 @@ main{
 
 #about{
     display: flex;
-    /* gap: 300px; */
+    gap: 300px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 section#information{
@@ -154,11 +154,15 @@ p.description{
     color: #8d8e8d;
 }
 
-h1{
+h1, p.about{
     color: #fff;
     font-size: 5rem;
     font-weight: 900;
     text-transform: uppercase;
+}
+
+p.about{
+    color: #463420;
 }
 
 h2{
