@@ -20,14 +20,14 @@ body{
     margin: 0 auto;
     max-width: 100vw;
     overflow-x: hidden;
-    background-color: #FEF6ED;
+    background-color: #f0f0f0;
 }
 
 header{
     top: 0;
     padding: 1% 2%;
     z-index: 3;
-    background-color: #FEF6ED;
+    background-color: #f0f0f0;
     position: sticky;
     display: flex;
     align-items: center;
@@ -154,6 +154,12 @@ p.description{
     color: #8d8e8d;
 }
 
+section.description > .link-btn{
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+}
+
 section.description > .link-btn:hover{
     border: 2px solid #fff;
     background-color: #fff;
@@ -167,12 +173,16 @@ h1, p.about{
     text-transform: uppercase;
 }
 
+.description > h2{
+    font-weight: 90;
+}
+
 p.about{
     color: #463420;
 }
 
 h2{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 
 h3{
@@ -207,7 +217,7 @@ hr{
     color: #fafafa;
     background-color: #029F8c;
     border: 2px solid #029F8c;
-    border-radius: 18px;
+    /* border-radius: 18px; */
     transition: all .4s;
     cursor: pointer;
 }
@@ -262,7 +272,7 @@ div.info>p{
 }
 
 .info-img{
-    width: 270px;
+    width: 280px;
     height: 270px;
     /* filter: grayscale(1); */
 }
@@ -276,47 +286,57 @@ article#catalog{
 
 .btns > button{
     border: 2px solid transparent;
-    border-radius: 18px;
+    /* border-radius: 18px; */
     background-color: inherit;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
     font-weight: 500;
     color: #8d8e8d;
-    width: 150px;
-    padding: 2% 1%;
+    width: 250px;
+    height: 50px;
+    padding: 1%;
     transition: all .4s;
 }
 
 #man.active{
     border: 2px solid #d07d6f;
-    border-radius: 18px;
+    /* border-radius: 18px; */
     background-color: #d07d6f;
-    padding: 2% 1%;
+    /* padding: 2% 1%; */
     color: #fff;
 }
 
 #woman.active{
-        border: 2px solid #029F8c;
-    border-radius: 18px;
+    border: 2px solid #029F8c;
+    /* border-radius: 18px; */
     background-color: #029F8c;
-    padding: 2% 1%;
+    /* padding: 2% 1%; */
     color: #fff;
 }
 
-#man:hover{
+.btns > button:nth-child(odd){
      border: 2px solid #d07d6f;
      color: #d07d6f;
-     border-radius: 18px;
+     /* border-radius: 18px; */
 }
 
-#woman:hover{
+.btns > button:nth-child(even){
      border: 2px solid #029F8c;
      color: #029F8c;
-     border-radius: 18px;
+     /* border-radius: 18px; */
 }
 
-#woman.active:hover,
-#man.active:hover{
+.btns > button.active:hover{
+    color: #fff;
+}
+
+.btns > button:nth-child(odd):hover{
+    background-color: #d07d6f;
+    color: #fff;
+}
+
+.btns > button:nth-child(even):hover{
+    background-color: #029F8c;
     color: #fff;
 }
 
@@ -382,7 +402,9 @@ div.swiper-button-prev:hover{
     font-size: 25px;
 }
 
-#clients{
+
+
+/* #clients{
     align-self: center;
     display: grid;
     grid-template-columns: repeat(4, 300px);
@@ -397,6 +419,12 @@ div.swiper-button-prev:hover{
     border-radius: 10px;
     background-color: #fff;
     max-width: 350px;
+} */
+
+#clients{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 section > h2{
@@ -473,4 +501,112 @@ h5{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+
+.question{
+    /* margin-bottom: 15px; */
+    border-bottom: 1px solid #383838;
+}
+
+.question:first-child{
+    border-top: 1px solid #383838;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-question, .accordion:hover {
+    background-color: #ccc;
+    /* font-weight: 900; */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    line-height: 1.5;
+}
+
+.panel > p{
+    margin: 10px 0;
+}
+
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 35px;
+  color: #383838;
+  float: right;
+  margin-left: 5px;
+}
+
+.active-question:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+  font-size: 35px;
+}
+
+footer{
+    background-color: #463420;
+    padding: 5% 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > img{
+    width: 10%;
+    height: 10%;
+}
+
+footer > .nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer > .nav > a{
+    color: #fff;
+}
+
+.business-info{
+    color: #fff;
+    max-width: 250px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-links > a{
+    background-color: inherit;
+}
+
+.social-links > a > div > i,
+.social-links > a > div > div > h4{
+    color: #fff;
+    font-size: 20px;
+}
+
+.social-links > a > div > i{
+    font-size: 25px;
 }
