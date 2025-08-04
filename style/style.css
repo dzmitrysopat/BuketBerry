@@ -3,7 +3,7 @@
 *{
     font-family: 'comfortaa', sans-serif;
     text-decoration: none;
-    color: #463420;
+    color: #2f3030;
     margin: 0;
     padding: 0;
     /* outline: 2px solid lightgreen; */
@@ -36,13 +36,22 @@ header{
 }
 
 a#logoLink{
+    position: relative;
     display: flex;
     gap: 15px;
     font-weight: 700;
     font-size: 1.9rem;
     align-items:center;
-    color: #463420;
+    color: #2f3030;
     transition: all .4s;
+}
+
+.logo-img{
+    top: 0px;
+    right: -35px;
+    position: absolute;
+    height: 60px;
+    rotate: 20deg;
 }
 
 a#logoLink:hover{
@@ -178,7 +187,7 @@ h1, p.about{
 }
 
 p.about{
-    color: #463420;
+    color: #2f3030;
 }
 
 h2{
@@ -223,16 +232,16 @@ hr{
 }
 
 header > .link-btn{
-    background-color: #d07d6f;
-    border: 2px solid #d07d6f;
+    background-color: #2f3030;
+    border: 2px solid #2f3030;
 }
 
 header > .link-btn:hover{
-    color: #d07d6f;
+    color: #2f3030;
 }
 .link-btn:hover{
     background-color: inherit;
-    color: #029F8c;
+    color: #2f3030;
 }
 
 article > h2{
@@ -259,7 +268,7 @@ div.info{
 
 div.info:nth-child(2),
 div.info:nth-child(6){
-    background-color: #029F8c;
+    background-color: #2f3030;
 }
 
 div.info:nth-child(4){
@@ -299,9 +308,9 @@ article#catalog{
 }
 
 #man.active{
-    border: 2px solid #d07d6f;
+    border: 2px solid #2f3030;
     /* border-radius: 18px; */
-    background-color: #d07d6f;
+    background-color: #2f3030;
     /* padding: 2% 1%; */
     color: #fff;
 }
@@ -315,8 +324,8 @@ article#catalog{
 }
 
 .btns > button:nth-child(odd){
-     border: 2px solid #d07d6f;
-     color: #d07d6f;
+     border: 2px solid #2f3030;
+     color: #2f3030;
      /* border-radius: 18px; */
 }
 
@@ -331,7 +340,7 @@ article#catalog{
 }
 
 .btns > button:nth-child(odd):hover{
-    background-color: #d07d6f;
+    background-color: #2f3030;
     color: #fff;
 }
 
@@ -341,8 +350,8 @@ article#catalog{
 }
 
 .btns > .link-btn:first-child{
-    border: 2px solid #d07d6f;
-    background-color: #d07d6f;
+    border: 2px solid #2f3030;
+    background-color: #2f3030;
 }
 
 .btns > .link-btn:first-child:hover{
@@ -564,7 +573,7 @@ h5{
 }
 
 footer{
-    background-color: #463420;
+    background-color: #2f3030;
     padding: 5% 0;
     color: #fff;
     display: flex;
