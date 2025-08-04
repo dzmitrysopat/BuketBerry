@@ -117,7 +117,7 @@ main{
 
 .bg-flowers{
     left: -300px;
-    top: 950px;
+    top: 1050px;
     width: 500px;
     rotate: -45deg;
     position: absolute;
@@ -126,7 +126,7 @@ main{
 
 .bg-flowers:nth-child(2){
     left: 1170px;
-    top: 1100px;
+    top: 1200px;
     width: 500px;
     rotate: -45deg;
     position: absolute;
@@ -390,11 +390,11 @@ article#catalog{
 
 .swiper {
     width: 1400px;
-    height: 500px;
+    height: 600px;
 }
 
 .swiper-slide{
-    border-radius: 25px;
+    /* border-radius: 25px; */
     cursor: pointer;
 }
 
@@ -410,7 +410,8 @@ div.swiper-button-prev{
 
 div.swiper-button-next:hover,
 div.swiper-button-prev:hover{
-    background-color: #f7941d;
+    background-color: #fff;
+    color: #2f3030;
 }
 
 .hide{
