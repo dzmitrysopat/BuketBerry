@@ -38,20 +38,21 @@ header{
 a#logoLink{
     position: relative;
     display: flex;
+    align-items: end;
     gap: 15px;
     font-weight: 700;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     align-items:center;
     color: #2f3030;
     transition: all .4s;
 }
 
 .logo-img{
-    top: 0px;
-    right: -35px;
+    top: 15px;
+    left: -5px;
     position: absolute;
-    height: 60px;
-    rotate: 20deg;
+    height: 35px;
+    rotate: -40deg;
 }
 
 a#logoLink:hover{
@@ -108,10 +109,29 @@ nav a.active-link >i{
 main{
     margin: 0 auto;
     max-width: 1400px;
-    /* position: relative; */
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 125px;
+}
+
+.bg-flowers{
+    left: -250px;
+    top: 950px;
+    width: 500px;
+    rotate: -45deg;
+    position: absolute;
+    z-index: 0;
+}
+
+.bg-flowers:nth-child(2){
+    left: 1150px;
+    top: 1100px;
+    width: 500px;
+    rotate: -45deg;
+    position: absolute;
+    z-index: 2;
+    transform: scale(-1, -1)
 }
 
 #banner{
@@ -180,6 +200,7 @@ h1, p.about{
     font-size: 5rem;
     font-weight: 900;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .description > h2{
