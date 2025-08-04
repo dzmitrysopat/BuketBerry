@@ -116,7 +116,7 @@ main{
 }
 
 .bg-flowers{
-    left: -250px;
+    left: -300px;
     top: 950px;
     width: 500px;
     rotate: -45deg;
@@ -125,13 +125,13 @@ main{
 }
 
 .bg-flowers:nth-child(2){
-    left: 1150px;
+    left: 1170px;
     top: 1100px;
     width: 500px;
     rotate: -45deg;
     position: absolute;
     z-index: 2;
-    transform: scale(-1, -1)
+    transform: scale(-1, -1);
 }
 
 #banner{
@@ -192,7 +192,7 @@ section.description > .link-btn{
 section.description > .link-btn:hover{
     border: 2px solid #fff;
     background-color: #fff;
-    color: #029F8c;
+    color: #2f3030;
 }
 
 h1, p.about{
@@ -245,8 +245,8 @@ hr{
     align-items: center;
     justify-content: center;
     color: #fafafa;
-    background-color: #029F8c;
-    border: 2px solid #029F8c;
+    background-color: #2f3030;
+    border: 2px solid #2f3030;
     /* border-radius: 18px; */
     transition: all .4s;
     cursor: pointer;
@@ -293,7 +293,7 @@ div.info:nth-child(6){
 }
 
 div.info:nth-child(4){
-    background-color: #d07d6f;
+    background-color: #2f3030;
 }
 
 div.info>h3,
@@ -337,9 +337,9 @@ article#catalog{
 }
 
 #woman.active{
-    border: 2px solid #029F8c;
+    border: 2px solid #2f3030;
     /* border-radius: 18px; */
-    background-color: #029F8c;
+    background-color: #2f3030;
     /* padding: 2% 1%; */
     color: #fff;
 }
@@ -351,8 +351,8 @@ article#catalog{
 }
 
 .btns > button:nth-child(even){
-     border: 2px solid #029F8c;
-     color: #029F8c;
+     border: 2px solid #2f3030;
+     color: #2f3030;
      /* border-radius: 18px; */
 }
 
@@ -366,7 +366,7 @@ article#catalog{
 }
 
 .btns > button:nth-child(even):hover{
-    background-color: #029F8c;
+    background-color: #2f3030;
     color: #fff;
 }
 
@@ -398,7 +398,7 @@ article#catalog{
 div.swiper-button-next,
 div.swiper-button-prev{
     border-radius: 50%;
-    background-color: #029F8c;
+    background-color: #2f3030;
     color: #fff;
     padding: 20px 27px;
     transition: all .4s;
@@ -458,7 +458,7 @@ div.swiper-button-prev:hover{
 }
 
 section > h2{
-    /* color: #029F8c; */
+    /* color: #2f3030; */
     text-decoration: underline;
 }
 
@@ -503,8 +503,8 @@ a.contact-card:nth-child(2):hover{
 }
 
 a.contact-card:nth-child(3):hover{
-    background-color: #029F8c;
-    border: 2px solid #029F8c;
+    background-color: #2f3030;
+    border: 2px solid #2f3030;
 }
 
 h5{
@@ -538,12 +538,16 @@ h5{
     color: #383838;
     font-size: 20px;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px 18px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .questions{
@@ -584,6 +588,7 @@ h5{
   content: '+'; /* Unicode character for "plus" sign (+) */
   font-size: 35px;
   color: #383838;
+  top: 0;
   float: right;
   margin-left: 5px;
 }
