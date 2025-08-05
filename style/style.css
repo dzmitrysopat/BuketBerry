@@ -20,14 +20,16 @@ body{
     margin: 0 auto;
     max-width: 100vw;
     overflow-x: hidden;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #f4eee6;
 }
 
 header{
     top: 0;
     padding: 1% 2%;
     z-index: 3;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #f4eee6;
     position: sticky;
     display: flex;
     align-items: center;
@@ -122,6 +124,7 @@ main{
     rotate: -45deg;
     position: absolute;
     z-index: 0;
+     opacity: 0.7;
 }
 
 .bg-flowers:nth-child(2){
@@ -187,15 +190,15 @@ section.description > .link-btn{
     width: 400px;
     height: 50px;
     font-size: 30px;
-    border: 2px solid #fff;
-    background-color: #fff;
-    color: #2f3030;
+    border: 2px solid #94c17d;
+    background-color: #94c17d;
+    color: #fff;
 }
 
 section.description > .link-btn:hover{
-    border: 2px solid #2f3030;
-    background-color: #2f3030;
-    color: #fff;
+    border: 2px solid #94c17d;
+    background-color: #fff;
+    color: #94c17d;
 }
 
 h1, p.about{
@@ -248,20 +251,21 @@ hr{
     align-items: center;
     justify-content: center;
     color: #fafafa;
-    background-color: #2f3030;
-    border: 2px solid #2f3030;
+    background-color: #94c17d;
+    border: 2px solid #94c17d;
     /* border-radius: 18px; */
     transition: all .4s;
     cursor: pointer;
 }
 
 header > .link-btn{
-    background-color: #2f3030;
-    border: 2px solid #2f3030;
+    /* background-color: #2f3030; */
+    background-color: #94c17d;
+    border: 2px solid #94c17d;
 }
 
 header > .link-btn:hover{
-    color: #2f3030;
+    color: #94c17d;
 }
 .link-btn:hover{
     background-color: inherit;
@@ -292,11 +296,12 @@ div.info{
 
 div.info:nth-child(2),
 div.info:nth-child(6){
-    background-color: #2f3030;
+    /* background-color: #2f3030; */
+    background-color: #94c17d;
 }
 
 div.info:nth-child(4){
-    background-color: #2f3030;
+    background-color: #ffabac;
 }
 
 div.info>h3,
@@ -332,17 +337,17 @@ article#catalog{
 }
 
 #man.active{
-    border: 2px solid #2f3030;
+    border: 2px solid #94c17d;
     /* border-radius: 18px; */
-    background-color: #2f3030;
+    background-color: #94c17d;
     /* padding: 2% 1%; */
     color: #fff;
 }
 
 #woman.active{
-    border: 2px solid #2f3030;
+    border: 2px solid #94c17d;
     /* border-radius: 18px; */
-    background-color: #2f3030;
+    background-color: #94c17d;
     /* padding: 2% 1%; */
     color: #fff;
 }
@@ -354,8 +359,8 @@ article#catalog{
 }
 
 .btns > button:nth-child(even){
-     border: 2px solid #2f3030;
-     color: #2f3030;
+    border: 2px solid #2f3030;
+    color: #2f3030;
      /* border-radius: 18px; */
 }
 
@@ -364,12 +369,14 @@ article#catalog{
 }
 
 .btns > button:nth-child(odd):hover{
-    background-color: #2f3030;
+    background-color: #94c17d;
+    border: 2px solid #94c17d;
     color: #fff;
 }
 
 .btns > button:nth-child(even):hover{
-    background-color: #2f3030;
+    background-color: #94c17d;
+    border: 2px solid #94c17d;
     color: #fff;
 }
 
@@ -538,7 +545,7 @@ h5{
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: inherit;
     color: #383838;
     font-size: 20px;
     cursor: pointer;
@@ -562,16 +569,16 @@ h5{
 
 .question{
     /* margin-bottom: 15px; */
-    border-bottom: 1px solid #383838;
+    border-bottom: 1px solid #38383867;
 }
 
 .question:first-child{
-    border-top: 1px solid #383838;
+    border-top: 1px solid #38383867;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active-question, .accordion:hover {
-    background-color: #ccc;
+    background-color: #94c17d79;
     /* font-weight: 900; */
 }
 
