@@ -119,7 +119,7 @@ main{
 
 .bg-flowers{
     left: -300px;
-    top: 1050px;
+    top: 850px;
     width: 500px;
     rotate: -45deg;
     position: absolute;
@@ -128,8 +128,8 @@ main{
 }
 
 .bg-flowers:nth-child(2){
-    left: 1170px;
-    top: 1200px;
+    left: 1130px;
+    top: 970px;
     width: 500px;
     rotate: -45deg;
     position: absolute;
@@ -396,7 +396,7 @@ article#catalog{
 }
 
 .swiper {
-    width: 1240px;
+    width: 1300px;
     height: 414px;
 }
 
