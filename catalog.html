@@ -32,28 +32,26 @@
         <article id="catalog">
             <h2>Наши работы</h2>
             <div class="btns">
-                <button class="active" id="man" onclick="hide()">Для него</button>
-                <button class="" id="woman" onclick="show()">Для неё</button>
-                <button class="" id="child" onclick="show()">Детские букеты</button>
-                <button class="" id="bucket" onclick="show()">Корзины с сухофруктом</button>
-                <button class="" id="strawberry" onclick="show()">Клубника в шоколаде</button>
+                <button class="active" id="man" onclick="man()">Для него</button>
+                <button class="" id="woman" onclick="woman()">Для неё</button>
+                <button class="" id="baby" onclick="baby()">Детские букеты</button>
+                <button class="" id="premium" onclick="premium()">Корзины с сухофруктом</button>
+                <!-- <button class="" id="strawberry" onclick="show()">Клубника в шоколаде</button> -->
             </div>
-            <!-- Slider main container -->
-        <article class="gallery" id="mans">
-            <section class="shop-item">
-                <div class="photos">
-                    <img src="./media/compositions/mans/IMG_20250811_154329_028.jpg" alt="" class="">
-                </div>
-                <p class="name">Мужская сила</p>
-                <span class="cost">50 руб.</span>
-            </section>
+
+        <article class="gallery" id="manItems">
+            
         </article>
-        <article class="gallery" id="womans"></article>
-        <article class="gallery" id="childrens"></article>
-        <article class="gallery" id="tasty"></article>
+        <article class="gallery" id="womanItems"></article>
+        <article class="gallery" id="childrenItems"></article>
+        <article class="gallery" id="premiumItems"></article>
         <!-- <article class="mans" id="mans"></article> -->
         <!-- <a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="link-btn"><i class="uil uil-instagram"></i>Больше работ</a> -->
         </article>
+
+        <div class="product-cards" id="productContainer">
+        <!-- Карточки будут здесь -->
+    </div>
     </main>
     <footer>
         <img src="./media/img/logo-Photoroom.png" alt="">
@@ -104,5 +102,6 @@
         Copyright © 2025. All rights are reserved -->
     </footer>
     <script src="./script/script.js"></script>
+    <script src="./script/shop.js" defer></script>
 </body>
 </html>

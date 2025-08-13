@@ -336,45 +336,18 @@ article#catalog{
     transition: all .4s;
 }
 
-#man.active{
+.active{
     border: 1px solid #94c17d;
-    /* border-radius: 18px; */
     background-color: #94c17d;
-    /* padding: 2% 1%; */
     color: #fff;
 }
 
-#woman.active{
-    border: 1px solid #94c17d;
-    /* border-radius: 18px; */
-    background-color: #94c17d;
-    /* padding: 2% 1%; */
-    color: #fff;
-}
-
-.btns > button:nth-child(odd){
-     border: 1px solid #2f3030;
-     color: #2f3030;
-     /* border-radius: 18px; */
-}
-
-.btns > button:nth-child(even){
+.btns > button{
     border: 1px solid #2f3030;
     color: #2f3030;
-     /* border-radius: 18px; */
 }
 
-.btns > button.active:hover{
-    color: #fff;
-}
-
-.btns > button:nth-child(odd):hover{
-    background-color: #94c17d;
-    border: 2px solid #94c17d;
-    color: #fff;
-}
-
-.btns > button:nth-child(even):hover{
+.btns > button:hover{
     background-color: #94c17d;
     border: 2px solid #94c17d;
     color: #fff;
@@ -392,7 +365,9 @@ article#catalog{
 }
 
 .btns > button.active{
-    color: #f7941d;
+    background-color: #94c17d;
+    border: 2px solid #94c17d;
+    color: #fff;
 }
 
 .swiper {
@@ -669,7 +644,8 @@ footer > .nav > a:hover{
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
+    /* max-width: 1400px; */
+    gap: 25px;
 }
 
 .shop-item{
@@ -680,6 +656,7 @@ footer > .nav > a:hover{
 
 .photos > img{
     width: 310px;
+    height: 414px;
 }
 
 .photos{
@@ -689,4 +666,8 @@ footer > .nav > a:hover{
 .name{
     font-size: 20px;
     font-weight: 900;
+}
+
+.alt-product-img{
+    display: none;
 }

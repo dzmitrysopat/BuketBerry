@@ -51,18 +51,32 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-function show(){
-    document.getElementById("man").classList.remove("active");
-    document.getElementById("woman").classList.add("active");
-    document.querySelector('.man').classList.add("hide");
-    document.querySelector('.woman').classList.remove("hide");
-}
-
-function hide(){
+function man(){
     document.getElementById("man").classList.add("active");
     document.getElementById("woman").classList.remove("active");
-    document.querySelector('.man').classList.remove("hide");
-    document.querySelector('.woman').classList.add("hide");
+    document.getElementById("baby").classList.remove("active");
+    document.getElementById("premium").classList.remove("active");
+}
+
+function woman(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.add("active");
+    document.getElementById("baby").classList.remove("active");
+    document.getElementById("premium").classList.remove("active");
+}
+
+function baby(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.remove("active");
+    document.getElementById("baby").classList.add("active");
+    document.getElementById("premium").classList.remove("active");
+}
+
+function premium(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.remove("active");
+    document.getElementById("baby").classList.remove("active");
+    document.getElementById("premium").classList.add("active");
 }
 
 var acc = document.getElementsByClassName("accordion");
@@ -79,32 +93,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
-fetch('../shop_list/mans_list.json')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById("gallery");
-
-        data.forEach(item =>{
-          const block = document.createElement('section');
-          block.classList.add('shop-item');
-
-          
-  block.innerHTML = `
-                <div class="photos">
-                    <img src="${item.photo}" alt="" class="">
-                    <img src="${item.photo}" alt="" class="">                    
-                </div>
-                <p class="name">${item.name}</p>
-                <span class="cost">${item.price}</span>
-  `;
-  cotainer.appendChild(block);
-    let hwIdelement = block.querySelector('.hw-id');
-  if (item.topic == "css"){
-    hwIdelement.classList.add("css");
-    // document.querySelector("i").classList.remove("bxl-html5");
-    document.querySelector("i").classList.add("bxl-css3");
-  }
-        })
-        .catch(error => console.error('Ошибка загрузки JSON:', error));
-        })

@@ -1,8 +1,9 @@
-[
+{
+"products": [
   {
     "id": 1,
     "name": "01",
-    "price": "45 руб.",
+    "price": "45",
     "photo": "../media/compositions/mans/IMG_20250811_154329_028.jpg",
     "photo2": "../media/compositions/mans/IMG_20250811_154332_716.jpg"
   },
@@ -70,3 +71,5 @@
     "photo2": ""
   }
 ]
+}
+
