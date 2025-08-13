@@ -614,6 +614,7 @@ h5{
 footer{
     background-color: #2f3030;
     padding: 5% 0;
+    margin-top: 50px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -663,4 +664,29 @@ footer > .nav > a:hover{
 
 .social-links > a > div > i{
     font-size: 25px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}
+
+.shop-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photos > img{
+    width: 310px;
+}
+
+.photos{
+    margin-bottom: 15px;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 900;
 }
