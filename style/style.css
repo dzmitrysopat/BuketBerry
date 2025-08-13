@@ -128,7 +128,7 @@ main{
 }
 
 .bg-flowers:nth-child(2){
-    left: 1130px;
+    left: 1120px;
     top: 970px;
     width: 500px;
     rotate: -45deg;
@@ -337,7 +337,7 @@ article#catalog{
 }
 
 #man.active{
-    border: 2px solid #94c17d;
+    border: 1px solid #94c17d;
     /* border-radius: 18px; */
     background-color: #94c17d;
     /* padding: 2% 1%; */
@@ -345,7 +345,7 @@ article#catalog{
 }
 
 #woman.active{
-    border: 2px solid #94c17d;
+    border: 1px solid #94c17d;
     /* border-radius: 18px; */
     background-color: #94c17d;
     /* padding: 2% 1%; */
@@ -353,13 +353,13 @@ article#catalog{
 }
 
 .btns > button:nth-child(odd){
-     border: 2px solid #2f3030;
+     border: 1px solid #2f3030;
      color: #2f3030;
      /* border-radius: 18px; */
 }
 
 .btns > button:nth-child(even){
-    border: 2px solid #2f3030;
+    border: 1px solid #2f3030;
     color: #2f3030;
      /* border-radius: 18px; */
 }
@@ -427,15 +427,17 @@ div.swiper-button-prev:hover{
 
 #catalog > .link-btn{
     margin-top: 10px;
-    border: none;
-    background: #833ab4;
-    background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+    border: 1px solid #2f3030;
+    background: inherit;
+    color: #2f3030;
+    /* background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045); */
     transition: all .4s;
 }
 
 #catalog > .link-btn:hover{
     color: #fff;
-    opacity: 0.6;
+    background-color: #94c17d;
+    border: 1px solid #94c17d;
 }
 
 #catalog > .link-btn > i{
