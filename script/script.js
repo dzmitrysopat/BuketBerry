@@ -79,3 +79,32 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+fetch('../shop_list/mans_list.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById("gallery");
+
+        data.forEach(item =>{
+          const block = document.createElement('section');
+          block.classList.add('shop-item');
+
+          
+  block.innerHTML = `
+                <div class="photos">
+                    <img src="${item.photo}" alt="" class="">
+                    <img src="${item.photo}" alt="" class="">                    
+                </div>
+                <p class="name">${item.name}</p>
+                <span class="cost">${item.price}</span>
+  `;
+  cotainer.appendChild(block);
+    let hwIdelement = block.querySelector('.hw-id');
+  if (item.topic == "css"){
+    hwIdelement.classList.add("css");
+    // document.querySelector("i").classList.remove("bxl-html5");
+    document.querySelector("i").classList.add("bxl-css3");
+  }
+        })
+        .catch(error => console.error('Ошибка загрузки JSON:', error));
+        })

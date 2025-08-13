@@ -1,71 +1,71 @@
 [
   {
     "id": 1,
-    "name": "",
-    "price": "",
-    "photo": "",
-    "photo2": ""
+    "name": "01",
+    "price": "45 руб.",
+    "photo": "../media/compositions/mans/IMG_20250811_154329_028.jpg",
+    "photo2": "../media/compositions/mans/IMG_20250811_154332_716.jpg"
   },
   {
     "id": 2,
-    "name": "",
-    "price": "",
+    "name": "02",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   },
   {
     "id": 3,
-    "name": "",
-    "price": "",
+    "name": "03",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   },
   {
     "id": 4,
-    "name": "",
-    "price": "",
+    "name": "04",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   },
   {
     "id": 5,
-    "name": "",
-    "price": "",
+    "name": "05",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   },
   {
     "id": 6,
-    "name": "",
-    "price": "",
+    "name": "06",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   },
   {
     "id": 7,
-    "name": "",
-    "price": "",
+    "name": "07",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   },
   {
     "id": 8,
-    "name": "",
-    "price": "",
+    "name": "08",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   },
   {
     "id": 9,
-    "name": "",
-    "price": "",
+    "name": "09",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   },
   {
     "id": 10,
-    "name": "",
-    "price": "",
+    "name": "010",
+    "price": "45 руб.",
     "photo": "",
     "photo2": ""
   }
