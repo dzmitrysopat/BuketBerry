@@ -56,6 +56,12 @@ function man(){
     document.getElementById("woman").classList.remove("active");
     document.getElementById("baby").classList.remove("active");
     document.getElementById("premium").classList.remove("active");
+
+    document.getElementById("manItems").classList.remove("hidden");
+    document.getElementById("womanItems").classList.add("hidden");
+    document.getElementById("babyItems").classList.add("hidden");
+    document.getElementById("premiumItems").classList.add("hidden");
+
 }
 
 function woman(){
@@ -63,6 +69,11 @@ function woman(){
     document.getElementById("woman").classList.add("active");
     document.getElementById("baby").classList.remove("active");
     document.getElementById("premium").classList.remove("active");
+
+    document.getElementById("manItems").classList.add("hidden");
+    document.getElementById("womanItems").classList.remove("hidden");
+    document.getElementById("babyItems").classList.add("hidden");
+    document.getElementById("premiumItems").classList.add("hidden");
 }
 
 function baby(){
@@ -70,6 +81,11 @@ function baby(){
     document.getElementById("woman").classList.remove("active");
     document.getElementById("baby").classList.add("active");
     document.getElementById("premium").classList.remove("active");
+
+    document.getElementById("manItems").classList.add("hidden");
+    document.getElementById("womanItems").classList.add("hidden");
+    document.getElementById("babyItems").classList.remove("hidden");
+    document.getElementById("premiumItems").classList.add("hidden");
 }
 
 function premium(){
@@ -77,6 +93,11 @@ function premium(){
     document.getElementById("woman").classList.remove("active");
     document.getElementById("baby").classList.remove("active");
     document.getElementById("premium").classList.add("active");
+
+    document.getElementById("manItems").classList.add("hidden");
+    document.getElementById("womanItems").classList.add("hidden");
+    document.getElementById("babyItems").classList.add("hidden");
+    document.getElementById("premiumItems").classList.remove("hidden");
 }
 
 var acc = document.getElementsByClassName("accordion");

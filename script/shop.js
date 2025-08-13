@@ -74,7 +74,7 @@ const products = [
 displayProducts(products);
 
 function displayProducts(products) {
-    const container = document.getElementById('mans');
+    const container = document.getElementById('manItems');
     
     products.forEach(product => {
         const card = document.createElement('section');

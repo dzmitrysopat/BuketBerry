@@ -396,7 +396,7 @@ div.swiper-button-prev:hover{
     color: #2f3030;
 }
 
-.hide{
+.hidden{
     display: none !important;
 }
 
