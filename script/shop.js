@@ -163,3 +163,155 @@ function displayWomansProducts(products) {
         container.appendChild(card);
     });
 }
+
+// children block
+
+const child = [
+    {
+    "id": 1,
+    "name": "01",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_260.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 2,
+    "name": "02",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_340.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 3,
+    "name": "03",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_448.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 4,
+    "name": "04",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_726.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 5,
+    "name": "05",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_939.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 6,
+    "name": "06",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_961.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 7,
+    "name": "07",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165237_045.jpg",
+    "photo2": "./media/compositions/child/"
+  }
+];
+
+displayChildsProducts(child);
+
+function displayChildsProducts(products) {
+    const container = document.getElementById('babyItems');
+    
+    products.forEach(product => {
+        const card = document.createElement('section');
+        card.className = 'shop-item';
+        
+        card.innerHTML = `
+            <div class="photos">
+                    <img src="${product.photo}" alt="" class="product-img">
+                    <img src="${product.photo2}" alt="" class="alt-product-img">
+                </div>
+                <p class="name">${product.name}</p>
+                <span class="price">${product.price} руб.</span>
+        `;
+        
+        container.appendChild(card);
+    });
+}
+
+// oldFruits block
+
+const child = [
+    {
+    "id": 1,
+    "name": "01",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_260.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 2,
+    "name": "02",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_340.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 3,
+    "name": "03",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_448.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 4,
+    "name": "04",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_726.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 5,
+    "name": "05",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_939.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 6,
+    "name": "06",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165236_961.jpg",
+    "photo2": "./media/compositions/child/"
+  },
+  {
+    "id": 7,
+    "name": "07",
+    "price": "45",
+    "photo": "./media/compositions/child/IMG_20250811_165237_045.jpg",
+    "photo2": "./media/compositions/child/"
+  }
+];
+
+displayChildsProducts(child);
+
+function displayChildsProducts(products) {
+    const container = document.getElementById('babyItems');
+    
+    products.forEach(product => {
+        const card = document.createElement('section');
+        card.className = 'shop-item';
+        
+        card.innerHTML = `
+            <div class="photos">
+                    <img src="${product.photo}" alt="" class="product-img">
+                    <img src="${product.photo2}" alt="" class="alt-product-img">
+                </div>
+                <p class="name">${product.name}</p>
+                <span class="price">${product.price} руб.</span>
+        `;
+        
+        container.appendChild(card);
+    });
+}
