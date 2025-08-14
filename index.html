@@ -70,26 +70,59 @@
         <div class="anchor" id="catalogAnchor"></div>
         <article id="catalog">
             <h2>Наши работы</h2>
-           <div class="btns">
-                <button class="active" id="man" onclick="man()">Для него</button>
-                <button class="" id="woman" onclick="woman()">Для неё</button>
-                <button class="" id="baby" onclick="baby()">Детские букеты</button>
-                <button class="" id="oldFruits" onclick="oldFruits()">Корзины с сухофруктом</button>
-                <button class="" id="premium" onclick="premium()">Клубника в шоколаде</button>
-                <!-- <button class="" id="strawberry" onclick="show()">Клубника в шоколаде</button> -->
+            <div class="btns">
+                <button class="active" id="man" onclick="hide()">Для него</button>
+                <button class="" id="woman" onclick="show()">Для неё</button>
+                <button class="" id="child" onclick="show()">Детские букеты</button>
+                <button class="" id="bucket" onclick="show()">Корзины с сухофруктом</button>
+                <button class="" id="strawberry" onclick="show()">Клубника в шоколаде</button>
             </div>
-
-        <article class="gallery " id="manItems"></article>
-
-        <article class="gallery hidden" id="womanItems"></article>
-
-        <article class="gallery hidden" id="babyItems"></article>
-
-        <article class="gallery hidden" id="oldFruitsItems"></article>
-
-        <article class="gallery hidden" id="premiumItems"></article>
             <!-- Slider main container -->
+        <div class="swiper man">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img src="./media/compositions/mans/01.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/09.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/02.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/03.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/010.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/04.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/08.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/05.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/06.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/mans/07.webp" alt="" class="swiper-slide">
+            
+        </div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="swiper woman hide">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img src="./media/compositions/woman/01.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/02.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/03.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/04.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/05.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/06.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/07.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/08.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/09.webp" alt="" class="swiper-slide">
+            <img src="./media/compositions/woman/010.webp" alt="" class="swiper-slide">
+            
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>
         <a href="./catalog.html" class="link-btn">Больше работ</a>
         <!-- <a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="link-btn"><i class="uil uil-instagram"></i>Больше работ</a> -->
         </article>
@@ -315,6 +348,5 @@
         Copyright © 2025. All rights are reserved -->
     </footer>
     <script src="./script/script.js"></script>
-    <script src="./script/shop.js"></script>
 </body>
 </html>
