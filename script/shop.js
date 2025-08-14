@@ -77,7 +77,6 @@ displayMansProducts(mans);
 
 function displayMansProducts(products) {
     const container = document.getElementById('manItems');
-    const swiperContainer = document.querySelector('#manItems div');
 
     products.forEach(product => {
         const card = document.createElement('section');
@@ -93,7 +92,6 @@ function displayMansProducts(products) {
         `;
         
         container.appendChild(card);
-        swiperContainer.appendChild(card);
     });
 }
 

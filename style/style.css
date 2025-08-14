@@ -371,11 +371,19 @@ article#catalog{
 }
 
 .swiper {
-    width: 1200px;
-    height: 550px;
+    width: 1300px;
+    height: 500px;
+}
+
+.swiper-wrapper{
+    display: flex;
+    gap: 25px;
 }
 
 .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* border-radius: 25px; */
     cursor: pointer;
 }
