@@ -371,8 +371,8 @@ article#catalog{
 }
 
 .swiper {
-    width: 1300px;
-    height: 414px;
+    width: 1200px;
+    height: 550px;
 }
 
 .swiper-slide{
@@ -387,6 +387,7 @@ div.swiper-button-prev{
     color: #fff;
     padding: 20px 27px;
     transition: all .4s;
+    z-index: 2000;
 }
 
 
