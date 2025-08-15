@@ -112,7 +112,7 @@ const womans = [
     "name": "06",
     "price": "45",
     "photo": "./media/compositions/woman/IMG_20250811_165423_888.jpg",
-    "photo2": "./media/compositions/woman/IMG_20250811_154329_028.jpg"
+    "photo2": ""
   }
 ];
 
@@ -296,7 +296,7 @@ const Premium = [
     "name": "08",
     "price": "45",
     "photo": "./media/compositions/premium/IMG_20250811_163733_604.jpg",
-    "photo2": "./media/compositions/premium/"
+    "photo2": ""
   }
 ];
 
