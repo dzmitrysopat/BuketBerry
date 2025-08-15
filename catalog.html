@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваша Букетная Мастерская - Buket Berry</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="./media/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html" id="logoLink">
+            <img src="./media/img/strawberry.png" alt="" class="logo-img">
+            Buket Berry
+        </a>
+        <nav>
+            <a href="#catalogAnchor">Наши работы</a>
+            <a href="#aboutAnchor">О нас</a>
+            <!-- <a href="#contactsAnchor">Контакты</a> -->
+            <a href="#paymentAnchor">Оплата</a>
+            <a href="#clientsAnchor">Вопросы</a>
+        </nav>
+        <a href="#contactsAnchor" class="link-btn">Сделать заказ</a>
+    </header>
+
+    <main>
+        <article id="catalog">
+            <h2>Наши работы</h2>
+            <div class="btns">
+                <button class="active" id="man" onclick="man()">Для него</button>
+                <button class="" id="woman" onclick="woman()">Для неё</button>
+                <button class="" id="baby" onclick="baby()">Детские букеты</button>
+                <button class="" id="oldFruits" onclick="oldFruits()">Корзины с сухофруктом</button>
+                <button class="" id="premium" onclick="premium()">Клубника в шоколаде</button>
+                <!-- <button class="" id="strawberry" onclick="show()">Клубника в шоколаде</button> -->
+            </div>
+
+        <article class="gallery" id="manItems"></article>
+        <article class="gallery hidden" id="womanItems"></article>
+        <article class="gallery hidden" id="babyItems"></article>
+        <article class="gallery hidden" id="oldFruitsItems"></article>
+        <article class="gallery hidden" id="premiumItems"></article>
+        <!-- <article class="mans" id="mans"></article> -->
+        <!-- <a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="link-btn"><i class="uil uil-instagram"></i>Больше работ</a> -->
+        </article>
+
+        <div class="product-cards" id="productContainer">
+        <!-- Карточки будут здесь -->
+    </div>
+    </main>
+    <footer>
+        <img src="./media/img/logo-Photoroom.png" alt="">
+            <section class="nav">
+                <a href="#catalogAnchor">Наши работы</a>
+                <a href="#aboutAnchor">О нас</a>
+                <!-- <a href="#contactsAnchor">Контакты</a> -->
+                <a href="#paymentAnchor">Оплата</a>
+                <a href="#clientsAnchor">Вопросы</a>
+                <a href="#">Политика конфиденциальности</a>
+            </section>
+
+            <section class="business-info">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam quos odit, iure perferendis, esse aliquam deserunt molestias omnis laboriosam error excepturi alias quod, soluta consequatur minima sit asperiores consectetur nostrum.
+            </section>
+
+            <section class="social-links">
+                <a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="contact-card telegram">
+                        <div class="skill-item">
+                            <i class="uil uil-instagram"></i>
+                            <div class="skill-description">
+                                <h4>Instagram</h4>
+                                 <!-- <h5>найти нас</h5> -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/Ilonapodterebkova" target="_blank" class="contact-card">
+                        <div class="skill-item">
+                            <i class="uil uil-telegram-alt"></i>
+                            <div class="skill-description">
+                                <h4>Telegram</h4>
+                                 <!-- <h5>написать нам</h5> -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/Ilonapodterebkova" target="_blank" class="contact-card">
+                        <div class="skill-item">
+                            <i class="uil uil-phone-alt"></i>
+                            <div class="skill-description">
+                                <h4>Телефон</h4>
+                                 <!-- <h5>позвонить</h5> -->
+                            </div>
+                        </div>
+                    </a>
+            </section>
+            <hr>
+        <!-- <hr>
+        Copyright © 2025. All rights are reserved -->
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="./script/shop.js" defer></script>
+</body>
+</html>

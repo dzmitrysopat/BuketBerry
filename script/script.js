@@ -19,28 +19,16 @@ function navHighlighter() {
   });
 }
 
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper(".mySwiper", {
   // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
 
-  // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+        el: ".swiper-pagination",
+      },
 
     autoplay: {
         delay: 5000,
@@ -51,16 +39,88 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-function show(){
-    document.getElementById("man").classList.remove("active");
-    document.getElementById("woman").classList.add("active");
-    document.querySelector('.man').classList.add("hide");
-    document.querySelector('.woman').classList.remove("hide");
-}
-
-function hide(){
+function man(){
     document.getElementById("man").classList.add("active");
     document.getElementById("woman").classList.remove("active");
-    document.querySelector('.man').classList.remove("hide");
-    document.querySelector('.woman').classList.add("hide");
+    document.getElementById("baby").classList.remove("active");
+    document.getElementById("oldFruits").classList.remove("active");
+    document.getElementById("premium").classList.remove("active");
+
+    document.getElementById("manItems").classList.remove("hidden");
+    document.getElementById("womanItems").classList.add("hidden");
+    document.getElementById("babyItems").classList.add("hidden");
+    document.getElementById("oldFruitsItems").classList.add("hidden");
+    document.getElementById("premiumItems").classList.add("hidden");
+
+}
+
+function woman(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.add("active");
+    document.getElementById("baby").classList.remove("active");
+    document.getElementById("oldFruits").classList.remove("active");
+    document.getElementById("premium").classList.remove("active");
+
+    document.getElementById("manItems").classList.add("hidden");
+    document.getElementById("womanItems").classList.remove("hidden");
+    document.getElementById("babyItems").classList.add("hidden");
+    document.getElementById("oldFruitsItems").classList.add("hidden");
+    document.getElementById("premiumItems").classList.add("hidden");
+}
+
+function baby(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.remove("active");
+    document.getElementById("baby").classList.add("active");
+    document.getElementById("oldFruits").classList.remove("active");
+    document.getElementById("premium").classList.remove("active");
+
+    document.getElementById("manItems").classList.add("hidden");
+    document.getElementById("womanItems").classList.add("hidden");
+    document.getElementById("babyItems").classList.remove("hidden");
+    document.getElementById("oldFruitsItems").classList.add("hidden");
+    document.getElementById("premiumItems").classList.add("hidden");
+}
+
+function oldFruits(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.remove("active");
+    document.getElementById("baby").classList.remove("active");
+    document.getElementById("oldFruits").classList.add("active");    
+    document.getElementById("premium").classList.remove("active");
+
+    document.getElementById("manItems").classList.add("hidden");
+    document.getElementById("womanItems").classList.add("hidden");
+    document.getElementById("babyItems").classList.add("hidden");
+    document.getElementById("oldFruitsItems").classList.remove("hidden");
+    document.getElementById("premiumItems").classList.add("hidden");
+}
+
+function premium(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.remove("active");
+    document.getElementById("baby").classList.remove("active");
+    document.getElementById("oldFruits").classList.remove("active");
+    document.getElementById("premium").classList.add("active");
+
+    document.getElementById("manItems").classList.add("hidden");
+    document.getElementById("womanItems").classList.add("hidden");
+    document.getElementById("babyItems").classList.add("hidden");
+    document.getElementById("oldFruitsItems").classList.add("hidden");
+    document.getElementById("premiumItems").classList.remove("hidden");
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active-question");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }
