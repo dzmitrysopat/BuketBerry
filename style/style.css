@@ -385,6 +385,20 @@ article#catalog{
     align-items: center;
 }
 
+.swiper-pagination{
+    margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet{
+    background-color: #fff !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #30b6eb !important;
+    opacity: 1 !important;
+}
+
 .swiper-slide{
     text-align: center;
     font-size: 18px;
@@ -394,7 +408,8 @@ article#catalog{
     align-items: center;
 }
 
-img.swiper-slide{
+.swiper-slide img{
+    cursor: pointer;
     display: block;
     width: 310px;
     height: 414px;

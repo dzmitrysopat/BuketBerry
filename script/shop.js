@@ -1,5 +1,3 @@
-// mans block
-
 const mans = [
     {
     "id": 1,
@@ -73,31 +71,6 @@ const mans = [
   }
 ];
 
-displayMansProducts(mans);
-
-function displayMansProducts(products) {
-    const container = document.getElementById('manItems');
-
-    products.forEach(product => {
-        const card = document.createElement('section');
-        card.className = 'swiper mySwiper';
-        
-        card.innerHTML = `
-            <div class="swiper-wrapper">
-                    <img src="${product.photo}" alt="" class="product-img swiper-slide">
-                    <img src="${product.photo2}" alt="" class="alt-product-img swiper-slide">
-              </div>
-              <div class="swiper-pagination"></div>
-              <p class="name">${product.name}</p>
-              <span class="price">${product.price} руб.</span>
-        `;
-        
-        container.appendChild(card);
-    });
-}
-
-// womans block
-
 const womans = [
     {
     "id": 1,
@@ -142,30 +115,6 @@ const womans = [
     "photo2": "./media/compositions/woman/IMG_20250811_154329_028.jpg"
   }
 ];
-
-displayWomansProducts(womans);
-
-function displayWomansProducts(products) {
-    const container = document.getElementById('womanItems');
-    
-    products.forEach(product => {
-        const card = document.createElement('section');
-        card.className = 'shop-item';
-        
-        card.innerHTML = `
-            <div class="photos">
-                    <img src="${product.photo}" alt="" class="product-img">
-                    <img src="${product.photo2}" alt="" class="alt-product-img">
-                </div>
-                <p class="name">${product.name}</p>
-                <span class="price">${product.price} руб.</span>
-        `;
-        
-        container.appendChild(card);
-    });
-}
-
-// children block
 
 const child = [
     {
@@ -218,30 +167,6 @@ const child = [
     "photo2": "./media/compositions/child/"
   }
 ];
-
-displayChildsProducts(child);
-
-function displayChildsProducts(products) {
-    const container = document.getElementById('babyItems');
-    
-    products.forEach(product => {
-        const card = document.createElement('section');
-        card.className = 'shop-item';
-        
-        card.innerHTML = `
-            <div class="photos">
-                    <img src="${product.photo}" alt="" class="product-img">
-                    <img src="${product.photo2}" alt="" class="alt-product-img">
-                </div>
-                <p class="name">${product.name}</p>
-                <span class="price">${product.price} руб.</span>
-        `;
-        
-        container.appendChild(card);
-    });
-}
-
-// oldFruits block
 
 const Fruits = [
     {
@@ -316,30 +241,6 @@ const Fruits = [
   }
 ];
 
-displayFruitsProducts(Fruits);
-
-function displayFruitsProducts(products) {
-    const container = document.getElementById('oldFruitsItems');
-    
-    products.forEach(product => {
-        const card = document.createElement('section');
-        card.className = 'shop-item';
-        
-        card.innerHTML = `
-            <div class="photos">
-                    <img src="${product.photo}" alt="" class="product-img">
-                    <img src="${product.photo2}" alt="" class="alt-product-img">
-                </div>
-                <p class="name">${product.name}</p>
-                <span class="price">${product.price} руб.</span>
-        `;
-        
-        container.appendChild(card);
-    });
-}
-
-// premium block
-
 const Premium = [
     {
     "id": 1,
@@ -399,24 +300,48 @@ const Premium = [
   }
 ];
 
-displayPremiumProducts(Premium);
+// Универсальная функция для вывода товаров с слайдером
+function displayProducts(products, containerId) {
+    const container = document.getElementById(containerId);
 
-function displayPremiumProducts(products) {
-    const container = document.getElementById('premiumItems');
-    
     products.forEach(product => {
-        const card = document.createElement('section');
-        card.className = 'shop-item';
-        
+        const card = document.createElement('div');
+        card.className = 'swiper mySwiper';
+
         card.innerHTML = `
-            <div class="photos">
-                    <img src="${product.photo}" alt="" class="product-img">
-                    <img src="${product.photo2}" alt="" class="alt-product-img">
-                </div>
-                <p class="name">${product.name}</p>
-                <span class="price">${product.price} руб.</span>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="${product.photo}" alt="" class="product-img"></div>
+                <div class="swiper-slide"><img src="${product.photo2}" alt="" class="alt-product-img"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <p class="name">${product.name}</p>
+            <span class="price">${product.price} руб.</span>
         `;
-        
+
         container.appendChild(card);
+
+        // Инициализация Swiper для этого блока
+        new Swiper(card, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: card.querySelector('.swiper-pagination'),
+                clickable: true
+            },
+            autoplay: {
+                delay: 5000
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false
+            }
+        });
     });
 }
+
+displayProducts(mans, 'manItems');
+displayProducts(womans, 'womanItems');
+displayProducts(child, 'babyItems');
+displayProducts(Fruits, 'oldFruitsItems');
+displayProducts(Premium, 'premiumItems');
