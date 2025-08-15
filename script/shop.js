@@ -342,7 +342,11 @@ function displayProducts(products, containerId) {
                 keyboard: {
                     enabled: true,
                     onlyInViewport: false
-                }
+                },
+                  simulateTouch: true,   // свайп пальцем
+                  grabCursor: true,      // «рука» при наведении
+                  touchRatio: 1,         // чувствительность свайпа
+                  touchAngle: 45,        // угол срабатывания
             });
         }
     });
