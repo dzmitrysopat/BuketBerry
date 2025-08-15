@@ -122,49 +122,49 @@ const child = [
     "name": "01",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165236_260.jpg",
-    "photo2": "./media/compositions/child/"
+    "photo2": ""
   },
   {
     "id": 2,
     "name": "02",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165236_340.jpg",
-    "photo2": "./media/compositions/child/"
+    "photo2": ""
   },
   {
     "id": 3,
     "name": "03",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165236_448.jpg",
-    "photo2": "./media/compositions/child/"
+    "photo2": ""
   },
   {
     "id": 4,
     "name": "04",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165236_726.jpg",
-    "photo2": "./media/compositions/child/"
+    "photo2": ""
   },
   {
     "id": 5,
     "name": "05",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165236_939.jpg",
-    "photo2": "./media/compositions/child/"
+    "photo2": ""
   },
   {
     "id": 6,
     "name": "06",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165236_961.jpg",
-    "photo2": "./media/compositions/child/"
+    "photo2": ""
   },
   {
     "id": 7,
     "name": "07",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165237_045.jpg",
-    "photo2": "./media/compositions/child/"
+    "photo2": ""
   }
 ];
 
@@ -300,7 +300,6 @@ const Premium = [
   }
 ];
 
-// Универсальная функция для вывода товаров с слайдером
 function displayProducts(products, containerId) {
     const container = document.getElementById(containerId);
 
@@ -308,35 +307,44 @@ function displayProducts(products, containerId) {
         const card = document.createElement('div');
         card.className = 'swiper mySwiper';
 
+        let slidesHTML = `<div class="swiper-slide"><img src="${product.photo}" alt="" class="product-img"></div>`;
+        
+        // Добавляем второй слайд, только если фото есть
+        if (product.photo2 && product.photo2.trim() !== "") {
+            slidesHTML += `<div class="swiper-slide"><img src="${product.photo2}" alt="" class="alt-product-img"></div>`;
+        }
+
+        // Пагинация только если есть больше одного слайда
         card.innerHTML = `
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="${product.photo}" alt="" class="product-img"></div>
-                <div class="swiper-slide"><img src="${product.photo2}" alt="" class="alt-product-img"></div>
+                ${slidesHTML}
             </div>
-            <div class="swiper-pagination"></div>
+            ${product.photo2 && product.photo2.trim() !== "" ? '<div class="swiper-pagination"></div>' : ''}
             <p class="name">${product.name}</p>
             <span class="price">${product.price} руб.</span>
         `;
 
         container.appendChild(card);
 
-        // Инициализация Swiper для этого блока
-        new Swiper(card, {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: card.querySelector('.swiper-pagination'),
-                clickable: true
-            },
-            autoplay: {
-                delay: 5000
-            },
-            keyboard: {
-                enabled: true,
-                onlyInViewport: false
-            }
-        });
+        // Инициализация Swiper только если есть второй слайд
+        if (product.photo2 && product.photo2.trim() !== "") {
+            new Swiper(card, {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: card.querySelector('.swiper-pagination'),
+                    clickable: true
+                },
+                autoplay: {
+                    delay: 5000
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false
+                }
+            });
+        }
     });
 }
 
