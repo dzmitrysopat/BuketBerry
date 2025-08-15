@@ -80,15 +80,16 @@ function displayMansProducts(products) {
 
     products.forEach(product => {
         const card = document.createElement('section');
-        card.className = 'shop-item';
+        card.className = 'swiper mySwiper';
         
         card.innerHTML = `
-            <div class="photos">
-                    <img src="${product.photo}" alt="" class="product-img">
-                    <img src="${product.photo2}" alt="" class="alt-product-img">
-                </div>
-                <p class="name">${product.name}</p>
-                <span class="price">${product.price} руб.</span>
+            <div class="swiper-wrapper">
+                    <img src="${product.photo}" alt="" class="product-img swiper-slide">
+                    <img src="${product.photo2}" alt="" class="alt-product-img swiper-slide">
+              </div>
+              <div class="swiper-pagination"></div>
+              <p class="name">${product.name}</p>
+              <span class="price">${product.price} руб.</span>
         `;
         
         container.appendChild(card);

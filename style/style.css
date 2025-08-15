@@ -272,6 +272,10 @@ header > .link-btn:hover{
     color: #2f3030;
 }
 
+h2{
+    margin-bottom: 50px;
+}
+
 article > h2{
     text-align: center;
 }
@@ -371,38 +375,28 @@ article#catalog{
 }
 
 .swiper {
-    width: 1300px;
-    height: 500px;
-}
-
-.swiper-wrapper{
-    display: flex;
-    gap: 25px;
+    width:  310px;
+    height: fit-content;
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
 }
 
 .swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #444;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /* border-radius: 25px; */
-    cursor: pointer;
 }
 
-div.swiper-button-next,
-div.swiper-button-prev{
-    border-radius: 50%;
-    background-color: #2f3030;
-    color: #fff;
-    padding: 20px 27px;
-    transition: all .4s;
-    z-index: 2000;
-}
-
-
-div.swiper-button-next:hover,
-div.swiper-button-prev:hover{
-    background-color: #fff;
-    color: #2f3030;
+img.swiper-slide{
+    display: block;
+    width: 310px;
+    height: 414px;
+    object-fit: cover;
 }
 
 .hidden{
@@ -429,25 +423,7 @@ div.swiper-button-prev:hover{
     font-size: 25px;
 }
 
-
-
-/* #clients{
-    align-self: center;
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 45px;
-    grid-row-gap: 15px;
-}
-
-#clients > section{
-    padding: 15px 20px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
-    max-width: 350px;
-} */
-
+/* #clients
 #clients{
     display: flex;
     flex-direction: column;
@@ -652,15 +628,14 @@ footer > .nav > a:hover{
 
 .gallery{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     /* max-width: 1400px; */
     gap: 25px;
 }
 
 .shop-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
 .photos > img{
