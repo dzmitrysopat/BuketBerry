@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
+/* #94c17d  */ /* #81b7cc */ /* #f7941d */
+
 *{
     font-family: 'comfortaa', sans-serif;
     text-decoration: none;
@@ -58,7 +60,7 @@ a#logoLink{
 }
 
 a#logoLink:hover{
-    color: #f7941d;
+    color: #81b7cc;
 }
 
 a#logoLink > img{
@@ -82,7 +84,7 @@ nav > a{
 
 nav > a:hover,
 nav > a.colored{
-    color: #f7941d;
+    color: #81b7cc;
 }
 
 nav > a:after,
@@ -92,7 +94,7 @@ nav > a:active:after{
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
 	height: 3px; /*задаём ширину линии*/
-	background-color: #f7941d; /*задаём цвет линии*/
+	background-color: #81b7cc; /*задаём цвет линии*/
 	content: "";
 	transition: width 0.2s ease-out; /*задаём время анимации*/
 }
@@ -105,7 +107,7 @@ nav > a.active-link:after {
 
 nav a.active-link,
 nav a.active-link >i{
-    color: #f7941d;
+    color: #81b7cc;
 }
 
 main{
@@ -190,15 +192,15 @@ section.description > .link-btn{
     width: 400px;
     height: 50px;
     font-size: 30px;
-    border: 2px solid #94c17d;
-    background-color: #94c17d;
+    border: 2px solid #81b7cc;
+    background-color: #81b7cc;
     color: #fff;
 }
 
 section.description > .link-btn:hover{
-    border: 2px solid #94c17d;
+    border: 2px solid #81b7cc;
     background-color: #fff;
-    color: #94c17d;
+    color: #81b7cc;
 }
 
 h1, p.about{
@@ -251,8 +253,8 @@ hr{
     align-items: center;
     justify-content: center;
     color: #fafafa;
-    background-color: #94c17d;
-    border: 2px solid #94c17d;
+    background-color: #81b7cc;
+    border: 2px solid #81b7cc;
     /* border-radius: 18px; */
     transition: all .4s;
     cursor: pointer;
@@ -260,12 +262,12 @@ hr{
 
 header > .link-btn{
     /* background-color: #2f3030; */
-    background-color: #94c17d;
-    border: 2px solid #94c17d;
+    background-color: #81b7cc;
+    border: 2px solid #81b7cc;
 }
 
 header > .link-btn:hover{
-    color: #94c17d;
+    color: #81b7cc;
 }
 .link-btn:hover{
     background-color: inherit;
@@ -301,7 +303,7 @@ div.info{
 div.info:nth-child(2),
 div.info:nth-child(6){
     /* background-color: #2f3030; */
-    background-color: #94c17d;
+    background-color: #81b7cc;
 }
 
 div.info:nth-child(4){
@@ -341,8 +343,8 @@ article#catalog{
 }
 
 .active{
-    border: 1px solid #94c17d;
-    background-color: #94c17d;
+    border: 1px solid #81b7cc;
+    background-color: #81b7cc;
     color: #fff;
 }
 
@@ -352,8 +354,8 @@ article#catalog{
 }
 
 .btns > button:hover{
-    background-color: #94c17d;
-    border: 2px solid #94c17d;
+    background-color: #81b7cc;
+    border: 2px solid #81b7cc;
     color: #fff;
 }
 
@@ -363,14 +365,14 @@ article#catalog{
 }
 
 .btns > .link-btn:first-child:hover{
-    color: #f7941d;
-    border: 2px solid #f7941d;
+    color: #81b7cc;
+    border: 2px solid #81b7cc;
     background-color: #fff;
 }
 
 .btns > button.active{
-    background-color: #94c17d;
-    border: 2px solid #94c17d;
+    background-color: #81b7cc;
+    border: 2px solid #81b7cc;
     color: #fff;
 }
 
@@ -414,8 +416,8 @@ img.swiper-slide{
 
 #catalog > .link-btn:hover{
     color: #fff;
-    background-color: #94c17d;
-    border: 1px solid #94c17d;
+    background-color: #81b7cc;
+    border: 1px solid #81b7cc;
 }
 
 #catalog > .link-btn > i{
@@ -540,7 +542,7 @@ h5{
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active-question, .accordion:hover {
-    background-color: #94c17d79;
+    background-color: #81b7cc79;
     /* font-weight: 900; */
 }
 
@@ -598,7 +600,7 @@ footer > .nav > a{
 }
 
 footer > .nav > a:hover{
-    color: #f7941d;
+    color: #81b7cc;
 }
 
 .business-info{

@@ -19,17 +19,16 @@ function navHighlighter() {
   });
 }
 
-const swiper = new Swiper('.swiper .mySwiper', {
+var swiper = new Swiper(".mySwiper", {
   // Optional parameters
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
 
-  // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
-  },
+        el: ".swiper-pagination",
+      },
 
     autoplay: {
         delay: 5000,
