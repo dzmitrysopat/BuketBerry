@@ -19,26 +19,6 @@ function navHighlighter() {
   });
 }
 
-// var swiper = new Swiper(".mySwiper", {
-//   // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-
-//   pagination: {
-//         el: ".swiper-pagination",
-//       },
-
-//     autoplay: {
-//         delay: 5000,
-//     },
-//     keyboard: {
-//         enabled: true,
-//         onlyInViewport: false,
-//     },
-// });
-
 function man(){
     document.getElementById("man").classList.add("active");
     document.getElementById("woman").classList.remove("active");

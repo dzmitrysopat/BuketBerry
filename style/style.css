@@ -116,22 +116,22 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 125px;
+    gap: 100px;
 }
 
 .bg-flowers{
     left: -300px;
-    top: 850px;
+    top: 900px;
     width: 500px;
     rotate: -45deg;
     position: absolute;
     z-index: 0;
-     opacity: 0.7;
+    opacity: 0.7;
 }
 
 .bg-flowers:nth-child(2){
     left: 1120px;
-    top: 970px;
+    top: 1000px;
     width: 500px;
     rotate: -45deg;
     position: absolute;

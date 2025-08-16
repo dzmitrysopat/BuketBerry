@@ -352,8 +352,19 @@ function displayProducts(products, containerId) {
     });
 }
 
-displayProducts(mans, 'manItems');
-displayProducts(womans, 'womanItems');
-displayProducts(child, 'babyItems');
-displayProducts(Fruits, 'oldFruitsItems');
-displayProducts(Premium, 'premiumItems');
+const currentUrl = window.location.pathname;
+console.log("Текущий URL:", currentUrl);
+
+if (currentUrl == "/index.html") {
+  displayProducts(mans.slice(0,4), 'manItems');
+  displayProducts(womans.slice(0, 4), 'womanItems');
+  displayProducts(child.slice(0, 4), 'babyItems');
+  displayProducts(Fruits.slice(0, 4), 'oldFruitsItems');
+  displayProducts(Premium.slice(0, 4), 'premiumItems');
+} else{
+  displayProducts(mans, 'manItems');
+  displayProducts(womans, 'womanItems');
+  displayProducts(child, 'babyItems');
+  displayProducts(Fruits, 'oldFruitsItems');
+  displayProducts(Premium, 'premiumItems');
+}
