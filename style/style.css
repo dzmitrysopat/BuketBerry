@@ -1,9 +1,16 @@
 /* / Общие стили / */
+*{
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+}
+
 body {
-margin: 0;
-font-family: 'Raleway', sans-serif;
-color: #333;
-background: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    background: #fff;
 }
 
 h1, h2, h3 {
@@ -18,9 +25,9 @@ color: inherit;
 }
 
 .container {
-width: 90%;
-max-width: 100%;
-margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 /* / Хедер / */
@@ -40,10 +47,15 @@ padding: 15px 0;
 flex-wrap: wrap;
 }
 
-.logo {
+.logo{
 font-size: 20px;
 font-weight: 600;
 color: #e67a8a;
+transition: all .4s;
+}
+
+.logo:hover{
+    color: #d45a6e;
 }
 
 nav {
@@ -52,27 +64,60 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-nav a {
-margin: 5px 10px;
-font-weight: 500;
+nav a,
+.footer-nav > a{
+    margin: 5px 10px;
+    font-weight: 500;
+    transition: all .4s;
+    position: relative;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav > a.colored,
+.footer-nav > a:hover{
+    color: #e67a8a;
+}
+
+nav > a:after,
+nav > a:active:after{
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+	background-color: #e67a8a; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.2s ease-out; /*задаём время анимации*/
+}
+
+nav > a:hover:after,
+nav > a:focus:after,
+nav > a.active-link:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+nav a.active-link,
+nav a.active-link >i{
+    color: #e67a8a;
 }
 
 .btn {
-background: #e67a8a;
-color: #fff;
-padding: 10px 20px;
-border-radius: 25px;
-transition: 0.3s;
-display: inline-block;
+    background: #e67a8a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+    display: inline-block;
 }
 
 .btn:hover {
-background: #d45a6e;
+    background: #d45a6e;
 }
 
 /* / Баннер / */
 section.hero {
-height: 90vh;
+height: 93vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -86,19 +131,23 @@ padding: 0 20px;
 
 .hero h1 {
     color: #fff;
-font-size: 36px;
+font-size: 86px;
 margin-bottom: 10px;
 }
 
 .hero p {
     color: #fff;
-font-size: 18px;
+font-size: 38px;
 margin-bottom: 20px;
 }
 
+.hero-content > a{
+    font-size: 25px;
+    padding: 10px 45px;
+}
+
 main{
-    width: 90vw;
-    max-width: 100%;
+    width: 100vw;
     margin: 150px auto;
     display: flex;
     flex-direction: column;
@@ -166,11 +215,63 @@ width: 100%;
 border-radius: 10px;
 }
 
+.gallery{
+    display: flex;
+    gap: 15px;
+}
+
+.swiper {
+    width:  310px;
+    height: fit-content;
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.swiper-pagination{
+    margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet{
+    background-color: #bbbbbb !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #d45a6e !important;
+    opacity: 1 !important;
+}
+
+.swiper-slide{
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img{
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    width: 310px;
+    height: 414px;
+    object-fit: cover;
+}
+
+.hidden{
+    display: none !important;
+}
+
 /* / О нас / */
 .about {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     /* margin: 60px 0; */
     gap: 40px;
 }
@@ -250,6 +351,12 @@ margin: 0 10px;
 margin: 10px 0;
 font-size: 14px;
 color: #666;
+text-align: center;
+}
+
+.footer-copy > span{
+    font-size: 14px;
+    color: #666;
 }
 
 .footer-socials a {

@@ -104,3 +104,12 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function updateDateTime() {
+    const date = new Date();
+    const yearOption = { year: 'numeric' };        
+    const currentYear = date.toLocaleString('ru-RU', yearOption);                
+
+    document.getElementById('year').textContent = currentYear;
+}
+setInterval(updateDateTime, 1000);

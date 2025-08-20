@@ -6,6 +6,10 @@
 <title>Buket Berry | Съедобные букеты в Гомеле</title>
 <link rel="stylesheet" href="./style/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./media/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 
@@ -132,7 +136,7 @@
 <a href="#delivery">Доставка</a>
 <a href="#contacts">Контакты</a>
 </div>
-<div class="footer-copy">© <span id="year"></span> Buket Berry | Все права защищены</div>
+<div class="footer-copy">© <span id="year"></span> Buket Berry</div>
 <div class="footer-socials">
 <a href="https://www.instagram.com/buket_berry.gomel">📸</a>
 <a href="https://t.me/Ilonapodterebkova">💬</a>
@@ -143,24 +147,5 @@
 
 <script src="./script/script.js"></script>
 <script src="./script/shop.js"></script>
-<script>
-        // create a function to update the date and time
-        function updateDateTime() {
-        const date = new Date();
-            const options = {  weekday: 'long',
-                                year: 'numeric',
-                                month: 'long',
-                                day: 'numeric'  };
-            const dayOfWeek = date.toLocaleString('ru-RU', options);
-
-        document.querySelector('#datetime').textContent = dayOfWeek;
-
-        const yearOption = { year: 'numeric'};
-        const currentYear = date.toLocaleString('ru-RU', yearOption);
-
-        document.getElementById('#year').textContent = currentYear;
-        }
-                setInterval(updateDateTime, 1000);
-    </script>
 </body>
 </html>
