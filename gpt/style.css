@@ -1,4 +1,4 @@
-/ Общие стили /
+/* / Общие стили / */
 body {
 margin: 0;
 font-family: 'Raleway', sans-serif;
@@ -19,11 +19,11 @@ color: inherit;
 
 .container {
 width: 90%;
-max-width: 1200px;
+max-width: 100%;
 margin: 0 auto;
 }
 
-/ Хедер /
+/* / Хедер / */
 header {
 background: #fff;
 box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -70,28 +70,41 @@ display: inline-block;
 background: #d45a6e;
 }
 
-/ Баннер /
-.hero {
+/* / Баннер / */
+section.hero {
 height: 90vh;
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-background: linear-gradient(135deg, #ffeaea, #fff6f0);
+/* background: linear-gradient(135deg, #ffeaea, #fff6f0); */
+background: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
+background-size: cover;
+background-attachment: fixed;
 padding: 0 20px;
 }
 
 .hero h1 {
+    color: #fff;
 font-size: 36px;
 margin-bottom: 10px;
 }
 
 .hero p {
+    color: #fff;
 font-size: 18px;
 margin-bottom: 20px;
 }
 
-/ Каталог /
+main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+/* / Каталог / */
 .catalog h2 {
 text-align: center;
 margin: 40px 0 20px;
@@ -109,6 +122,12 @@ border: none;
 border-radius: 20px;
 background: #f5f5f5;
 cursor: pointer;
+transition: all .3s;
+}
+
+.categories button:hover{
+    background: #e67a8a;
+    color: #fff;
 }
 
 .categories .active {
@@ -137,7 +156,7 @@ width: 100%;
 border-radius: 10px;
 }
 
-/ О нас /
+/* / О нас / */
 .about {
 display: flex;
 align-items: center;
@@ -158,10 +177,10 @@ font-size: 16px;
 
 .about-img img {
 border-radius: 15px;
-max-width: 100%;
+max-width: 35%;
 }
 
-/ Инфо-блоки /
+/* / Инфо-блоки / */
 .info-blocks {
 display: flex;
 justify-content: space-between;
@@ -177,7 +196,7 @@ border-radius: 15px;
 text-align: center;
 }
 
-/ Контакты /
+/* / Контакты / */
 .contacts {
 text-align: center;
 margin: 60px 0;
@@ -197,7 +216,7 @@ transition: 0.3s;
 background: #d45a6e;
 }
 
-/ Футер /
+/* / Футер / */
 footer {
 background: #fdf7f5;
 padding: 20px 0;
@@ -227,7 +246,7 @@ margin: 0 5px;
 font-size: 20px;
 }
 
-/ 📱 Адаптив /
+/* / 📱 Адаптив / */
 @media (max-width: 992px) {
 .about {
 flex-direction: column;

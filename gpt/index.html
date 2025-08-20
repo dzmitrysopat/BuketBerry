@@ -29,47 +29,43 @@
 <section class="hero">
 <div class="hero-content">
 <h1>Студия оригинальных подарков</h1>
-<p>Съедобные букеты для любого повода</p>
+<p>Здесь рождаются шедевры</p>
 <a href="#catalog" class="btn">Наши работы</a>
 </div>
 </section>
 
+<main>
 <!-- Каталог -->
 <section id="catalog" class="catalog container">
 <h2>Наши работы</h2>
 <div class="categories">
-<button class="active">Для него</button>
-<button>Для неё</button>
-<button>Детские букеты</button>
-<button>Сухофрукты</button>
-<button>Клубника</button>
+<button class="active" id="man" onclick="man()">Для него</button>
+    <button class="" id="woman" onclick="woman()">Для неё</button>
+    <button class="" id="baby" onclick="baby()">Детские букеты</button>
+    <button class="" id="oldFruits" onclick="oldFruits()">Корзины с сухофруктом</button>
+    <button class="" id="premium" onclick="premium()">Клубника в шоколаде</button>
 </div>
 
 <div class="products">
-<div class="card">
-<img src="https://via.placeholder.com/250" alt="Букет 1">
-<h3>Букет 1</h3>
-<p>45 BYN</p>
-</div>
-<div class="card">
-<img src="https://via.placeholder.com/250" alt="Букет 2">
-<h3>Букет #2</h3>
-<p>45 BYN</p>
-</div>
-<div class="card">
-<img src="https://via.placeholder.com/250" alt="Букет 3">
-<h3>Букет #3</h3>
-<p>45 BYN</p>
-</div>
+        <article class="gallery" id="manItems"></article>
+        <article class="gallery hidden" id="womanItems"></article>
+        <article class="gallery hidden" id="babyItems"></article>
+        <article class="gallery hidden" id="oldFruitsItems"></article>
+        <article class="gallery hidden" id="premiumItems"></article>
 </div>
 
-<a href="https://www.instagram.com/buket_berry.gomel" class="btn">Больше работ</a>
+<a href="../catalog.html" class="link-btn btn">Больше работ</a>
 </section>
 
 <!-- О нас -->
 <section id="about" class="about container">
 <div class="about-text">
 <h2>Ваша букетная мастерская</h2>
+<p class="description">
+    Привет! Меня зовут, Илона🙂<br>
+    Именно я создаю для Вас авторские букеты и подарки <br>
+    🎁Помогаю выразить Вашу заботу и внимание <br>
+</p>
 <ul>
 <li>🌸 Только свежие и качественные продукты</li>
 <li>🌸 Букеты не вянут</li>
@@ -79,7 +75,7 @@
 </ul>
 </div>
 <div class="about-img">
-<img src="https://via.placeholder.com/350" alt="О нас">
+<img src="../media/myself/Ilona.png" alt="О нас">
 </div>
 </section>
 
@@ -109,6 +105,8 @@
 <a href="https://wa.me/375291234567" target="_blank">📱 WhatsApp</a>
 </div>
 </section>
+</main>
+
 
 <!-- Футер -->
 <footer>
@@ -129,5 +127,7 @@
 </div>
 </footer>
 
+<script src="../script/script.js"></script>
+<script src="../script/shop.js"></script>
 </body>
 </html>
