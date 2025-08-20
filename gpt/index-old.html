@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваша Букетная Мастерская - Buket Berry</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="./media/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html" id="logoLink">
+            <img src="./media/img/strawberry.png" alt="" class="logo-img">
+            Buket Berry
+        </a>
+        <nav>
+            <a href="#catalogAnchor">Наши работы</a>
+            <a href="#aboutAnchor">О нас</a>
+            <!-- <a href="#contactsAnchor">Контакты</a> -->
+            <a href="#paymentAnchor">Оплата</a>
+            <a href="#clientsAnchor">Вопросы</a>
+        </nav>
+        <a href="#contactsAnchor" class="link-btn">Сделать заказ</a>
+    </header>
+
+    <article id="banner">
+        <section class="description">
+            <h1>Студия оригинальных подарков</h1>
+            <h2>Здесь рождаются шедевры</h2>
+            <a href="#catalogAnchor" class="link-btn">Наши работы</a>
+        </section>
+    </article>
+    
+    <main>
+        <img src="./media/img/flowers_01.png" alt="" class="bg-flowers">
+        <img src="./media/img/flowers_01.png" alt="" class="bg-flowers">
+
+        <div class="anchor" id="catalogAnchor"></div>
+        <article id="catalog">
+            <h2>Наши работы</h2>
+            <div class="btns">
+                <button class="active" id="man" onclick="man()">Для него</button>
+                <button class="" id="woman" onclick="woman()">Для неё</button>
+                <button class="" id="baby" onclick="baby()">Детские букеты</button>
+                <button class="" id="oldFruits" onclick="oldFruits()">Корзины с сухофруктом</button>
+                <button class="" id="premium" onclick="premium()">Клубника в шоколаде</button>
+                <!-- <button class="" id="strawberry" onclick="show()">Клубника в шоколаде</button> -->
+            </div>
+
+        <article class="gallery" id="manItems"></article>
+        <article class="gallery hidden" id="womanItems"></article>
+        <article class="gallery hidden" id="babyItems"></article>
+        <article class="gallery hidden" id="oldFruitsItems"></article>
+        <article class="gallery hidden" id="premiumItems"></article>
+        <a href="./catalog.html" class="link-btn">Больше работ</a>
+        </article>
+
+    <div class="anchor" id="aboutAnchor"></div>
+    <article id="about">
+            <!-- <h2>О нас</h2> -->
+            <section id="information">
+                <p class="about">Ваша Букетная Мастерская</p>
+                <hr>
+                <p class="description">
+                    Привет! Меня зовут, Илона🙂<br>
+                    Именно я создаю для Вас авторские букеты и подарки <br>
+                    🎁Помогаю выразить Вашу заботу и внимание <br>
+                    <!-- 🔸При изготовлении всегда используем только свежие и качественные продукты <br>
+                    🔸Вы получаете букеты, которые не вянут. <br>
+                    🔸Максимально полезные и вкусные <br>
+                    🔸Индивидуальность в каждой композициии. <br>
+                    🔸Возможно изготовление композиции исходя из ваших пожеланий и предпочтений. <br>
+                    🔸Подарки для любого повода -->
+                </p>
+            </section>
+            <img src="./media/myself/Ilona.png" alt="">
+        </article>
+        
+
+    <article class="lil-info">
+        <article class="information">
+            <img src="./media/compositions/woman/04.webp" alt="" class="info-img">
+        <div class="info">
+            <!-- <h3>Авторские букеты сделанные с любовью</h3> -->
+            <!-- <br> -->
+            <p class="description">При изготовлении всегда используем только свежие и качественные продукты </p>
+        </div>
+        <img src="./media/compositions/woman/01.webp" alt="" class="info-img">
+        <div class="info">
+            <!-- <h3>Для самых любимых</h3> -->
+            <!-- <br> -->
+            <p class="description">Вы получаете букеты, которые не вянут</p>
+        </div>
+        <img src="./media/compositions/woman/04.webp" alt="" class="info-img">
+        <div class="info">
+            <!-- <h3>Его будут хотеть все</h3> -->
+            <!-- <br> -->
+            <p class="description">Максимально полезные и вкусные</p>
+        </div>
+        <img src="./media/compositions/woman/08.webp" alt="" class="info-img">
+        </article>
+
+        <article class="information">
+        <div class="info">
+        </div>
+            <img src="./media/compositions/woman/04.webp" alt="" class="info-img">
+        <div class="info">
+            <!-- <h3>Авторские букеты сделанные с любовью</h3> -->
+            <!-- <br> -->
+            <p class="description">Индивидуальность в каждой композициии. Возможно изготовление композиции исходя из ваших пожеланий и предпочтений</p>
+        </div>
+        <img src="./media/compositions/woman/04.webp" alt="" class="info-img">
+        <div class="info">
+            <!-- <h3>Для самых любимых</h3>
+            <br> -->
+            <p class="description">Подарки для любого повода</p>
+        </div>
+        <img src="./media/compositions/woman/08.webp" alt="" class="info-img">
+        <div class="info">
+        </div>
+    </article>
+    </article>
+    
+        <!-- <article id="clients">
+            <h2>Часто задаваемые вопросы</h2>
+            <section class="questions">
+                <div class="question">
+            <button class="accordion">За какое время оптимально заказывать композицию?</button>
+            <div class="panel">
+            <p>
+                Оптимально сделать заказ за 2-3 дня до предполагаемой даты.
+                <br>
+                В большие праздники лучше всего предусмотреть и оформить заказ за 7 дней.
+                <br>
+                С учётом Ваших пожеланий подберём нужную композицию, обсудим упаковку, состав, стоимость и детали.
+                <br>
+                Перед получением мы всегда отправляем Вам фото/видео Вашей композиции </p>
+            </div>
+
+            </div>
+
+            <div class="question">
+                <button class="accordion">Стоимость букетов фиксированная?</button>
+                <div class="panel">
+                <p>Стоимость композиций оговаривается на этапе обсуждения Вашего заказа</p>
+            </div>
+            </div>
+
+            <div class="question">
+                <button class="accordion">Как происходит доставка букета?</button>
+                <div class="panel">
+                <p>Доставка по городу осуществляется по тарифу Яндекс доставки в любое удобное для Вас время
+                    <br>
+                    (доставка не входит в стоимость букета)
+                    <br>
+                    Для этого Вам необходимо указать адрес, оптимальный временной промежуток и контактный телефон
+                    <br>
+                    Также у нас всегда работает система Самовывоза</p>
+            </div>
+            </div>
+
+            <div class="question">
+                <button class="accordion">Могу ли я рассчитаться картой?</button>
+                <div class="panel">
+                <p>Конечно!
+                    <br>
+                    А ещё оплатить композицию можно чере ЕРИП, E-POS
+                    <br>
+                    Либо наличными по факту доставки Вашего букета
+
+                </p>
+            </div>
+            </div>
+
+            <div class="question">
+                <button class="accordion">Какой у букета срок годности?</button>
+                <div class="panel">
+                <p>Наши букеты мы рекомендуем употребить в течении суток со дня приготовления. 
+                <br>А вот сухофруктовые букеты можно съесть и на второй, и на третий день жизни Вашего букета.
+                </p>
+            </div>
+            </div>
+            </section>
+        </article> -->
+
+        <!-- <div class="anchor" id="contactsAnchor"></div>
+        <article id="contacts">
+            <h2>Контакты</h2>
+             <section class="contacts">
+
+                <a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="contact-card telegram">
+                        <div class="skill-item">
+                            <i class="uil uil-instagram"></i>
+                            <div class="skill-description">
+                                <h4>Instagram</h4>
+                                 <h5>найти нас</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/Ilonapodterebkova" target="_blank" class="contact-card">
+                        <div class="skill-item">
+                            <i class="uil uil-telegram-alt"></i>
+                            <div class="skill-description">
+                                <h4>Telegram</h4>
+                                 <h5>написать нам</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/Ilonapodterebkova" target="_blank" class="contact-card">
+                        <div class="skill-item">
+                            <i class="uil uil-phone-alt"></i>
+                            <div class="skill-description">
+                                <h4>Телефон</h4>
+                                 <h5>позвонить</h5>
+                            </div>
+                        </div>
+                    </a>
+            </section>
+        </article> -->
+
+        <div class="anchor" id="clientsAanchor"></div>
+        <article id="shopping">
+            <section class="texting faq">
+                <h3>
+                    Оформление заказа
+                </h3>
+                <p class="description">
+                Оптимально сделать заказ за 2-3 дня до предполагаемой даты.
+                <br><br>
+                В большие праздники лучше всего предусмотреть и оформить заказ за 7 дней.
+                <br><br>
+                С учётом Ваших пожеланий подберём нужную композицию, обсудим упаковку, состав, стоимость и детали.
+                <br><br>
+                Перед получением мы всегда отправляем Вам фото/видео Вашей композиции
+            </p>
+                <img src="./media/img/message.png" alt="">
+            </section>
+
+            <section class="delivery faq">
+                 <h3>
+                    Доставка букетов
+                </h3>
+                <p class="description">
+                    Доставка по городу осуществляется по тарифу Яндекс доставки в любое удобное для Вас время
+                    <br><br>
+                    (доставка не входит в стоимость букета)
+                    <br><br>
+                    Для этого Вам необходимо указать адрес, удобный временной промежуток и контактный телефон
+                    <br><br>
+                    Также у нас всегда работает система Самовывоза
+                </p>
+                <br><br>
+                <img src="./media/img/delivery.png" alt="">
+            </section>
+            <section class="payment faq">
+                 <h3>
+                    Стоимость и Оплата
+                </h3>
+                <p class="description">
+                    Стоимость композиций оговаривается на этапе обсуждения Вашего заказа
+                    <br><br>
+                    Оплатить композицию можно через ЕРИП, E-POS, либо наличными по факту доставки Вашего букета
+                    <br><br>
+                    Также возможна оплата картой 
+                </p>
+                <img src="./media/img/money.png" alt="">
+            </section>
+
+        </article>
+    </main>
+    <footer>
+        <img src="./media/img/logo-Photoroom.png" alt="">
+            <section class="nav">
+                <a href="#catalogAnchor">Наши работы</a>
+                <a href="#aboutAnchor">О нас</a>
+                <!-- <a href="#contactsAnchor">Контакты</a> -->
+                <a href="#paymentAnchor">Оплата</a>
+                <a href="#clientsAnchor">Вопросы</a>
+                <a href="#">Политика конфиденциальности</a>
+            </section>
+
+            <section class="business-info">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam quos odit, iure perferendis, esse aliquam deserunt molestias omnis laboriosam error excepturi alias quod, soluta consequatur minima sit asperiores consectetur nostrum.
+            </section>
+
+            <section class="social-links">
+                <a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="contact-card telegram">
+                        <div class="skill-item">
+                            <i class="uil uil-instagram"></i>
+                            <div class="skill-description">
+                                <h4>Instagram</h4>
+                                 <!-- <h5>найти нас</h5> -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/Ilonapodterebkova" target="_blank" class="contact-card">
+                        <div class="skill-item">
+                            <i class="uil uil-telegram-alt"></i>
+                            <div class="skill-description">
+                                <h4>Telegram</h4>
+                                 <!-- <h5>написать нам</h5> -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/Ilonapodterebkova" target="_blank" class="contact-card">
+                        <div class="skill-item">
+                            <i class="uil uil-phone-alt"></i>
+                            <div class="skill-description">
+                                <h4>Телефон</h4>
+                                 <!-- <h5>позвонить</h5> -->
+                            </div>
+                        </div>
+                    </a>
+            </section>
+            <hr>
+        <!-- <hr>
+        Copyright © 2025. All rights are reserved -->
+    </footer>
+    <script src="./script/script.js" defer></script>
+    <script src="./script/shop.js" defer></script>
+</body>
+</html>
