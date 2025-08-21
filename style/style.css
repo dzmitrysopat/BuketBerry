@@ -46,15 +46,26 @@ z-index: 100;
 }
 
 .header-inner {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 15px 0;
-flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    flex-wrap: wrap;
 }
 
-.logo{
-font-size: 20px;
+.logo > img {
+    top: 5px;
+    left: -5px;
+    position: absolute;
+    height: 25px;
+    rotate: -40deg;
+    z-index: 1;
+}
+
+a.logo{
+    z-index: 2;
+font-size: 30px;
 font-weight: 600;
 color: #e67a8a;
 transition: all .4s;
@@ -223,6 +234,7 @@ border-radius: 10px;
 
 .gallery{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -355,6 +367,7 @@ background: #d45a6e;
 
 /* / Футер / */
 footer {
+    margin-top: 100px;
 background: #fdf7f5;
 padding: 20px 0;
 text-align: center;
@@ -396,6 +409,11 @@ flex-direction: column;
 text-align: center;
 }
 
+.categories{
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
 .info-blocks {
 flex-direction: column;
 }
@@ -412,6 +430,11 @@ font-size: 28px;
 
 .hero p {
 font-size: 16px;
+}
+
+.categories{
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -442,5 +465,10 @@ font-size: 14px;
 
 .hero h1 {
 font-size: 24px;
+}
+
+.categories{
+    gap:5px;
+    flex-wrap: wrap;
 }
 }
