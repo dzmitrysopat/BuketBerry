@@ -294,6 +294,10 @@ border-radius: 10px;
     gap: 40px;
 }
 
+.about-text > h2{
+    font-size: 45px;
+}
+
 .about-text ul {
     margin-top: 50px;
     list-style: none;
