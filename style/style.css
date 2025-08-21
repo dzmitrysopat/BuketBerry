@@ -18,6 +18,12 @@ h1, h2, h3 {
 font-family: 'Montserrat', sans-serif;
 margin: 10px 0;
 color: #444;
+z-index: 2;
+}
+
+h2{
+
+    font-size: 40px;
 }
 
 h3{
@@ -173,14 +179,17 @@ main{
 }
 
 /* / Каталог / */
-#catalog{
+#catalog,
+#review{
+    position: relative;
     gap: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.catalog h2 {
+.catalog h2,
+.review h2{
     text-align: center;
     margin: 40px 0 20px;
 }
@@ -200,6 +209,7 @@ main{
     background: #f5f5f5;
     cursor: pointer;
     transition: all .3s;
+    z-index: 1;
 }
 
 .categories button:hover{
@@ -344,7 +354,7 @@ border-radius: 10px;
 
 .info-item {
     flex: 1;
-    background: #fff6f0;
+    background: #fff6f08e;
     padding: 20px;
     border-radius: 15px;
     text-align: left;
@@ -380,6 +390,97 @@ ul > img{
     margin-top: 5px;
     position: absolute;
     max-width: 500px;
+}
+
+.review-item{
+    background-color: #fff ; 
+    z-index: 2;
+    padding: 15px 25px;
+    display: flex;
+    max-width: 500px;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.2);
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.name{
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.user > .avatar{
+    grid-area: 1 / 1 / 3 / 2;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.user > .stars{
+    width: 125px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.review-text{
+    margin-left: 5px;
+    text-align: justify;
+}
+
+.circle{
+    right: 500px;
+    width: 242px;
+    height: 242px;
+    background-color: #FFF8F8;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+#catalog > .circle{
+    z-index: 0;
+    top: 80px;
+    left: 100px;
+    background: #b3df54;
+    opacity: 0.15;
+}
+
+.blured{
+    display: none;
+    right: 100px;
+    bottom: 0;
+    position: absolute;
+    width: 172px;
+    height: 172px;
+    background: #b3df54;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+#about > .blured{
+    bottom: 50px;
+    left: 100px;
+    position: absolute;
+    width: 172px;
+    height: 172px;
+    filter: blur(150px);
+    background: #ffef15;
+}
+
+#review > .blured{
+    bottom: -50px;
+    left: 100px;
+    position: absolute;
+    width: 172px;
+    height: 172px;
+    filter: blur(150px);
+    background: #ff9215;
 }
 
 /* / Контакты / */
