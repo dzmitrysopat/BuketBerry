@@ -350,7 +350,7 @@ border-radius: 10px;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 384px 1fr;
+    grid-template-rows: auto 307px 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.1);
@@ -359,7 +359,7 @@ border-radius: 10px;
 
 .info-item > img {
     margin: 0 auto;
-    max-width: 384px;
+    max-width: 307px;
     /* height: 50%; */
 }
 
