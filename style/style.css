@@ -1,21 +1,24 @@
 /* / Общие стили / */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 *{
+    font-family: 'comfortaa', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     color: #333;
 }
 
 body {
     overflow-x: hidden;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'comfortaa', sans-serif;
     color: #333;
     background: #fff;
 }
 
 h1, h2, h3 {
-font-family: 'Montserrat', sans-serif;
+font-family: 'comfortaa', sans-serif;
 margin: 10px 0;
 color: #444;
 z-index: 2;
@@ -202,6 +205,7 @@ main{
 }
 
 .categories button {
+    font-size: 15px;
     margin: 5px;
     padding: 10px 20px;
     border: none;
@@ -334,7 +338,7 @@ border-radius: 10px;
 
 .bg-flowers:nth-child(1){
     top: -100px;
-    left: -250px;
+    left: -270px;
     rotate: -45deg;
 }
 
@@ -342,7 +346,7 @@ border-radius: 10px;
     rotate: -45deg;
     transform: scale(-1, -1);
     top: 25px;
-    right: -225px;
+    right: -250px;
 }
 
 /* / Инфо-блоки / */
@@ -445,14 +449,13 @@ ul > img{
 
 #catalog > .circle{
     z-index: 0;
-    top: 80px;
-    left: 100px;
+    top: 85px;
+    left: 105px;
     background: #b3df54;
     opacity: 0.15;
 }
 
 .blured{
-    display: none;
     right: 100px;
     bottom: 0;
     position: absolute;
