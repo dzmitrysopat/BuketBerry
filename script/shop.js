@@ -368,3 +368,31 @@ if (currentUrl == "/index.html") {
   displayProducts(Fruits, 'oldFruitsItems');
   displayProducts(Premium, 'premiumItems');
 }
+
+const reviews = [
+{  
+  "img": "",
+  "name": "",
+  "review": ""
+  },
+  {  
+  "img": "",
+  "name": "",
+  "review": ""
+  },
+  {  
+  "img": "",
+  "name": "",
+  "review": ""
+  },
+  {  
+  "img": "",
+  "name": "",
+  "review": ""
+  },
+  {  
+  "img": "",
+  "name": "",
+  "review": ""
+  },
+]
