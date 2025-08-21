@@ -286,9 +286,10 @@ border-radius: 10px;
 
 /* / О нас / */
 .about {
+    max-width: 1400px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: left;
     gap: 40px;
 }
@@ -306,7 +307,7 @@ border-radius: 10px;
 
 .about-img img {
     border-radius: 50%;
-    max-width: 40%;
+    width: 25vw;
 }
 
 /* / Инфо-блоки / */
