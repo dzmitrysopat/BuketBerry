@@ -286,16 +286,17 @@ border-radius: 10px;
 
 /* / О нас / */
 .about {
+    position: relative;
     max-width: 1400px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: left;
     gap: 40px;
 }
 
 .about-text > h2{
-    font-size: 45px;
+    font-size: 65px;
 }
 
 .about-text ul {
@@ -312,6 +313,25 @@ border-radius: 10px;
 .about-img img {
     border-radius: 50%;
     width: 25vw;
+}
+
+.bg-flowers{
+    position: absolute;
+    width: 550px;
+    opacity: 0.8;
+}
+
+.bg-flowers:nth-child(1){
+    top: -100px;
+    left: -250px;
+    rotate: -45deg;
+}
+
+.bg-flowers:nth-child(2){
+    rotate: -45deg;
+    transform: scale(-1, -1);
+    top: 25px;
+    right: -225px;
 }
 
 /* / Инфо-блоки / */
@@ -335,7 +355,7 @@ border-radius: 10px;
 
 .info-item > img {
     align-self: center;
-    max-width: 50%;
+    max-width: 256px;
     /* height: 50%; */
 }
 
