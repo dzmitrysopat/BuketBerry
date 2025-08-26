@@ -264,6 +264,10 @@ border-radius: 10px;
     align-items: center;
 }
 
+#catalog > .swiper{
+    width: 1400px;
+}
+
 .swiper-pagination{
     margin-bottom: 50px;
 }
@@ -295,6 +299,13 @@ border-radius: 10px;
     width: 310px;
     height: 414px;
     object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #e67a8a; /* поменяй на свой акцентный */
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #d45a6e;
 }
 
 .hidden{
@@ -556,6 +567,7 @@ font-size: 20px;
 
 /* / 📱 Адаптив / */
 @media (max-width: 992px) {
+
 .about {
 flex-direction: column;
 text-align: center;
@@ -601,7 +613,12 @@ text-align: center;
 }
 
 @media (max-width: 480px) {
+    header > div > a.btn{
+        display: none;
+    }
+
 nav {
+    display: none;
 flex-direction: column;
 margin-top: 10px;
 }

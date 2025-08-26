@@ -24,51 +24,92 @@ const mans = [
     "id": 4,
     "name": "04",
     "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_154926_700.jpg",
-    "photo2": "./media/compositions/mans/IMG_20250811_155036_754.jpg"
+    "photo": "./media/compositions/mans/IMG_20250811_155451_426.jpg",
+    "photo2": "./media/compositions/mans/IMG_20250811_155447_729.jpg"
   },
   {
     "id": 5,
     "name": "05",
     "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_155056_922.jpg",
-    "photo2": "./media/compositions/mans/IMG_20250811_155111_220.jpg"
+    "photo": "./media/compositions/mans/IMG_20250811_155417_222.jpg",
+    "photo2": "./media/compositions/mans/IMG_20250811_155412_500.jpg"
   },
   {
     "id": 6,
     "name": "06",
     "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_155127_578.jpg",
-    "photo2": "./media/compositions/mans/IMG_20250811_155145_809.jpg"
+    "photo": "./media/compositions/mans/IMG_20250811_160041_778.jpg",
+    "photo2": "./media/compositions/mans/IMG_20250811_160039_725.jpg"
   },
   {
     "id": 7,
     "name": "07",
     "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_155204_068.jpg",
-    "photo2": "./media/compositions/mans/IMG_20250811_155313_466.jpg"
+    "photo": "./media/compositions/mans/IMG_20250811_155706_925.jpg",
+    "photo2": "./media/compositions/mans/IMG_20250811_155708_876.jpg"
   },
   {
     "id": 8,
     "name": "08",
     "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_155328_054.jpg",
-    "photo2": "./media/compositions/mans/IMG_20250811_155331_879.jpg"
+    "photo": "./media/compositions/mans/IMG_20250811_155609_021.jpg",
+    "photo2": "./media/compositions/mans/IMG_20250811_155606_992.jpg",
   },
   {
     "id": 9,
     "name": "09",
     "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_155412_500.jpg",
-    "photo2": "./media/compositions/mans/IMG_20250811_155417_222.jpg"
+    "photo": "./media/compositions/mans/IMG_20250811_155331_879.jpg",
+    "photo2": "./media/compositions/mans/IMG_20250811_155328_054.jpg"
   },
   {
     "id": 10,
     "name": "010",
     "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_155447_729.jpg",
-    "photo2": "./media/compositions/mans/IMG_20250811_155451_426.jpg"
-  }
+    "photo": "./media/compositions/mans/IMG_20250811_170439_976.jpg",
+  },
+  {
+    "id": 11,
+    "name": "011",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_155204_068.jpg",
+  },
+  {
+    "id": 12,
+    "name": "012",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_155145_809.jpg",
+  },
+  {
+    "id": 13,
+    "name": "013",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_155127_578.jpg",
+  },
+  {
+    "id": 14,
+    "name": "014",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_155111_220.jpg",
+  },
+  {
+    "id": 15,
+    "name": "015",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_155056_922.jpg",
+  },
+  {
+    "id": 16,
+    "name": "016",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_155036_754.jpg",
+  },
+  {
+    "id": 17,
+    "name": "017",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_154926_700.jpg",
+  },
 ];
 
 const womans = [
@@ -76,43 +117,29 @@ const womans = [
     "id": 1,
     "name": "01",
     "price": "45",
-    "photo": "./media/compositions/woman/IMG_20250811_165419_877.jpg",
-    "photo2": "./media/compositions/woman/IMG_20250811_165419_941.jpg"
+    "photo": "./media/compositions/woman/IMG_20250811_165419_941.jpg",
+    "photo2": "./media/compositions/woman/IMG_20250811_165420_531.jpg"
   },
   {
     "id": 2,
     "name": "02",
     "price": "45",
-    "photo": "./media/compositions/woman/IMG_20250811_165419_986.jpg",
-    "photo2": "./media/compositions/woman/IMG_20250811_165420_252.jpg"
+    "photo": "./media/compositions/woman/IMG_20250811_165420_835.jpg",
+    "photo2": "./media/compositions/woman/IMG_20250811_165419_877.jpg"
   },
   {
     "id": 3,
     "name": "03",
     "price": "45",
-    "photo": "./media/compositions/woman/IMG_20250811_165420_260.jpg",
-    "photo2": "./media/compositions/woman/IMG_20250811_165420_445.jpg"
+    "photo": "./media/compositions/woman/IMG_20250811_165420_448.jpg",
+    "photo2": "./media/compositions/woman/IMG_20250811_165419_986.jpg"
   },
   {
     "id": 4,
     "name": "04",
     "price": "45",
-    "photo": "./media/compositions/woman/IMG_20250811_165420_448.jpg",
-    "photo2": "./media/compositions/woman/IMG_20250811_165420_531.jpg"
-  },
-  {
-    "id": 5,
-    "name": "05",
-    "price": "45",
-    "photo": "./media/compositions/woman/IMG_20250811_165420_610.jpg",
-    "photo2": "./media/compositions/woman/IMG_20250811_165420_835.jpg"
-  },
-  {
-    "id": 6,
-    "name": "06",
-    "price": "45",
-    "photo": "./media/compositions/woman/IMG_20250811_165423_888.jpg",
-    "photo2": ""
+    "photo": "./media/compositions/woman/IMG_20250811_165423_897.jpg",
+    "photo2": "./media/compositions/woman/IMG_20250811_165423_888.jpg"
   }
 ];
 
@@ -122,14 +149,14 @@ const child = [
     "name": "01",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165236_260.jpg",
-    "photo2": ""
+    "photo2": "./media/compositions/child/IMG_20250811_165237_045.jpg"
   },
   {
     "id": 2,
     "name": "02",
     "price": "45",
-    "photo": "./media/compositions/child/IMG_20250811_165236_340.jpg",
-    "photo2": ""
+    "photo": "./media/compositions/child/IMG_20250811_165236_939.jpg",
+    "photo2": "./media/compositions/child/IMG_20250811_165236_961.jpg"
   },
   {
     "id": 3,
@@ -143,28 +170,7 @@ const child = [
     "name": "04",
     "price": "45",
     "photo": "./media/compositions/child/IMG_20250811_165236_726.jpg",
-    "photo2": ""
-  },
-  {
-    "id": 5,
-    "name": "05",
-    "price": "45",
-    "photo": "./media/compositions/child/IMG_20250811_165236_939.jpg",
-    "photo2": ""
-  },
-  {
-    "id": 6,
-    "name": "06",
-    "price": "45",
-    "photo": "./media/compositions/child/IMG_20250811_165236_961.jpg",
-    "photo2": ""
-  },
-  {
-    "id": 7,
-    "name": "07",
-    "price": "45",
-    "photo": "./media/compositions/child/IMG_20250811_165237_045.jpg",
-    "photo2": ""
+    "photo2": "./media/compositions/child/IMG_20250811_165236_340.jpg"
   }
 ];
 
