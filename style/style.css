@@ -612,7 +612,7 @@ text-align: center;
 }
 
 @media (max-width: 480px) {
-h2{
+#about > h2{
     font-size: 35px;
 }
 
@@ -654,5 +654,9 @@ h2{
 
     .reviews{
         flex-wrap: wrap;
+    }
+
+    .reviews > a{
+        z-index: 10;
     }
 }
