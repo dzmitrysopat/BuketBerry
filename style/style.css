@@ -640,4 +640,8 @@ font-size: 24px;
     gap:5px;
     flex-wrap: wrap;
 }
+
+.bg-flowers{
+    display: none;
+}
 }
