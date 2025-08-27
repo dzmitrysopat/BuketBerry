@@ -644,4 +644,8 @@ font-size: 24px;
 .bg-flowers{
     display: none;
 }
+
+.about-img{
+    width: 70vw;
+}
 }
