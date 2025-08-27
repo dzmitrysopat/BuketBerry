@@ -252,57 +252,50 @@ const Premium = [
     "id": 1,
     "name": "01",
     "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163701_380.jpg",
-    "photo2": "./media/compositions/premium/IMG_20250811_163701_453.jpg"
+    "photo": "./media/compositions/premium/IMG_20250811_163732_860.jpg",
+    "photo2": "./media/compositions/premium/IMG_20250811_163732_956.jpg"
   },
   {
     "id": 2,
     "name": "02",
     "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163728_557.jpg",
-    "photo2": "./media/compositions/premium/IMG_20250811_163728_769.jpg"
+    "photo": "./media/compositions/premium/IMG_20250811_163701_453.jpg",
+    "photo2": "./media/compositions/premium/IMG_20250811_163728_975.jpg"
   },
   {
     "id": 3,
     "name": "03",
     "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163728_975.jpg",
-    "photo2": "./media/compositions/premium/IMG_20250811_163732_860.jpg"
+    "photo": "./media/compositions/premium/IMG_20250811_163733_604.jpg",
+    "photo2": "./media/compositions/premium/IMG_20250811_163733_055.jpg"
   },
   {
     "id": 4,
     "name": "04",
     "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163732_956.jpg",
-    "photo2": "./media/compositions/premium/IMG_20250811_163732_968.jpg"
+    "photo": "./media/compositions/premium/IMG_20250811_163733_104.jpg",
+    "photo2": "./media/compositions/premium/IMG_20250811_163733_380.jpg"
   },
   {
     "id": 5,
     "name": "05",
     "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163733_055.jpg",
-    "photo2": "./media/compositions/premium/IMG_20250811_163733_104.jpg"
+    "photo": "./media/compositions/premium/IMG_20250811_163733_123.jpg",
+    "photo2": "./media/compositions/premium/IMG_20250811_163733_553.jpg"
   },
   {
     "id": 6,
     "name": "06",
     "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163733_123.jpg",
-    "photo2": "./media/compositions/premium/IMG_20250811_163733_380.jpg"
+    "photo": "./media/compositions/premium/IMG_20250811_163733_603.jpg",
+    "photo2": "./media/compositions/premium/IMG_20250811_163732_968.jpg"
   },
   {
     "id": 7,
     "name": "07",
     "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163733_553.jpg",
-    "photo2": "./media/compositions/premium/IMG_20250811_163733_603.jpg"
-  },
-  {
-    "id": 8,
-    "name": "08",
-    "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163733_604.jpg",
-    "photo2": ""
+    "photo": "./media/compositions/premium/IMG_20250811_163728_557.jpg",
+    "photo2": "./media/compositions/premium/IMG_20250811_163728_769.jpg"
   }
 ];
 
