@@ -412,6 +412,7 @@ ul > img{
 .reviews{
     gap: 15px;
     display: flex;
+    margin-bottom: 30px;
 }
 
 .review-item:not(:nth-child(2)){
@@ -427,6 +428,10 @@ ul > img{
     border-radius: 10px;
     flex-direction: column;
     box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.2);
+}
+
+.review-item > img{
+    border-radius: 10px;
 }
 
 .user{
@@ -496,6 +501,10 @@ ul > img{
     height: 172px;
     filter: blur(150px);
     background: #ffef15;
+}
+
+#review > .btn{
+    font-size: 20px;
 }
 
 #review > .blured{
