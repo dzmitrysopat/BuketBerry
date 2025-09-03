@@ -258,7 +258,7 @@ border-radius: 10px;
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
 }
 
 .swiper {
@@ -266,7 +266,6 @@ border-radius: 10px;
     height: fit-content;
     display: flex !important;
     flex-direction: column;
-    gap: px;
     align-items: center;
 }
 
