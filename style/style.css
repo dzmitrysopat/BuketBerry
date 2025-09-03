@@ -79,7 +79,7 @@ a.logo{
     z-index: 2;
 font-size: 30px;
 font-weight: 600;
-color: #e67a8a;
+color: #a2d0eb;
 transition: all .4s;
 }
 
@@ -105,7 +105,7 @@ nav a,
 nav a:hover,
 nav > a.colored,
 .footer-nav > a:hover{
-    color: #e67a8a;
+    color: #a2d0eb;
 }
 
 nav > a:after,
@@ -115,7 +115,7 @@ nav > a:active:after{
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
 	height: 3px; /*задаём ширину линии*/
-	background-color: #e67a8a; /*задаём цвет линии*/
+	background-color: #a2d0eb; /*задаём цвет линии*/
 	content: "";
 	transition: width 0.2s ease-out; /*задаём время анимации*/
 }
@@ -128,11 +128,11 @@ nav > a.active-link:after {
 
 nav a.active-link,
 nav a.active-link >i{
-    color: #e67a8a;
+    color: #a2d0eb;
 }
 
 .btn {
-    background: #e67a8a;
+    background: #a2d0eb;
     color: #fff;
     padding: 10px 20px;
     border-radius: 25px;
@@ -141,7 +141,7 @@ nav a.active-link >i{
 }
 
 .btn:hover {
-    background: #d45a6e;
+    background: #a2d0eb;
 }
 
 /* / Баннер / */
@@ -151,7 +151,7 @@ section.hero {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
+    background: url('../media/img/vid-speredi-svezii-greipfrut-s-cvetami-na-derevannoi-poverhnosti.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding: 0 20px;
@@ -159,7 +159,7 @@ section.hero {
 
 .hero h1 {
     color: #fff;
-font-size: 86px;
+font-size: 8rem;
 margin-bottom: 10px;
 }
 
@@ -192,8 +192,6 @@ main{
     align-items: center;
 }
 
-
-
 .catalog h2,
 .review h2{
     text-align: center;
@@ -220,12 +218,12 @@ main{
 }
 
 .categories button:hover{
-    background: #e67a8a;
+    background: #a2d0eb;
     color: #fff;
 }
 
 .categories .active {
-    background: #e67a8a;
+    background: #a2d0eb;
     color: #fff;
 }
 
@@ -303,7 +301,7 @@ border-radius: 10px;
 }
 
 .swiper-button-next, .swiper-button-prev {
-    color: #e67a8a; /* поменяй на свой акцентный */
+    color: #a2d0eb; /* поменяй на свой акцентный */
 }
 .swiper-button-next:hover, .swiper-button-prev:hover {
     color: #d45a6e;
@@ -365,6 +363,8 @@ border-radius: 10px;
 
 /* / Инфо-блоки / */
 
+
+
 .info-blocks {
     display: flex;
     justify-content: space-between;
@@ -385,6 +385,62 @@ border-radius: 10px;
     grid-row-gap: 0px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.1);
     /* box-shadow: 0 2px 5px rgba(0,0,0,0.05); */
+}
+
+#order,
+#delivery,
+#payment{
+    width: 100vw;
+    display: flex;
+}
+
+.info-img{
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-image: url('../media/img/buket-cvetov-s-granatom-vinograd-v-zeltoi-kvadratnoi-korobke.jpg');
+    width: 63vw;
+    height: 55vh;
+}
+
+.info-img:nth-child(2){
+    background-image: url('../media/img/vid-speredi-svezii-greipfrut-s-cvetami-na-derevannoi-poverhnosti.jpg');
+}
+
+.order:nth-child(3) > .info-img{
+    width: 59.6vw;
+    background-size: cover;
+    background-image: url('../media/img/still-life-fruits-tablecloth.jpg') !important;
+}
+
+
+#order > .info-block,
+#delivery > .info-block,
+#payment > .info-block{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 5px;
+    background-color: #f3eeea;
+}
+
+#order > .info-block > h3,
+#delivery > .info-block > h3,
+#payment > .info-block > h3{
+    border-bottom: 2px solid #c7c7c7;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+#order > .info-block > ul,
+#delivery > .info-block > ul,
+#payment > .info-block > ul{
+    list-style: none;
+}
+
+#order > .info-block > ul > li,
+#delivery > .info-block > ul > li,
+#payment > .info-block > ul > li{
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .info-item > .circle{
@@ -540,7 +596,7 @@ display: inline-block;
 margin: 10px;
 padding: 10px 20px;
 border-radius: 20px;
-background: #e67a8a;
+background: #a2d0eb;
 color: #fff;
 transition: 0.3s;
 }
@@ -679,6 +735,31 @@ font-size: 24px;
 
 .reviews{
     flex-direction: column;
+}
+
+#order,
+#delivery,
+#payment{
+    flex-direction: column !important;
+}
+
+#delivery{
+    flex-direction: column-reverse !important;
+}
+
+.info-img,
+.info-img:nth-child(2),
+.order:nth-child(3) > .info-img{
+    width: 100vw;
+}
+
+#order > .info-block,
+#delivery > .info-block,
+#payment > .info-block{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #f3eeea;
 }
 
 }
