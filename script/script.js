@@ -1,23 +1,21 @@
-// let articles = document.querySelectorAll("article[id]");
-// window.addEventListener("scroll", navHighlighter);
-// function navHighlighter() {
-//   let scrollY = window.scrollY;
-//   articles.forEach(current => {
-//     let articleHeight = current.offsetHeight;
-//     let articleTop = current.offsetTop - 350;    
-//     let articleId = current.getAttribute("id");
-//     if (
-//       scrollY > articleTop &&
-//       scrollY <= articleTop + articleHeight
-//     ){
-//       document.querySelector("header nav a[href*="+ articleId + "-anchor" + "]").classList.add("active-link");
-//       document.querySelector("header nav div a[href*="+articleId +"]").classList.add("active-link");
-//     } else {
-//       document.querySelector("header nav a[href*="+ articleId + "-anchor" + "]").classList.remove("active-link");
-//       document.querySelector("header nav div a[href*="+articleId +"]").classList.remove("active-link");
-//     }
-//   });
-// }
+let sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", navHighlighter);
+function navHighlighter() {
+  let scrollY = window.scrollY;
+  sections.forEach(current => {
+    let sectionHeight = current.offsetHeight;
+    let sectionTop = current.offsetTop - 350;    
+    let sectionId = current.getAttribute("id");
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ){
+      document.querySelector("header nav a[href*="+ sectionId + "-anchor" + "]").classList.add("active-link");
+    } else {
+      document.querySelector("header nav a[href*="+ sectionId + "-anchor" + "]").classList.remove("active-link");
+    }
+  });
+}
 
 function man(){
     document.getElementById("man").classList.add("active");
