@@ -79,12 +79,12 @@ a.logo{
     z-index: 2;
 font-size: 30px;
 font-weight: 600;
-color: #a2d0eb;
+color: #678368;
 transition: all .4s;
 }
 
 .logo:hover{
-    color: #d45a6e;
+    color: #678368a6;
 }
 
 nav {
@@ -105,7 +105,7 @@ nav a,
 nav a:hover,
 nav > a.colored,
 .footer-nav > a:hover{
-    color: #a2d0eb;
+    color: #678368;
 }
 
 nav > a:after,
@@ -115,7 +115,7 @@ nav > a:active:after{
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
 	height: 3px; /*задаём ширину линии*/
-	background-color: #a2d0eb; /*задаём цвет линии*/
+	background-color: #678368; /*задаём цвет линии*/
 	content: "";
 	transition: width 0.2s ease-out; /*задаём время анимации*/
 }
@@ -128,22 +128,22 @@ nav > a.active-link:after {
 
 nav a.active-link,
 nav a.active-link >i{
-    color: #a2d0eb;
+    color: #678368;
 }
 
 .btn {
-    background: #a2d0eb;
+    background: #678368;
     color: #fff;
     padding: 15px 40px;
-    border: 2px solid #a2d0eb;
+    border: 2px solid #678368;
     transition: 0.3s;
     display: inline-block;
 }
 
 .btn:hover {
     background: #fff;
-    border: 2px solid #a2d0eb;
-    color: #a2d0eb;
+    border: 2px solid #678368;
+    color: #678368;
 }
 
 /* / Баннер / */
@@ -153,7 +153,7 @@ section.hero {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('../media/img/vid-speredi-svezii-greipfrut-s-cvetami-na-derevannoi-poverhnosti.jpg');
+    background: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding: 0 20px;
@@ -225,12 +225,12 @@ main{
 }
 
 .categories button:hover{
-    background: #a2d0eb;
+    background: #678368;
     color: #fff;
 }
 
 .categories .active {
-    background: #a2d0eb;
+    background: #678368;
     color: #fff;
 }
 
@@ -283,7 +283,7 @@ border-radius: 10px;
 }
 
 .swiper-pagination-bullet-active{
-    background-color: #84cdf8 !important;
+    background-color: #678368 !important;
     opacity: 1 !important;
 }
 
@@ -312,7 +312,7 @@ border-radius: 10px;
 }
 
 .swiper-button-next, .swiper-button-prev {
-    color: #a2d0eb; /* поменяй на свой акцентный */
+    color: #678368; /* поменяй на свой акцентный */
 }
 .swiper-button-next:hover, .swiper-button-prev:hover {
     color: #d45a6e;
@@ -441,7 +441,7 @@ border-radius: 10px;
     padding: 15px;
     margin-bottom: 50px;
     color: #fff;
-    background: #a2d0eb;
+    background: #678368;
 }
 
 #order > .info-block > ul,
@@ -492,7 +492,7 @@ ul > img{
 }
 
 .reviews{
-    gap: 15px;
+    gap: 30px;
     display: flex;
     margin-bottom: 30px;
 }
@@ -507,7 +507,7 @@ ul > img{
     padding: 15px 25px;
     display: flex;
     max-width: 500px;
-    border-radius: 10px;
+    border-radius: 8px;
     flex-direction: column;
     box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.2);
 }
@@ -547,6 +547,7 @@ ul > img{
 }
 
 .circle{
+    display: none;
     right: 500px;
     width: 242px;
     height: 242px;
@@ -560,8 +561,16 @@ ul > img{
     z-index: 0;
     top: 85px;
     left: 105px;
-    background: #b3df54;
-    opacity: 0.15;
+    background: #ffb4c0;
+    opacity: 0.1;
+}
+
+#catalog > .circle:nth-child(2){
+    z-index: 0;
+    bottom: 85px;
+    right: 105px;
+    background: #84cdf8;
+    /* opacity: 0.15; */
 }
 
 .blured{
@@ -590,6 +599,7 @@ ul > img{
 }
 
 #review > .blured{
+    display: none;
     bottom: -50px;
     left: 100px;
     position: absolute;
@@ -610,7 +620,7 @@ display: inline-block;
 margin: 10px;
 padding: 10px 20px;
 border-radius: 20px;
-background: #a2d0eb;
+background: #678368;
 color: #fff;
 transition: 0.3s;
 }
