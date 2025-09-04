@@ -812,7 +812,7 @@ text-align: center;
 .burger-btn{
     display: block;
     background-color: transparent;
-    content: url('../media/icons/menu.svg');
+    /* content: url('../media/icons/menu.svg'); */
 }
 
 .burger-nav{
