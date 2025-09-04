@@ -111,3 +111,7 @@ function updateDateTime() {
     document.getElementById('year').textContent = currentYear;
 }
 setInterval(updateDateTime, 1000);
+
+function showBurger(){
+  document.getElementById("burgerNav").style.display == "block";
+}
