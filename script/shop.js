@@ -347,7 +347,7 @@ function displayProducts(products, containerId) {
 const currentUrl = window.location.pathname;
 console.log("Текущий URL:", currentUrl);
 
-if (currentUrl == "/index.html") {
+if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/BuketBerry/") || currentUrl.endsWith === "/") {
   displayProducts(mans.slice(0,4), 'manItems');
   displayProducts(womans.slice(0, 4), 'womanItems');
   displayProducts(child.slice(0, 4), 'babyItems');
