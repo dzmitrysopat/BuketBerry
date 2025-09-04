@@ -18,27 +18,27 @@
 <div class="container header-inner">
 <div class="logo"><img src="./media/img/strawberry.png" alt=""><a href="./index.html" class="logo">Buket Berry</a></div>
 <nav>
-<a href="#catalog">Каталог</a>
-<a href="#about">О нас</a>
-<a href="#order">Заказ</a>
-<!-- <a href="#payment">Оплата</a>
-<a href="#delivery">Доставка</a> -->
-<a href="#contacts">Контакты</a>
-<a href="#review">Отзывы</a>
+<a href="#catalog-anchor">Каталог</a>
+<a href="#about-anchor">О нас</a>
+<a href="#order-anchor">Заказ</a>
+<a href="#review-anchor">Отзывы</a>
+<a href="#contacts-anchor">Контакты</a>
+
 </nav>
-<a href="#order" class="btn">Сделать заказ</a>
+<a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="btn">Сделать заказ</a>
 </div>
 </header>
 
 
 <section class="hero">
 <div class="hero-content">
-<h1>Студия оригинальных подарков</h1>
+<h1>Студия <br> оригинальных <br> подарков</h1>
 <p>Здесь рождаются шедевры</p>
-<a href="#catalog" class="btn">Наши работы</a>
+<a href="#catalog-anchor" class="btn">Наши работы</a>
 </div>
 </section>
 
+ <div class="anchor" id="catalog-anchor"></div>
 <main>
 <section id="catalog" class="catalog container">
 <h2>Наши работы</h2>
@@ -61,13 +61,15 @@
 
 <a href="./catalog.html" class="link-btn btn">Больше работ</a>
 <div class="circle"></div>
+<div class="circle"></div>
 <!-- <div class="blured"></div> -->
 </section>
 
-
+ <div class="anchor" id="about-anchor"></div>
 <section id="about" class="about container">
 <img src="./media/img/flowers_01.png" alt="" class="bg-flowers">
-<img src="./media/img/flowers_01.png" alt="" class="bg-flowers"><div class="about-text">
+<img src="./media/img/flowers_01.png" alt="" class="bg-flowers">
+<div class="about-text">
 <h2>Ваша <br> букетная <br> мастерская</h2>
 <p class="description">
     Привет! Меня зовут, Илона 🙂<br>
@@ -88,47 +90,58 @@
 <!-- <div class="blured"></div> -->
 </section>
 
+<div class="anchor" id="order-anchor"></div>
 <!-- Заказ / Доставка / Стоимость -->
-<section id="order" class="info-blocks container">
-<div class="info-item">
-<h3>Оформление заказа</h3>
-<img src="./media/img/message.png" alt="messaging-image">
-<ul>
-<li>Оптимально сделать заказ за 2-3 дня до предполагаемой даты.</li>
-<li>В большие праздники лучше всего предусмотреть и оформить заказ за 7 дней.</li>
-<li>С учётом Ваших пожеланий подберём нужную композицию, обсудим упаковку, состав, стоимость и детали.</li>
-<li>Перед получением мы всегда отправляем Вам фото/видео Вашей композиции</li>
-</ul>
-</div>
 
-<div class="info-item" id="delivery">
-<h3>Доставка букетов</h3>
-<img src="./media/img/delivery.png" alt="">
-<ul>
-<li>Доставка по городу осуществляется по тарифу Яндекс доставки в любое удобное для Вас время</li>
-<li>(доставка не входит в стоимость букета)</li>
-<li>Для этого Вам необходимо указать адрес, удобный временной промежуток и контактный телефон</li>
-<li> Также у нас всегда работает система Самовывоза</li>
-</ul>
-</div>
-<div class="info-item" id="payment">
-<h3>Стоимость</h3>
-<img src="./media/img/money.png" alt="">
-<ul>
-<li>Стоимость композиций оговаривается на этапе обсуждения Вашего заказа</li>
-<li>Оплатить композицию можно через ЕРИП, E-POS, либо наличными по факту доставки Вашего букета</li>
-<li>Также возможна оплата картой</li>
-<!-- <img src="./media/img/payments.png" alt=""> -->
-</ul>
-</div>
+<section id="orders">
+<section id="order" class="order">
+    <div class="info-img"></div>
+    <div class="info-block">
+        <h3>Оформление заказа</h3>
+        <ul>
+        <li>Оптимально сделать заказ за 2-3 дня до предполагаемой даты.</li>
+        <li>В большие праздники лучше всего предусмотреть и оформить заказ за 7 дней.</li>
+        <li>С учётом Ваших пожеланий подберём нужную композицию, обсудим упаковку, состав, стоимость и детали.</li>
+        <li>Перед получением мы всегда отправляем Вам фото/видео Вашей композиции</li>
+        </ul>
+    </div>
 </section>
 
+<section id="delivery" class="order">
+    <div class="info-block">
+        <h3>Доставка букетов</h3>
+        <ul>
+        <li>Доставка по городу осуществляется по тарифу Яндекс доставки в любое удобное для Вас время</li>
+        <li>(доставка не входит в стоимость букета)</li>
+        <li>Для этого Вам необходимо указать адрес, удобный временной промежуток и контактный телефон</li>
+        <li> Также у нас всегда работает система Самовывоза</li>
+        </ul>
+    </div>
+    <div class="info-img"></div>
+</section>
+
+<section id="payment" class="order">
+    <div class="info-img"></div>
+    <div class="info-block">
+        <h3>Стоимость</h3>
+        <ul>
+        <li>Стоимость композиций оговаривается на этапе обсуждения Вашего заказа</li>
+        <li>Оплатить композицию можно через ЕРИП, E-POS, либо наличными по факту доставки Вашего букета</li>
+        <li>Также возможна оплата картой</li>
+        </ul>
+    </div>
+</section>
+
+</section>
+
+
+<div class="anchor" id="review-anchor"></div>
 <section id="review" class="review container">
     <h2>Ваши отзывы</h2>
     <div class="reviews">
     <article class="review-item">
         <div class="user">
-            <img src="./media//users/user_female.png" alt="" class="avatar">
+            <img src="./media/users/user_female.png" alt="" class="avatar">
             <span class="name">Счастливые Вы</span>
             <img src="./media/img/stars.svg" alt="" class="stars">
         </div>
@@ -139,19 +152,18 @@
     </article>
     <article class="review-item">
         <div class="user">
-            <img src="./media//users/user_female.png" alt="" class="avatar">
-            <span class="name">Счастливые Вы</span>
+            <img src="./media/users/tati.jpg" alt="" class="avatar">
+            <span class="name">tati_fomenkova</span>
             <img src="./media/img/stars.svg" alt="" class="stars">
         </div>
         <p class="review-text">
-            Илона спасибки большое 💖 очень красиво и приятно, мы молодцы сделали сюрприз. <br>
-            Очень понравилось. 🌹🌹🌹 💖💖💖 <br>
-            Будем обращаться!
+            Илоночка, здравствуйте! В очередной раз восхищаюсь вашей работой и говорю от все души спасибо!!! Все как всегда красиво и сказочно!!!!
         </p>
+        <!-- <img src="./media/users/tati_01.jpg" alt="фото счастливой Тати с букетом"> -->
     </article>
     <article class="review-item">
         <div class="user">
-            <img src="./media//users/user_female.png" alt="" class="avatar">
+            <img src="./media/users/user_female.png" alt="" class="avatar">
             <span class="name">Счастливые Вы</span>
             <img src="./media/img/stars.svg" alt="" class="stars">
         </div>
@@ -161,12 +173,13 @@
         Мама была в восторге!! И мне также очень понравился!!!</p>
     </article>
     </div>
-    <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MTY5Njk3MDA1MjgzMjc5?igsh=azV0NzY5NTQ0YjBw" target="_blank" class="link-btn btn">Больше отзывов</a>
+    <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MTY5Njk3MDA1MjgzMjc5?igsh=azV0NzY5NTQ0YjBw" class="link-btn btn" target="_blank">Больше отзывов</a>
     <div class="circle"></div>
     <div class="blured"></div>
 </section>
 
 <!-- Контакты -->
+<div class="anchor" id="contacts-anchor"></div>
 <section id="contacts" class="contacts container">
 <h2>Контакты</h2>
 <p>📞 <a href="tel:+375291234567">+375 29 123-45-67</a></p>
@@ -181,11 +194,11 @@
 <footer>
 <div class="container footer-inner">
 <div class="footer-nav">
-<a href="#catalog">Каталог</a>
-<a href="#about">О нас</a>
-<a href="#order">Оплата</a>
-<a href="#delivery">Доставка</a>
-<a href="#contacts">Контакты</a>
+<a href="#catalog-anchor">Каталог</a>
+<a href="#about-anchor">О нас</a>
+<a href="#order-anchor">Заказ</a>
+<a href="#review-anchor">Отзывы</a>
+<a href="#contacts-anchor">Контакты</a>
 </div>
 <div class="footer-copy">© <span id="year"></span> Buket Berry</div>
 <div class="footer-socials">

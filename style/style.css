@@ -10,6 +10,7 @@
 }
 
 body {
+    z-index: 2;
     overflow-x: hidden;
     margin: 0;
     font-family: 'comfortaa', sans-serif;
@@ -77,12 +78,12 @@ a.logo{
     z-index: 2;
 font-size: 30px;
 font-weight: 600;
-color: #e67a8a;
+color: #678368;
 transition: all .4s;
 }
 
 .logo:hover{
-    color: #d45a6e;
+    color: #678368a6;
 }
 
 nav {
@@ -103,7 +104,7 @@ nav a,
 nav a:hover,
 nav > a.colored,
 .footer-nav > a:hover{
-    color: #e67a8a;
+    color: #678368;
 }
 
 nav > a:after,
@@ -113,7 +114,7 @@ nav > a:active:after{
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
 	width: 0;/*задаём длинну линии до наведения курсора*/
 	height: 3px; /*задаём ширину линии*/
-	background-color: #e67a8a; /*задаём цвет линии*/
+	background-color: #678368; /*задаём цвет линии*/
 	content: "";
 	transition: width 0.2s ease-out; /*задаём время анимации*/
 }
@@ -126,20 +127,22 @@ nav > a.active-link:after {
 
 nav a.active-link,
 nav a.active-link >i{
-    color: #e67a8a;
+    color: #678368;
 }
 
 .btn {
-    background: #e67a8a;
+    background: #678368;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 15px 40px;
+    border: 2px solid #678368;
     transition: 0.3s;
     display: inline-block;
 }
 
 .btn:hover {
-    background: #d45a6e;
+    background: #fff;
+    border: 2px solid #678368;
+    color: #678368;
 }
 
 /* / Баннер / */
@@ -157,19 +160,19 @@ section.hero {
 
 .hero h1 {
     color: #fff;
-font-size: 86px;
+font-size: 7rem;
 margin-bottom: 10px;
 }
 
 .hero p {
     color: #fff;
-    font-size: 38px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .hero-content > a{
     font-size: 25px;
-    padding: 10px 45px;
+    /* padding: 10px 45px; */
 }
 
 main{
@@ -177,7 +180,7 @@ main{
     margin: 150px auto;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 125px;
 }
 
 /* / Каталог / */
@@ -189,8 +192,6 @@ main{
     flex-direction: column;
     align-items: center;
 }
-
-
 
 .catalog h2,
 .review h2{
@@ -210,20 +211,25 @@ main{
     margin: 5px;
     padding: 10px 20px;
     border: none;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     background: #f5f5f5;
     cursor: pointer;
     transition: all .3s;
     z-index: 1;
 }
 
+#catalog > .btn{
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
 .categories button:hover{
-    background: #e67a8a;
+    background: #678368;
     color: #fff;
 }
 
 .categories .active {
-    background: #e67a8a;
+    background: #678368;
     color: #fff;
 }
 
@@ -251,7 +257,7 @@ border-radius: 10px;
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
 }
 
 .swiper {
@@ -259,16 +265,15 @@ border-radius: 10px;
     height: fit-content;
     display: flex !important;
     flex-direction: column;
-    gap: 5px;
     align-items: center;
 }
 
 #catalog > .swiper{
-    width: 1400px;
+    width: 100vw;
 }
 
 .swiper-pagination{
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .swiper-pagination-bullet{
@@ -277,7 +282,7 @@ border-radius: 10px;
 }
 
 .swiper-pagination-bullet-active{
-    background-color: #d45a6e !important;
+    background-color: #678368 !important;
     opacity: 1 !important;
 }
 
@@ -287,12 +292,13 @@ border-radius: 10px;
     font-size: 18px;
     background: #444;
     display: flex;
+    /* gap: 15px; */
     justify-content: center;
     align-items: center;
 }
 
 .swiper-slide img{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
     display: block;
     width: 310px;
@@ -300,8 +306,12 @@ border-radius: 10px;
     object-fit: cover;
 }
 
+.swiper > .name{
+    margin-top: 30px;
+}
+
 .swiper-button-next, .swiper-button-prev {
-    color: #e67a8a; /* поменяй на свой акцентный */
+    color: #678368; /* поменяй на свой акцентный */
 }
 .swiper-button-next:hover, .swiper-button-prev:hover {
     color: #d45a6e;
@@ -362,6 +372,9 @@ border-radius: 10px;
 }
 
 /* / Инфо-блоки / */
+
+
+
 .info-blocks {
     display: flex;
     justify-content: space-between;
@@ -369,10 +382,11 @@ border-radius: 10px;
 }
 
 .info-item {
+    position: relative;
     flex: 1;
     background: #fff6f08e;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr;
@@ -381,6 +395,74 @@ border-radius: 10px;
     grid-row-gap: 0px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.1);
     /* box-shadow: 0 2px 5px rgba(0,0,0,0.05); */
+}
+
+#order,
+#delivery,
+#payment{
+    width: 100vw;
+    display: flex;
+}
+
+.info-img{
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-image: url('../media/img/buket-cvetov-s-granatom-vinograd-v-zeltoi-kvadratnoi-korobke.jpg');
+    width: 63vw;
+    height: 55vh;
+}
+
+.info-img:nth-child(2){
+    background-image: url('../media/img/fruktovyi-buket-s-razlicnymi-fruktami.jpg');
+}
+
+.order:nth-child(3) > .info-img{
+    width: 59.6vw;
+    background-size: cover;
+    background-image: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
+}
+
+
+#order > .info-block,
+#delivery > .info-block,
+#payment > .info-block{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 5px;
+    background-color: #f3eeea;
+}
+
+#order > .info-block > h3,
+#delivery > .info-block > h3,
+#payment > .info-block > h3{
+    /* border-bottom: 2px solid #c7c7c7; */
+    font-size: 3rem;
+    padding: 15px;
+    margin-bottom: 50px;
+    color: #fff;
+    background: #678368;
+}
+
+#order > .info-block > ul,
+#delivery > .info-block > ul,
+#payment > .info-block > ul{
+    list-style: none;
+}
+
+#order > .info-block > ul > li,
+#delivery > .info-block > ul > li,
+#payment > .info-block > ul > li{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.info-item > .circle{
+    bottom: -100px;
+    left: -100px;
+    opacity: 0.1;
+    z-index: 0 !important;
+    background-color: #df9354;
+    position: absolute;
 }
 
 .info-item > img {
@@ -409,8 +491,9 @@ ul > img{
 }
 
 .reviews{
-    gap: 15px;
+    gap: 30px;
     display: flex;
+    margin-bottom: 30px;
 }
 
 .review-item:not(:nth-child(2)){
@@ -423,9 +506,13 @@ ul > img{
     padding: 15px 25px;
     display: flex;
     max-width: 500px;
-    border-radius: 10px;
+    border-radius: 8px;
     flex-direction: column;
     box-shadow: 0px 0px 20px 10px rgba(34, 60, 80, 0.2);
+}
+
+.review-item > img{
+    border-radius: 10px;
 }
 
 .user{
@@ -459,6 +546,7 @@ ul > img{
 }
 
 .circle{
+    display: none;
     right: 500px;
     width: 242px;
     height: 242px;
@@ -472,8 +560,16 @@ ul > img{
     z-index: 0;
     top: 85px;
     left: 105px;
-    background: #b3df54;
-    opacity: 0.15;
+    background: #ffb4c0;
+    opacity: 0.1;
+}
+
+#catalog > .circle:nth-child(2){
+    z-index: 0;
+    bottom: 85px;
+    right: 105px;
+    background: #84cdf8;
+    /* opacity: 0.15; */
 }
 
 .blured{
@@ -497,7 +593,12 @@ ul > img{
     background: #ffef15;
 }
 
+#review > .btn{
+    font-size: 20px;
+}
+
 #review > .blured{
+    display: none;
     bottom: -50px;
     left: 100px;
     position: absolute;
@@ -518,7 +619,7 @@ display: inline-block;
 margin: 10px;
 padding: 10px 20px;
 border-radius: 20px;
-background: #e67a8a;
+background: #678368;
 color: #fff;
 transition: 0.3s;
 }
@@ -639,6 +740,7 @@ text-align: center;
     font-size: 35px;
     }
 
+<<<<<<< HEAD
     .categories{
         gap:5px;
         flex-wrap: wrap;
@@ -659,4 +761,63 @@ text-align: center;
     .reviews > a{
         z-index: 10;
     }
+=======
+.categories{
+    gap:5px;
+    flex-wrap: wrap;
+}
+.about-text > h2{
+    font-size: 3.2rem;
+}
+
+.about-text ul{
+    text-align: left;
+}
+
+.bg-flowers{
+    display: none;
+}
+
+.about-img img{
+    width: 90vw;
+}
+
+.reviews{
+    flex-direction: column;
+}
+
+#order,
+#delivery,
+#payment{
+    flex-direction: column !important;
+}
+
+#delivery{
+    flex-direction: column-reverse !important;
+}
+
+.info-img,
+.info-img:nth-child(2),
+.order:nth-child(3) > .info-img{
+    width: 100vw;
+}
+
+#order > .info-block,
+#delivery > .info-block,
+#payment > .info-block{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 50px 0;
+    text-align: left;
+    background-color: #f3eeea;
+}
+
+.info-block > h3{
+    width: 100vw;
+    font-size: 20px;
+    text-align: center;
+    /* margin-left: 10%; */
+}
+
+>>>>>>> 65d2578cf33a9eeedabd36481c4542b1b1017fb0
 }
