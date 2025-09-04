@@ -811,7 +811,7 @@ text-align: center;
 
 .burger-btn{
     display: block;
-    content: '🔽';
+    content: url('../media/icons/menu.svg');
 }
 
 .burger-nav{
@@ -823,6 +823,10 @@ text-align: center;
     height: 97vh;
     width: 100vw;
     position: absolute;
+}
+
+.burger-nav > a{
+    border-bottom: 2px solid #f3eeea;
 }
 
 .close-btn{
