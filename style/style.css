@@ -740,28 +740,6 @@ text-align: center;
     font-size: 35px;
     }
 
-<<<<<<< HEAD
-    .categories{
-        gap:5px;
-        flex-wrap: wrap;
-    }
-
-    .bg-flowers{
-        display: none;
-    }
-
-    .about-img > img{
-        width: 90vw;
-    }
-
-    .reviews{
-        flex-wrap: wrap;
-    }
-
-    .reviews > a{
-        z-index: 10;
-    }
-=======
 .categories{
     gap:5px;
     flex-wrap: wrap;
@@ -819,5 +797,4 @@ text-align: center;
     /* margin-left: 10%; */
 }
 
->>>>>>> 65d2578cf33a9eeedabd36481c4542b1b1017fb0
 }
