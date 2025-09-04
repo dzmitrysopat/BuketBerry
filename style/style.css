@@ -737,7 +737,7 @@ text-align: center;
     }
 
     .hero h1 {
-    font-size: 35px;
+    font-size: 35px !important;
     }
 
 .categories{
