@@ -115,3 +115,7 @@ setInterval(updateDateTime, 1000);
 function showBurger(){
   document.getElementById("burgerNav").style.display == "block";
 }
+
+function closeBurgerNav(){
+  document.getElementById("burgerNav").style.display == "none";
+}
