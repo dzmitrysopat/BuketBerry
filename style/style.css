@@ -810,11 +810,11 @@ text-align: center;
 }
 
 .burger-btn{
-    display: block;
+    display: none;
 }
 
 .burger-nav{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
     background-color: #678368;
