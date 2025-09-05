@@ -119,3 +119,6 @@ function showBurger(){
 function closeBurgerNav(){
   document.getElementById("burgerNav").style.display == "none";
 }
+
+var splide = new Splide( '.splide' );
+splide.mount();
