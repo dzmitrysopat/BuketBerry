@@ -180,7 +180,7 @@ const Fruits = [
     "name": "01",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163321_594.jpg",
-    "photo2": "./media/compositions/oldFruits/IMG_2343.jpg",
+    "photo2": "./media/compositions/oldFruits/IMG_2343.JPG",
     "photo3": "./media/compositions/oldFruits/IMG_20250811_163310_285.jpg"
 
   },
@@ -188,15 +188,15 @@ const Fruits = [
     "id": 2,
     "name": "02",
     "price": "45",
-    "photo": "./media/compositions/oldFruits/IMG_2340.jpg",
+    "photo": "./media/compositions/oldFruits/IMG_2340.JPG",
     "photo2": ""
   },
   {
     "id": 3,
     "name": "03",
     "price": "45",
-    "photo": "./media/compositions/oldFruits/IMG_2341.jpg",
-    "photo2": "./media/compositions/oldFruits/IMG_2342.jpg"
+    "photo": "./media/compositions/oldFruits/IMG_2341.JPG",
+    "photo2": "./media/compositions/oldFruits/IMG_2342.JPG"
   },
   {
     "id": 4,
