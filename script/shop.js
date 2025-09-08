@@ -202,34 +202,26 @@ const Fruits = [
     "id": 4,
     "name": "04",
     "price": "45",
-    "photo": "./media/compositions/oldFruits/IMG_20250811_163310_285.jpg",
-    "photo2": ""
-  },
-
-  {
-    "id": 5,
-    "name": "05",
-    "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163419_162.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163423_905.jpg"
   },
   {
-    "id": 6,
-    "name": "06",
+    "id": 5,
+    "name": "05",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163445_820.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163448_068.jpg"
   },
   {
-    "id": 7,
-    "name": "07",
+    "id": 6,
+    "name": "06",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163500_639.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163503_230.jpg"
   },
   {
-    "id": 8,
-    "name": "08",
+    "id": 7,
+    "name": "07",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163512_199.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163514_812.jpg"
