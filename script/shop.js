@@ -175,65 +175,61 @@ const child = [
 ];
 
 const Fruits = [
-    {
+  {
     "id": 1,
     "name": "01",
     "price": "45",
-    "photo": "./media/compositions/oldFruits/IMG_20250811_163144_090.jpg",
-    "photo2": "./media/compositions/oldFruits/IMG_20250811_163141_453.jpg"
+    "photo": "./media/compositions/oldFruits/IMG_20250811_163321_594.jpg",
+    "photo2": "./media/compositions/oldFruits/IMG_20250811_163312_922.jpg",
+    "photo3": "./media/compositions/oldFruits/IMG_20250811_163310_285.jpg"
+
   },
   {
     "id": 2,
     "name": "02",
     "price": "45",
-    "photo": "./media/compositions/oldFruits/IMG_20250811_163205_392.jpg",
-    "photo2": "./media/compositions/oldFruits/IMG_20250811_163209_556.jpg"
+    "photo": "./media/compositions/oldFruits/IMG_2340.jpg",
+    "photo2": ""
   },
   {
     "id": 3,
     "name": "03",
     "price": "45",
-    "photo": "./media/compositions/oldFruits/IMG_20250811_163248_227.jpg",
-    "photo2": "./media/compositions/oldFruits/IMG_20250811_163250_244.jpg"
+    "photo": "./media/compositions/oldFruits/IMG_2341.jpg",
+    "photo2": "./media/compositions/oldFruits/IMG_2342.jpg"
   },
   {
     "id": 4,
     "name": "04",
     "price": "45",
-    "photo": "./media/compositions/oldFruits/IMG_20250811_163312_922.jpg",
-    "photo2": "./media/compositions/oldFruits/IMG_20250811_163310_285.jpg"
+    "photo": "./media/compositions/oldFruits/IMG_20250811_163310_285.jpg",
+    "photo2": ""
   },
+
   {
     "id": 5,
     "name": "05",
-    "price": "45",
-    "photo": "./media/compositions/oldFruits/IMG_20250811_163312_922.jpg",
-    "photo2": "./media/compositions/oldFruits/IMG_20250811_163321_594.jpg"
-  },
-  {
-    "id": 6,
-    "name": "06",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163419_162.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163423_905.jpg"
   },
   {
-    "id": 7,
-    "name": "07",
+    "id": 6,
+    "name": "06",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163445_820.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163448_068.jpg"
   },
   {
-    "id": 8,
-    "name": "08",
+    "id": 7,
+    "name": "07",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163500_639.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163503_230.jpg"
   },
   {
-    "id": 9,
-    "name": "09",
+    "id": 8,
+    "name": "08",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163512_199.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163514_812.jpg"
