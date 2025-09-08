@@ -180,7 +180,7 @@ const Fruits = [
     "name": "01",
     "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163321_594.jpg",
-    "photo2": "./media/compositions/oldFruits/IMG_20250811_163312_922.jpg",
+    "photo2": "./media/compositions/oldFruits/IMG_2343.jpg",
     "photo3": "./media/compositions/oldFruits/IMG_20250811_163310_285.jpg"
 
   },
