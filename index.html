@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="./media/img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
@@ -25,7 +26,7 @@
 <a href="#contacts-anchor">Контакты</a>
 </nav>
 
-<button class="burger-btn" onclick="showBurger()">
+<button class="burger-btn" id="burgerBtn" onclick="showBurger()">
     <img src="./media/icons/menu.svg" alt="">
 </button>
 <div class="burger-nav" id="burgerNav">
@@ -34,7 +35,15 @@
     <a href="#order-anchor">Заказ</a>
     <a href="#review-anchor">Отзывы</a>
     <a href="#contacts-anchor">Контакты</a>
-    <button onclick="closeBurgerNav()" class="close-btn">X</button>
+
+    <div class="burger-socials">
+    <div class="footer-socials">
+    <a href="https://www.instagram.com/buket_berry.gomel" target="_blank"><i class="ri-instagram-line"></i></a>
+    <a href="https://t.me/Ilonapodterebkova" target="_blank"><i class="ri-telegram-2-fill"></i></a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> Buket Berry</div>
+    </div>
+    <!-- <button onclick="closeBurgerNav()" class="close-btn">X</button> -->
 </div>
 <a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="btn">Сделать заказ</a>
 </div>
@@ -98,11 +107,9 @@
 <div class="about-img">
 <img src="./media/myself/Ilona.png" alt="О нас">
 </div>
-<!-- <div class="blured"></div> -->
 </section>
 
 <div class="anchor" id="order-anchor"></div>
-<!-- Заказ / Доставка / Стоимость -->
 
 <section id="orders">
 <section id="order" class="order">
@@ -213,9 +220,8 @@
 </div>
 <div class="footer-copy">© <span id="year"></span> Buket Berry</div>
 <div class="footer-socials">
-<a href="https://www.instagram.com/buket_berry.gomel">📸</a>
-<a href="https://t.me/Ilonapodterebkova">💬</a>
-<a href="tel:+"></a>
+<a href="https://www.instagram.com/buket_berry.gomel" target="_blank"><i class="ri-instagram-line"></i></a>
+<a href="https://t.me/Ilonapodterebkova" target="_blank"><i class="ri-telegram-2-fill"></i></a>
 </div>
 </div>
 </footer>

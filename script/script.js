@@ -112,10 +112,24 @@ function updateDateTime() {
 }
 setInterval(updateDateTime, 1000);
 
-function showBurger(){
-  document.getElementById("burgerNav").style.display == "block";
-}
+// function showBurger(){
+//     const burgerNav = document.getElementById("burgerNav");
+//    document.getElementById("burgerNav").classList.toggle("active");
+//     document.body.style.overflowY = 'hidden';
+// }
 
-function closeBurgerNav(){
-  document.getElementById("burgerNav").style.display == "none";
-}
+// function closeBurgerNav(){
+//   document.getElementById("burgerNav").classList.remove("active");
+// }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerBtn = document.getElementById("burgerBtn");
+  const burgerNav = document.getElementById("burgerNav");
+
+  if (burgerBtn && burgerNav) {
+    burgerBtn.addEventListener("click", () => {
+      burgerNav.classList.toggle("active");
+    })
+  }
+});

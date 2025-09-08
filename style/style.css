@@ -635,9 +635,8 @@ background: #d45a6e;
 /* / Футер / */
 footer {
     margin-top: 100px;
-background: #f3eeea;
-padding: 20px 0;
-text-align: center;
+    background: #f3eeea;
+    padding: 20px 0;
 }
 
 .footer-inner {
@@ -649,7 +648,7 @@ gap: 20px;
 }
 
 .footer-nav a {
-margin: 0 10px;
+/* margin: 0 10px; */
 }
 
 .footer-copy {
@@ -666,7 +665,15 @@ text-align: center;
 
 .footer-socials a {
 margin: 0 5px;
-font-size: 20px;
+font-size: 30px;
+}
+
+.footer-socials > a > i{
+    transition: all.4s;
+}
+
+.footer-socials > a:hover > i{
+    color: #678368;
 }
 
 /* / 📱 Адаптив / */
@@ -818,14 +825,27 @@ text-align: center;
 .burger-nav{
     display: none;
     flex-direction: column !important;
-    gap: 15px;
-    background-color: #678368ec;
-    height: 97vh;
+    gap: 25px;
+    background-color: #678368;
+    height: 98vh;
     width: 100vw;
-    top: 8.7vh;
+    top: 64px;
     left: 0;
     padding: 25px 0 0 25px;
     position: fixed;
+    transition: all .5s;
+}
+
+.burger-nav > .burger-socials > .footer-socials > a > i{
+    color: #ffffff98;
+}
+
+.burger-socials{
+    margin-top: 110%;
+}
+
+.burger-nav.active{
+    display: flex;
 }
 
 .burger-nav > a{
@@ -846,6 +866,18 @@ text-align: center;
     font-weight: 900;
     top: 15px;
     right: 15px;
+}
+
+.burger-nav > .burger-socials > .footer-copy,
+.burger-nav > .burger-socials > .footer-copy > #year{
+    font-size: 15px;
+    color: #ffffff98;
+}
+.burger-nav > .burger-socials > .footer-copy{
+    border-top: 2px solid #ffffff98;
+    padding-top: 10px;
+    margin-right: 25px;
+    text-align: left;
 }
 
 }
