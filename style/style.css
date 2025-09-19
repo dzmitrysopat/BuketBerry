@@ -935,6 +935,7 @@ text-align: center;
 .burger-nav > .burger-socials > .footer-copy,
 .burger-nav > .burger-socials > .footer-copy > #year{
     font-size: 15px;
+    height: 15px;
     color: #ffffff98;
 }
 .burger-nav > .burger-socials > .footer-copy{

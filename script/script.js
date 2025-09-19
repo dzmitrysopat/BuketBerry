@@ -108,7 +108,9 @@ function updateDateTime() {
     const yearOption = { year: 'numeric' };        
     const currentYear = date.toLocaleString('ru-RU', yearOption);                
 
-    document.getElementById('year').textContent = currentYear;
+  document.getElementById('year').textContent = currentYear;
+  console.log(document.getElementById('year'));
+  
 }
 setInterval(updateDateTime, 1000);
 
@@ -122,14 +124,23 @@ setInterval(updateDateTime, 1000);
 //   document.getElementById("burgerNav").classList.remove("active");
 // }
 
-
-document.addEventListener("DOMContentLoaded", () => {
   const burgerBtn = document.getElementById("burgerBtn");
   const burgerNav = document.getElementById("burgerNav");
 
+function closeNav(){
+      burgerNav.classList.toggle("active");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
   if (burgerBtn && burgerNav) {
     burgerBtn.addEventListener("click", () => {
       burgerNav.classList.toggle("active");
     })
+  }
+
+    if (burgerNav.classList === "burger-nav active") {
+    document.body.style.overflowY = 'hidden';
+  } else {
+    	  document.body.style.overflowY = 'visible';
   }
 });
