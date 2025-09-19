@@ -882,12 +882,13 @@ text-align: center;
 }
 
 .burger-nav{
+    position: relative;
     display: none;
     flex-direction: column !important;
     gap: 25px;
     background-color: #678368;
-    height: 98vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     top: 64px;
     left: 0;
     padding: 25px 0 0 25px;
@@ -901,7 +902,10 @@ text-align: center;
 }
 
 .burger-socials{
-    margin-top: 110%;
+    position: absolute;
+    bottom: 10%;
+    width: 95vw;
+    /* margin-top: 110%; */
 }
 
 .burger-nav.active{
@@ -948,6 +952,12 @@ text-align: center;
 .socials > a{
     margin: 0;
     width: 100vw;
+    height: 37vh;
+}
+
+.socials > a > .social-poster{
+    height: inherit;
+    width: inherit;
 }
 
 }
