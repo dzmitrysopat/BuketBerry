@@ -25,7 +25,28 @@
 <a href="index.html#contacts">Контакты</a>
 <a href="index.html#review">Отзывы</a>
 </nav>
-<a href="#order" class="btn">Сделать заказ</a>
+
+<button class="burger-btn" id="burgerBtn" onclick="showBurger()">
+    <img src="./media/icons/menu.svg" alt="">
+</button>
+<div class="burger-nav" id="burgerNav">
+    <a href="#catalog-anchor">Каталог</a>
+    <a href="#about-anchor">О нас</a>
+    <a href="#order-anchor">Заказ</a>
+    <a href="#review-anchor">Отзывы</a>
+    <a href="#contacts-anchor">Контакты</a>
+
+    <div class="burger-socials">
+    <div class="footer-socials">
+    <a href="https://www.instagram.com/buket_berry.gomel" target="_blank"><i class="ri-instagram-line"></i></a>
+    <a href="https://t.me/Ilonapodterebkova" target="_blank"><i class="ri-telegram-2-fill"></i></a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> Buket Berry</div>
+    </div>
+    <!-- <button onclick="closeBurgerNav()" class="close-btn">X</button> -->
+</div>
+
+<a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="btn">Сделать заказ</a>
 </div>
 </header>
 
