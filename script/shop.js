@@ -255,14 +255,6 @@ const Premium = [
     "description": "<br>Сухофрукты: мед 3шт, манго, курага, кумкват, финик, инжир двух видов, вяленая груша (по сезону), маракуйа, хурма вяленая целая, персик, кубики манго. <br><br>Орехи: пекан, макадами, фундук, миндаль. <br><br>Размер сьедобной части около 40-45см<br><br>Заказ 5-7 дней"
   },
   {
-    "id": 3,
-    "name": "03",
-    "price": "45",
-    "photo": "./media/compositions/premium/IMG_20250811_163733_604.jpg",
-    "photo2": "./media/compositions/premium/IMG_20250811_163733_055.jpg",
-    "description": ""
-  },
-  {
     "id": 4,
     "name": "04",
     "price": "285",
@@ -316,7 +308,7 @@ function displayProducts(products, containerId) {
                 ${slidesHTML}
             </div>
             ${product.photo2 && product.photo2.trim() !== "" ? '<div class="swiper-pagination"></div>' : ''}
-            <p class="name">${product.name}</p>
+            <p class="name">Букет #${product.name}</p>
             <span class="price">${product.price} руб.</span>
             <span class="description"> 
             <span class="price">Состав:</span>
