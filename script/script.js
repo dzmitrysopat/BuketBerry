@@ -148,13 +148,18 @@ setInterval(updateDateTime, 1000);
 
 function closeNav(){
       burgerNav.classList.toggle("active");
+      document.body.classList.toggle("no-scroll");
+      document.querySelector("header").classList.toggle("fixed");
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   if (burgerBtn && burgerNav) {
     burgerBtn.addEventListener("click", () => {
-      burgerNav.classList.toggle("active");
-    })
+    burgerNav.classList.toggle("active");
+    document.body.classList.toggle("no-scroll");
+    document.querySelector("header").classList.toggle("fixed");
+  })
   }
 
     if (burgerNav.classList === "burger-nav active") {

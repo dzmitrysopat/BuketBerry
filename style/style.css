@@ -18,6 +18,11 @@ body {
     background: #fff;
 }
 
+.no-scroll {
+  overflow-y: hidden !important;
+  height: 100vh;
+}
+
 .body_hide {
 	opacity: 0;
 	transition: 2s opacity ease-in-out;
@@ -826,6 +831,14 @@ text-align: center;
 }
 
 @media (max-width: 480px) {
+    header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* чтобы меню всегда было сверху */
+    }
+
     section.hero{
     background: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
     background-size: cover;
