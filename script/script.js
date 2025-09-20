@@ -109,7 +109,7 @@ function updateDateTime() {
     const currentYear = date.toLocaleString('ru-RU', yearOption);                
 
   document.getElementById('year').textContent = currentYear;
-  console.log(document.getElementById('year'));
+  // console.log(document.getElementById('year'));
   
 }
 setInterval(updateDateTime, 1000);

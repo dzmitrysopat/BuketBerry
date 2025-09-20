@@ -645,13 +645,13 @@ text-align: center;
 
 .socials a{
     position: relative;
-    width: 40vw;
+    width: 45vw;
     height: 45vh;
 }
 
 .social-poster{
     padding: 0;
-    width: 40vw;
+    width: 45vw;
     height: 45vh;
     background-size: cover;
 }
