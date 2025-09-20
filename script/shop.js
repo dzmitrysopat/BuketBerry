@@ -32,14 +32,6 @@ const mans = [
     "description": "орехи в панировке, миндаль, фундук, соленый арахис, мясные чипсы, колбаски  3-4 вида, сухарики. <br>Напиток в стоимость не входит. <br> Размер бокса 20*20<br><br>Заказ 3-5 дней"
   },
   {
-    "id": 5,
-    "name": "05",
-    "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_155417_222.jpg",
-    "photo2": "./media/compositions/mans/IMG_20250811_155412_500.jpg",
-    "description": ""
-  },
-  {
     "id": 6,
     "name": "06",
     "price": "150",
@@ -61,6 +53,7 @@ const mans = [
     "price": "135",
     "photo": "./media/compositions/mans/IMG_20250811_155609_021.jpg",
     "photo2": "./media/compositions/mans/IMG_20250811_155606_992.jpg",
+    "photo3": "./media/compositions/mans/IMG_20250811_154926_700.jpg",
     "description": "помидоры черри, колбасы высших сортов 3-4 вида, сыр косичка, паструма, мясные чипсы, зелень розмарина.<br> Ящик дерево.<br> Напиток в стоимость не входит <br><br>Заказ 3-5 дней"
   },
   {
@@ -70,12 +63,6 @@ const mans = [
     "photo": "./media/compositions/mans/IMG_20250811_155331_879.jpg",
     "photo2": "./media/compositions/mans/IMG_20250811_155328_054.jpg",
     "description": "орехи в панировке, сыр косичка, помидоры черри, мясные чипсы, колбаски 3 видов, зелень. <br> Напиток в стоимость не входит. <br><br>Заказ 3-5 дней"
-  },
-  {
-    "id": 10,
-    "name": "010",
-    "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_170439_976.jpg",
   },
   {
     "id": 13,
@@ -97,12 +84,6 @@ const mans = [
     "price": "180",
     "photo": "./media/compositions/mans/IMG_20250811_155036_754.jpg",
     "description": "сыр палочки, колбаса Божоле, паструма, Парма с плесенью, кабандосы классик, мясные чипсы, сьедобная зелень. Форель, вомер, жёлтый полосатик, снежки лосось, палочки минтай. <br>Ящик дерево.<br> Напиток в стоимость не входит <br><br>Заказ 3-5 дней"
-  },
-  {
-    "id": 17,
-    "name": "017",
-    "price": "45",
-    "photo": "./media/compositions/mans/IMG_20250811_154926_700.jpg",
   },
 ];
 
@@ -255,37 +236,55 @@ const Premium = [
     "description": "<br>Сухофрукты: мед 3шт, манго, курага, кумкват, финик, инжир двух видов, вяленая груша (по сезону), маракуйа, хурма вяленая целая, персик, кубики манго. <br><br>Орехи: пекан, макадами, фундук, миндаль. <br><br>Размер сьедобной части около 40-45см<br><br>Заказ 5-7 дней"
   },
   {
-    "id": 4,
-    "name": "04",
+    "id": 3,
+    "name": "03",
     "price": "285",
     "photo": "./media/compositions/premium/IMG_20250811_163733_104.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163733_380.jpg",
     "description": "<br>Сухофрукты: Манго двух видов, курага, кумкват, инжир, финики обычный и королевский, ананас двух видов, хурма целая, кизил. <br><br>Орехи: пекан, макадами, миндаль, фундук в белом шоколаде.<br><br>Размеры сьедобной части до 40см <br><br>Заказ 5-7 дней"
   },
   {
-    "id": 5,
-    "name": "05",
+    "id": 4,
+    "name": "04",
     "price": "250",
     "photo": "./media/compositions/premium/IMG_20250811_163733_123.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163733_553.jpg",
     "description": "<br>Цветы: эустома, эвкалипт <br><br>Сухофрукты: Хурма целая, манго, ананас, курага, кумкват, инжир, палочки корицы, финики. <br><br>Орехи: пекан, макадами, фундук, фундук в белом шоколаде, миндаль.<br><br>Диаметр съедобной части около 40см <br><br>Заказ 5-7 дней "
   },
   {
-    "id": 6,
-    "name": "06",
+    "id": 5,
+    "name": "05",
     "price": "300",
     "photo": "./media/compositions/premium/IMG_20250811_163733_603.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163732_968.jpg",
     "description": "<br>Цветы: роза кустовая, хризантема, зелень <br><br>Сухофрукты: инжир, кумкват, курага, манго, хурма целая, персик, кубики манго.<br><br> Орехи: пекан, макадами, миндаль, фундук, фундук в белом шоколаде. <br><br>Диаметр съедобной части около 45см <br><br>Заказ 5-7 дней"
   },
   {
-    "id": 7,
-    "name": "07",
+    "id": 6,
+    "name": "06",
     "price": "165",
     "photo": "./media/compositions/premium/IMG_20250811_163728_557.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163728_769.jpg",
     "description": "<br>Цветы: роза кустовая, гипсофил, зелень <br><br> Сухофрукты: манго, инжир, финики, курага, кумкват, фундук в белом шоколаде, Рафаэлло. <br><br> Диаметр съедобной части около 30см <br><br> Заказ 5-7 дней "
   }
+];
+
+const Sea = [
+  {
+    "id": 1,
+    "name": "01",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_155417_222.jpg",
+    "photo2": "./media/compositions/mans/IMG_20250811_155412_500.jpg",
+    "description": ""
+  },
+  {
+    "id": 2,
+    "name": "02",
+    "price": "45",
+    "photo": "./media/compositions/mans/IMG_20250811_170439_976.jpg",
+    "description": ""
+  },
 ];
 
 function displayProducts(products, containerId) {
@@ -295,12 +294,13 @@ function displayProducts(products, containerId) {
         const card = document.createElement('div');
         card.className = 'swiper mySwiper';
 
-        let slidesHTML = `<div class="swiper-slide"><img src="${product.photo}" alt="" class="product-img"></div>`;
-        
-        // Добавляем второй слайд, только если фото есть
-        if (product.photo2 && product.photo2.trim() !== "") {
-            slidesHTML += `<div class="swiper-slide"><img src="${product.photo2}" alt="" class="alt-product-img"></div>`;
-        }
+        // собираем все фото в массив
+        const photos = [product.photo, product.photo2, product.photo3].filter(p => p && p.trim() !== "");
+
+        // формируем слайды динамически
+        let slidesHTML = photos.map(p => `
+            <div class="swiper-slide"><img src="${p}" alt="" class="product-img"></div>
+        `).join("");
 
         // Пагинация только если есть больше одного слайда
         card.innerHTML = `
@@ -308,7 +308,7 @@ function displayProducts(products, containerId) {
                 ${slidesHTML}
             </div>
             <div class="pagination-container">
-            ${product.photo2 && product.photo2.trim() !== "" ? '<div class="swiper-pagination"></div>' : ''}
+             ${photos.length > 1 ? '<div class="swiper-pagination"></div>' : ""}
             </div>
             <p class="name">Букет #${product.name}</p>
             <span class="price">${product.price} руб.</span>
@@ -317,10 +317,10 @@ function displayProducts(products, containerId) {
             ${product.description}</span>
         `;
 
-        container.appendChild(card);
+         container.appendChild(card);
 
-        // Инициализация Swiper только если есть второй слайд
-        if (product.photo2 && product.photo2.trim() !== "") {
+        // инициализация Swiper только если есть несколько фото
+        if (photos.length > 1) {
             new Swiper(card, {
                 loop: true,
                 slidesPerView: 1,
@@ -336,10 +336,8 @@ function displayProducts(products, containerId) {
                     enabled: true,
                     onlyInViewport: false
                 },
-                  simulateTouch: true,   // свайп пальцем
-                  grabCursor: true,      // «рука» при наведении
-                  touchRatio: 1,         // чувствительность свайпа
-                  touchAngle: 45,        // угол срабатывания
+                simulateTouch: true,
+                grabCursor: true
             });
         }
     });
@@ -354,12 +352,15 @@ if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/BuketBerry/") || 
   displayProducts(child.slice(0, 4), 'babyItems');
   displayProducts(Fruits.slice(0, 4), 'oldFruitsItems');
   displayProducts(Premium.slice(0, 4), 'premiumItems');
+  displayProducts(Sea.slice(0, 4), 'seaItems');
 } else{
   displayProducts(mans, 'manItems');
   displayProducts(womans, 'womanItems');
   displayProducts(child, 'babyItems');
   displayProducts(Fruits, 'oldFruitsItems');
   displayProducts(Premium, 'premiumItems');
+  displayProducts(Sea, 'seaItems');
+
 }
 
 const reviews = [
