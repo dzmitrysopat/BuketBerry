@@ -41,7 +41,12 @@ text-decoration: none;
 color: inherit;
 }
 
+.anchor{
+    display: none;
+}
+
 .container {
+    scroll-margin-top: 5rem;
     width: 90%;
     max-width: 100%;
     margin: 0 auto;
@@ -185,7 +190,7 @@ main{
     margin: 150px auto;
     display: flex;
     flex-direction: column;
-    gap: 125px;
+    gap: 250px;
 }
 
 /* / Каталог / */
@@ -342,6 +347,14 @@ border-radius: 10px;
 
 .hidden{
     display: none !important;
+}
+
+#about{
+    scroll-margin-top: 10rem;
+}
+
+#orders{
+    scroll-margin-top: 5rem;
 }
 
 /* / О нас / */

@@ -4,15 +4,15 @@ function navHighlighter() {
   let scrollY = window.scrollY;
   sections.forEach(current => {
     let sectionHeight = current.offsetHeight;
-    let sectionTop = current.offsetTop - 350;    
+    let sectionTop = current.offsetTop - 300;    
     let sectionId = current.getAttribute("id");
     if (
       scrollY > sectionTop &&
       scrollY <= sectionTop + sectionHeight
     ){
-      document.querySelector("header nav a[href*="+ sectionId + "-anchor" + "]").classList.add("active-link");
+      document.querySelector("header nav a[href*="+ sectionId  + "]").classList.add("active-link");
     } else {
-      document.querySelector("header nav a[href*="+ sectionId + "-anchor" + "]").classList.remove("active-link");
+      document.querySelector("header nav a[href*="+ sectionId  + "]").classList.remove("active-link");
     }
   });
 }
