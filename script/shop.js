@@ -307,7 +307,9 @@ function displayProducts(products, containerId) {
             <div class="swiper-wrapper">
                 ${slidesHTML}
             </div>
+            <div class="pagination-container">
             ${product.photo2 && product.photo2.trim() !== "" ? '<div class="swiper-pagination"></div>' : ''}
+            </div>
             <p class="name">Букет #${product.name}</p>
             <span class="price">${product.price} руб.</span>
             <span class="description"> 

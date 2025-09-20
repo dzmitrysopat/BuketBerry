@@ -285,7 +285,7 @@ main{
 }
 
 .price{
-    margin-top: 15px;
+    /* margin-top: 15px; */
     font-weight: 900;
 }
 
@@ -359,8 +359,9 @@ border-radius: 10px;
 
 .swiper > .name{
     /* display: none; */
+    font-size: 25px;
     font-weight: 900;
-    /* margin-top: 30px; */
+    margin: 15px 0;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -368,6 +369,10 @@ border-radius: 10px;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover {
     color: #d45a6e;
+}
+
+.pagination-container{
+    height: 18px;
 }
 
 .hidden{
