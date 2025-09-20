@@ -18,6 +18,32 @@ body {
     background: #fff;
 }
 
+.body_hide {
+	opacity: 0;
+	transition: 2s opacity ease-in-out;
+}
+
+
+.body_visible {
+	opacity: 1;
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(0%);
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(15%);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
 h1, h2, h3 {
 font-family: 'comfortaa', sans-serif;
 margin: 10px 0;
