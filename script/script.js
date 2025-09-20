@@ -109,6 +109,7 @@ function updateDateTime() {
     const currentYear = date.toLocaleString('ru-RU', yearOption);                
 
   document.getElementById('year').textContent = currentYear;
+  document.querySelector('.year').textContent = currentYear;
   // console.log(document.getElementById('year'));
   
 }
