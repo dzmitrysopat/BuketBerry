@@ -23,7 +23,6 @@ body {
 	transition: 2s opacity ease-in-out;
 }
 
-
 .body_visible {
 	opacity: 1;
 }
