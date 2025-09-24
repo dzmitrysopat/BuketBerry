@@ -362,31 +362,3 @@ if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/BuketBerry/") || 
   displayProducts(Sea, 'seaItems');
 
 }
-
-const reviews = [
-{  
-  "img": "",
-  "name": "",
-  "review": ""
-  },
-  {  
-  "img": "",
-  "name": "",
-  "review": ""
-  },
-  {  
-  "img": "",
-  "name": "",
-  "review": ""
-  },
-  {  
-  "img": "",
-  "name": "",
-  "review": ""
-  },
-  {  
-  "img": "",
-  "name": "",
-  "review": ""
-  },
-]
