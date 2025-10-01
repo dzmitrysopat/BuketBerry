@@ -565,9 +565,9 @@ ul > img{
     margin-bottom: 30px;
 }
 
-.review-item:not(:nth-child(2)){
-    opacity: 0.8;
-}
+/* .review-item:not(:nth-child(2)){
+    opacity: 0.9;
+} */
 
 .review-item{
     background-color: #fff ; 
