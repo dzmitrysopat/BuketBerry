@@ -154,6 +154,14 @@ const child = [
     "photo": "./media/compositions/child/IMG_20250811_165236_726.jpg",
     "photo2": "./media/compositions/child/IMG_20250811_165236_340.jpg",
     "description": ""
+  },
+  {
+    "id": 5,
+    "name": "Букет #05",
+    "price": "45",
+    "photo": "./media/compositions/child/51.jpg",
+    "photo2": "./media/compositions/child/52.jpg",
+    "description": ""
   }
 ];
 
@@ -310,7 +318,7 @@ function displayProducts(products, containerId) {
              ${photos.length > 1 ? '<div class="swiper-pagination"></div>' : ""}
             </div>
             <p class="name">${product.name}</p>
-            <span class="price">${product.price} руб.</span>
+            <span class="price">от ${product.price} руб.</span>
             <span class="description"> 
             <span class="price">Состав:<br></span>
             ${product.description}</span>
