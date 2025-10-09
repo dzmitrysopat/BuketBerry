@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const savedCategory = localStorage.getItem("selectedCategory");
+        if (savedCategory) {
+        switch (savedCategory) {
+            case "man": man(); break;
+            case "woman": woman(); break;
+            case "baby": baby(); break;
+            case "oldFruits": oldFruits(); break;
+            case "premium": premium(); break;
+            case "sea": sea(); break;
+            }    
+            localStorage.removeItem("selectedCategory");
+        }
+        });
+    </script>
 </head>
 <body>
 <header>

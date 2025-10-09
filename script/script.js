@@ -50,7 +50,7 @@ function man(){
     document.getElementById("oldFruitsItems").classList.add("hidden");
     document.getElementById("premiumItems").classList.add("hidden");
     document.getElementById("seaItems").classList.add("hidden");
-}
+  }
 
 function woman(){
     document.getElementById("man").classList.remove("active");
@@ -59,7 +59,6 @@ function woman(){
     document.getElementById("oldFruits").classList.remove("active");
     document.getElementById("premium").classList.remove("active");
     document.getElementById("sea").classList.remove("active");
-
 
     document.getElementById("manItems").classList.add("hidden");
     document.getElementById("womanItems").classList.remove("hidden");
@@ -101,7 +100,6 @@ function oldFruits(){
     document.getElementById("oldFruitsItems").classList.remove("hidden");
     document.getElementById("premiumItems").classList.add("hidden");
     document.getElementById("seaItems").classList.add("hidden");
-
 }
 
 function premium(){
@@ -199,3 +197,14 @@ document.addEventListener("DOMContentLoaded", () => {
     	  document.body.style.overflowY = 'visible';
   }
 });
+
+    // console.log(document.querySelector(".active").id);
+
+    document.getElementById("catalogLink").addEventListener("click", () => {
+      const activeCategory = document.querySelector(".active");
+      if (activeCategory) {
+        const categoryId = activeCategory.id;
+        console.log(categoryId);
+        localStorage.setItem("selectedCategory", categoryId);
+      }
+    });

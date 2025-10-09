@@ -368,5 +368,4 @@ if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/BuketBerry/") || 
   displayProducts(Fruits, 'oldFruitsItems');
   displayProducts(Premium, 'premiumItems');
   displayProducts(Sea, 'seaItems');
-
 }
