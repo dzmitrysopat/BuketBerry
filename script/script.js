@@ -157,7 +157,6 @@ function updateDateTime() {
 
   document.getElementById('year').textContent = currentYear;
   document.querySelector('.year').textContent = currentYear;
-  // console.log(document.getElementById('year'));
   
 }
 setInterval(updateDateTime, 1000);
@@ -198,13 +197,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-    // console.log(document.querySelector(".active").id);
-
     document.getElementById("catalogLink").addEventListener("click", () => {
       const activeCategory = document.querySelector(".active");
       if (activeCategory) {
         const categoryId = activeCategory.id;
-        console.log(categoryId);
         localStorage.setItem("selectedCategory", categoryId);
       }
     });

@@ -352,7 +352,6 @@ function displayProducts(products, containerId) {
 }
 
 const currentUrl = window.location.pathname;
-console.log("Текущий URL:", currentUrl);
 
 if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/BuketBerry/") || currentUrl.endsWith === "/") {
   displayProducts(mans.slice(0,4), 'manItems');
