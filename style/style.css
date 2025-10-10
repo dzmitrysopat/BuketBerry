@@ -192,7 +192,8 @@ section.hero {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
+    /* background: url('../media/img/buket-iz-smesannyh-fruktov.jpg'); */
+    background: url('../media/img/banner_01.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding: 0 20px;
@@ -840,7 +841,8 @@ text-align: center;
     }
 
     section.hero{
-    background: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
+    /* background: url('../media/img/buket-iz-smesannyh-fruktov.jpg'); */
+    background: url('../media/img/banner.jpg');
     background-size: cover;
     }
 

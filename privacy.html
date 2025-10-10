@@ -11,29 +11,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-        const savedCategory = localStorage.getItem("selectedCategory");
-        if (savedCategory) {
-        switch (savedCategory) {
-            case "man": man(); break;
-            case "woman": woman(); break;
-            case "baby": baby(); break;
-            case "oldFruits": oldFruits(); break;
-            case "premium": premium(); break;
-            case "sea": sea(); break;
-            }    
-            localStorage.removeItem("selectedCategory");
-        }
-        });
-    </script>
 </head>
 <body>
 <header>
 <div class="container header-inner">
 <div class="logo"><img src="./media/img/strawberry.png" alt=""><a href="./index.html" class="logo">Buket Berry</a></div>
 <nav>
-<a href="#catalog">Каталог</a>
+<a href="./catalog.html">Каталог</a>
 <a href="index.html#about">О нас</a>
 <a href="index.html#orders">Заказ</a>
 <a href="index.html#contacts">Контакты</a>
@@ -44,13 +28,13 @@
     <img src="./media/icons/menu.svg" alt="">
 </button>
 <div class="burger-nav" id="burgerNav">
-    <a href="#catalog">Каталог</a>
+    <a href="./catalog.html">Каталог</a>
     <a href="index.html#about">О нас</a>
     <a href="index.html#orders">Заказ</a>
     <a href="index.html#review">Отзывы</a>
     <a href="index.html#contacts">Контакты</a>
     <a href="./privacy.html" onclick="closeNav()">Политика конфиденциальности</a>
-
+    
     <div class="burger-socials">
     <div class="footer-socials">
     <a href="https://www.instagram.com/buket_berry.gomel" target="_blank"><i class="ri-instagram-line"></i></a>
@@ -67,33 +51,9 @@
 
 
 <section id="catalog" class="catalog container">
-<h2>Наши работы</h2>
-<div class="categories">
-    <button class="active" id="man" onclick="man()">Для него</button>
-    <button class="" id="woman" onclick="woman()">Для неё</button>
-    <button class="" id="baby" onclick="baby()">Детские букеты</button>
-    <button class="" id="oldFruits" onclick="oldFruits()">Сухофрукты</button>
-    <button class="" id="premium" onclick="premium()">Корзины премиум</button>
-    <button class="" id="sea" onclick="sea()">Морские букеты</button>
+<h2>Политика конфиденциальности</h2>
 
-</div>
-
-<div class="products">
-        <article class="gallery" id="manItems"></article>
-        <article class="gallery hidden" id="womanItems"></article>
-        <article class="gallery hidden" id="babyItems"></article>
-        <article class="gallery hidden" id="oldFruitsItems"></article>
-        <article class="gallery hidden" id="premiumItems"></article>
-        <article class="gallery hidden" id="seaItems"></article>
-</div>
-</div>
-
-</section>
-
-        <div class="product-cards" id="productContainer">
-        <!-- Карточки будут здесь -->
-    </div>
-    </main>
+</main>
 
 <footer>
 <div class="container footer-inner">
