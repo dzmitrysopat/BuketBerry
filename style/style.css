@@ -235,7 +235,8 @@ main{
 }
 
 .catalog h2,
-.review h2{
+.review h2,
+#privacy > h2{
     text-align: center;
     margin: 40px 0 20px;
 }
@@ -510,7 +511,7 @@ border-radius: 10px;
     padding: 15px;
     margin-bottom: 50px;
     color: #fff;
-    background: #678368;
+    background: #678368 !important;
 }
 
 #order > .info-block > ul,
@@ -521,18 +522,10 @@ border-radius: 10px;
 
 #order > .info-block > ul > li,
 #delivery > .info-block > ul > li,
-#payment > .info-block > ul > li{
+#payment > .info-block > ul > li,
+#privacy > p{
     font-size: 20px;
     margin-bottom: 15px;
-}
-
-.info-item > .circle{
-    bottom: -100px;
-    left: -100px;
-    opacity: 0.1;
-    z-index: 0 !important;
-    background-color: #df9354;
-    position: absolute;
 }
 
 .info-item > img {
@@ -615,54 +608,6 @@ ul > img{
     text-align: justify;
 }
 
-.circle{
-    display: none;
-    right: 500px;
-    width: 242px;
-    height: 242px;
-    background-color: #FFF8F8;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-}
-
-#catalog > .circle{
-    z-index: 0;
-    top: 85px;
-    left: 105px;
-    background: #ffb4c0;
-    opacity: 0.1;
-}
-
-#catalog > .circle:nth-child(2){
-    z-index: 0;
-    bottom: 85px;
-    right: 105px;
-    background: #84cdf8;
-    /* opacity: 0.15; */
-}
-
-.blured{
-    right: 100px;
-    bottom: 0;
-    position: absolute;
-    width: 172px;
-    height: 172px;
-    background: #b3df54;
-    filter: blur(100px);
-    z-index: 0;
-}
-
-#about > .blured{
-    bottom: 50px;
-    left: 100px;
-    position: absolute;
-    width: 172px;
-    height: 172px;
-    filter: blur(150px);
-    background: #ffef15;
-}
-
 #review > .btn{
     font-size: 20px;
 }
@@ -741,6 +686,10 @@ text-align: center;
 
 .socials > a:hover > .social-blur{
     opacity: 0.99;
+}
+
+#privacy > privacy-content{
+    max-width: 1400px;
 }
 
 /* / Футер / */
@@ -846,8 +795,13 @@ text-align: center;
     background-size: cover;
     }
 
-    #about > h2{
+    #about > h2,
+    #privacy > h2{
     font-size: 2rem;
+}
+
+.privacy-content{
+    text-align:start;
 }
 
     header > div > a.btn{
