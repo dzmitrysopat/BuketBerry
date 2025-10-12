@@ -961,6 +961,14 @@ text-align: center;
     background-size: cover;
     }
 
+        .hero h1 {
+    font-size: 3.2rem;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+
     #about > h2,
     #privacy > h2{
     font-size: 2rem;
@@ -984,15 +992,6 @@ text-align: center;
     margin: 8px 0;
     }
 
-    /* .btn,
-    #catalog > a.btn {
-    padding: 8px 16px;
-    font-size: 14px;
-    } */
-
-    .hero h1 {
-    font-size: 2.7rem;
-    }
 
 .categories{
     gap:5px;
@@ -1091,9 +1090,9 @@ text-align: center;
 }
 
 .burger-nav > a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
-    width: fit-content;
+
     border-bottom: 2px solid #f3eeea;
 }
 
