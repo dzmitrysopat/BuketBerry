@@ -178,7 +178,6 @@ function closeNav(){
       burgerNav.classList.toggle("active");
       document.body.classList.toggle("no-scroll");
       document.querySelector("header").classList.toggle("fixed");
-
 }
 
 document.addEventListener("DOMContentLoaded", () => {
