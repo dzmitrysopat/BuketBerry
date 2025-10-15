@@ -93,6 +93,14 @@ const mans = [
     "photo2": "./media/compositions/mans/12_02.jpg",
     "description": "Орехи в панировке 4 шт, фисташки 1шт, мясные чипсы, колбаска с плесенью, 4 вида сыра - косичка, шарики, Джил, палочки, инжир ( по сезону), зелень. <br><br> Ящик дерево. <br><br> Заказ 3-5 дней"
   },
+  {
+    "id": 13,
+    "name": "Мужской букет #13",
+    "price": "120",
+    "photo": "./media/compositions/mans/13_01.jpg",
+    "photo2": "./media/compositions/mans/13_02.jpg",
+    "description": ""
+  },
 ];
 
 const womans = [
