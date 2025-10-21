@@ -336,9 +336,9 @@ function displayProducts(products, containerId) {
             </div>
             <p class="name">${product.name}</p>
             <span class="price">от ${product.price} руб.</span>
-            <span class="description"> 
-            <span class="price">Состав:<br></span>
-            ${product.description}</span>
+            <details class="description"> 
+            <summary class="price">Состав:<br></summary>
+            ${product.description}</details>
         `;
 
          container.appendChild(card);

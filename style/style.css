@@ -288,6 +288,10 @@ main{
     width: 250px;
 }
 
+details{
+    text-align: center;
+}
+
 .price{
     font-weight: 900;
 }
@@ -313,7 +317,7 @@ border-radius: 10px;
 }
 
 .swiper {
-    width:  310px;
+    max-width:  310px;
     height: fit-content;
     display: flex !important;
     flex-direction: column;
@@ -968,6 +972,7 @@ text-align: center;
     gap:5px;
     flex-wrap: wrap;
 }
+
 
 .about-text > h2{
     font-size: 3.2rem;
