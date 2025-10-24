@@ -288,6 +288,10 @@ main{
     width: 250px;
 }
 
+.buy-link{
+    color: #678368;
+}
+
 details{
     text-align: center;
     transition: all 0.3s ease;
@@ -962,6 +966,7 @@ text-align: center;
 }
 
 .name{
+    /* height: 52px; */
     text-align: center;
 }
 }
