@@ -338,7 +338,7 @@ function displayProducts(products, containerId) {
             <span class="price">от ${product.price} руб.</span>
             <details class="description"> 
             <summary class="price">Состав:<br></summary>
-            ${product.description}<br><br><a href="https://t.me/Ilonapodterebkova" target="_blank" class="buy-link">Заказать</a></details>
+            ${product.description}<br><br><a href="https://t.me/Ilonapodterebkova" target="_blank" class="btn buy-link">Заказать</a></details>
         `;
 
          container.appendChild(card);
