@@ -161,7 +161,8 @@ nav > a.active-link:after {
 }
 
 nav a.active-link,
-nav a.active-link >i{
+nav a.active-link >i,
+li a{
     color: #678368;
 }
 
@@ -740,6 +741,104 @@ font-size: 30px;
 }
 
 @media (max-width: 992px) {
+header > div > a.btn{
+        display: none;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav a {
+    margin: 8px 0;
+    }
+
+    .categories{
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.card {
+width: 100%;
+max-width: 320px;
+}
+
+    .footer-inner {
+flex-direction: column;
+text-align: center;
+}
+
+.burger-btn{
+    border: none;
+    display: block;
+    background-color: transparent;
+}
+
+.burger-nav{
+    position: relative;
+    display: none;
+    flex-direction: column !important;
+    gap: 25px;
+    background-color: #678368;
+    height: 100vh;
+    width: 101vw;
+    top: 64px;
+    left: 0;
+    padding: 25px 0 0 25px;
+    position: fixed;
+    transition: all .5s;
+}
+
+.burger-nav > .burger-socials > .footer-socials > a > i{
+    color: #ffffff98;
+    font-size: 35px;
+}
+
+.burger-socials{
+    position: absolute;
+    bottom: 10%;
+    width: 95vw;
+}
+
+.burger-nav.active{
+    display: flex;
+}
+
+.burger-nav > a{
+    font-size: 2rem;
+    color: #fff;
+    width: fit-content;
+    border-bottom: 2px solid #f3eeea;
+}
+
+.close-btn{
+    background: none;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    top: 15px;
+    right: 15px;
+}
+
+.burger-nav > .burger-socials > .footer-copy,
+.burger-nav > .burger-socials > .footer-copy > #year{
+    font-size: 15px;
+    height: 15px;
+    color: #ffffff98;
+}
+.burger-nav > .burger-socials > .footer-copy{
+    border-top: 2px solid #ffffff98;
+    padding-top: 10px;
+    margin-right: 25px;
+    text-align: left;
+}
+
 .about {
 flex-direction: column;
 text-align: center;
