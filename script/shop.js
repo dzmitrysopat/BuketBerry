@@ -109,6 +109,14 @@ const mans = [
     "photo2": "./media/compositions/mans/1402.jpg",
     "description": "Орехи в панировке, соленый арахис, сухарики, сыр косичка, колбаски  <br>Напиток в стоимость не входит <br><br>Заказ 3-5 дней"
   },
+  {
+    "id": 15,
+    "name": "Мужской букет #15",
+    "price": "60",
+    "photo": "./media/compositions/mans/15_01.jpg",
+    "photo2": "./media/compositions/mans/15_02.jpg",
+    "description": "Арахис в панировке, арахис соленый, сухарики, сыр косичка, чипсы мясные, колбаски  <br>Напиток в стоимость не входит <br><br>Заказ 2-3 дней"
+  },
 ];
 
 const womans = [
@@ -308,6 +316,14 @@ const Sea = [
     "price": "175",
     "photo": "./media/compositions/mans/IMG_20250811_170439_976.jpg",
     "description": "Раки 1кг, креветки 0.5кг лимон/лайм, зелень. <br><br> Цвет упаковки можно менять под запрос <br><br> Заказ 5-7дней "
+  },
+  {
+    "id": 3,
+    "name": "Букет #03",
+    "price": "130",
+    "photo": "./media/compositions/sea/03_01.jpg",
+    "photo2": "./media/compositions/sea/03_02.jpg",
+    "description": "Раки 1 кг, лимон <br><br> Заказ 5-7дней "
   },
 ];
 
