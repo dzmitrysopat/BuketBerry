@@ -624,7 +624,7 @@ ul > img{
 
 .contacts {
     width: 100vw;
-text-align: center;
+    text-align: center;
 }
 
 .socials{
@@ -637,13 +637,13 @@ text-align: center;
 
 .socials a{
     position: relative;
-    width: 45vw;
+    width: 30vw;
     height: 45vh;
 }
 
 .social-poster{
     padding: 0;
-    width: 45vw;
+    width: 30vw;
     height: 45vh;
     background-size: cover;
 }
@@ -964,11 +964,6 @@ text-align: center;
   object-fit: cover; /* сохраняет пропорции, заполняя контейнер */
   display: block;
 }
-
-.name{
-    /* height: 52px; */
-    text-align: center;
-}
 }
 
 @media (max-width: 480px) {
@@ -1187,10 +1182,6 @@ text-align: center;
   height: 100%;
   object-fit: cover; /* сохраняет пропорции, заполняя контейнер */
   display: block;
-}
-
-.name{
-    text-align: center;
 }
 
 }
