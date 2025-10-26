@@ -650,12 +650,17 @@ ul > img{
 }
 
 .social-poster:nth-child(1){
-    background: url('../media/img/buket-cvetov-s-granatom-vinograd-v-zeltoi-kvadratnoi-korobke.jpg');
+    background: url('../media/bg/banner.jpg');
     background-size: cover;
 }
 
 .socials a:nth-child(2) > .social-poster{
-    background: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
+    background: url('../media/bg/order_desktop.jpg');
+    background-size: cover;
+}
+
+.socials a:nth-child(3) > .social-poster{
+    background: url('../media/bg/payment.jpg');
     background-size: cover;
 }
 
