@@ -192,7 +192,8 @@ section.hero {
     justify-content: center;
     text-align: center;
     /* background: url('../media/img/buket-iz-smesannyh-fruktov.jpg'); */
-    background: url('../media/img/banner_01.jpg');
+    /* background: url('../media/img/banner_01.jpg'); */
+    background: url('../media/bg/banner.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding: 0 20px;
@@ -482,19 +483,19 @@ border-radius: 10px;
 
 .info-img{
     background-size: cover;
-    background-image: url('../media/img/buket-cvetov-s-granatom-vinograd-v-zeltoi-kvadratnoi-korobke.jpg');
+    background-image: url('../media/bg/order_desktop.jpg');
     width: 63vw;
     height: 55vh;
 }
 
 .info-img:nth-child(2){
-    background-image: url('../media/img/fruktovyi-buket-s-razlicnymi-fruktami.jpg');
+    background-image: url('../media/bg/delivery_desktop.jpg');
 }
 
 .order:nth-child(3) > .info-img{
     width: 59.6vw;
     background-size: cover;
-    background-image: url('../media/img/buket-iz-smesannyh-fruktov.jpg');
+    background-image: url('../media/bg/payment_desktop.jpg');
 }
 
 
@@ -751,6 +752,24 @@ flex-direction: column;
 .products {
 justify-content: center;
 }
+
+.info-img{
+    background-size: cover;
+    background-image: url('../media/bg/order.jpg');
+    width: 63vw;
+    height: 55vh;
+}
+
+.info-img:nth-child(2){
+    background-image: url('../media/bg/delivery.jpg');
+}
+
+.order:nth-child(3) > .info-img{
+    width: 59.6vw;
+    background-size: cover;
+    background-image: url('../media/bg/payment.jpg');
+}
+
 }
 
 @media (max-width: 768px) {
@@ -765,7 +784,9 @@ justify-content: center;
 
     section.hero{
     /* background: url('../media/img/buket-iz-smesannyh-fruktov.jpg'); */
-    background: url('../media/img/banner.jpg');
+    /* background: url('../media/img/banner.jpg'); */
+    background: url('../media/bg/main.jpg');
+
     background-size: cover;
     }
 
@@ -976,7 +997,8 @@ text-align: center;
     }
 
     section.hero{
-    background: url('../media/img/banner.jpg');
+    /* background: url('../media/img/banner.jpg'); */
+    background: url('../media/bg/main.jpg');
     background-size: cover;
     }
 
