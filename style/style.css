@@ -830,6 +830,10 @@ flex-direction: column;
     border-bottom: 2px solid #f3eeea;
 }
 
+.burger-nav > a:last-of-type{
+    width: min-content;
+}
+
 .close-btn{
     background: none;
     padding: 20px 25px;
@@ -922,6 +926,10 @@ justify-content: center;
     background: url('../media/bg/banner_01.jpg');
     align-items: flex-start;
     background-size: cover;
+    }
+
+    .hero-content{
+        height: 100%;
     }
 
     .hero h1 {
