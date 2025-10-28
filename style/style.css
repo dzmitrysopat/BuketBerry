@@ -492,7 +492,7 @@ border-radius: 10px;
 }
 
 .info-img:nth-child(2){
-    background-image: url('../media/bg/delivery_desktop_01.jpg');
+    background-image: url('../media/bg/delivery_desk.jpg');
 }
 
 .order:nth-child(3) > .info-img{
