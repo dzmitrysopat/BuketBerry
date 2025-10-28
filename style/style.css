@@ -194,13 +194,15 @@ section.hero {
     text-align: center;
     /* background: url('../media/img/buket-iz-smesannyh-fruktov.jpg'); */
     /* background: url('../media/img/banner_01.jpg'); */
-    background: url('../media/bg/banner.jpg');
+    background: url('../media/bg/banner_desk.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding: 0 20px;
 }
 
 .hero h1 {
+    /* background-color: #678368; */
+    padding: 25px;
     color: #fff;
 font-size: 6rem;
 margin-bottom: 10px;
@@ -490,7 +492,7 @@ border-radius: 10px;
 }
 
 .info-img:nth-child(2){
-    background-image: url('../media/bg/delivery_desktop.jpg');
+    background-image: url('../media/bg/delivery_desktop_01.jpg');
 }
 
 .order:nth-child(3) > .info-img{
@@ -841,7 +843,23 @@ text-align: center;
 
 .about {
 flex-direction: column;
-text-align: center;
+/* text-align: center; */
+}
+
+.bg-flowers{
+    display: none;
+}
+
+p.description{
+    font-size: 1.5rem;
+}
+
+.about ul li{
+    font-size: 2rem;
+}
+
+.about-img img{
+    width: 70vw;
 }
 
 .categories{
@@ -865,7 +883,7 @@ justify-content: center;
 }
 
 .info-img:nth-child(2){
-    background-image: url('../media/bg/delivery.jpg');
+    background-image: url('../media/bg/delivery_desktop_01.jpg');
 }
 
 .order:nth-child(3) > .info-img{
@@ -889,7 +907,7 @@ justify-content: center;
     section.hero{
     /* background: url('../media/img/buket-iz-smesannyh-fruktov.jpg'); */
     /* background: url('../media/img/banner.jpg'); */
-    background: url('../media/bg/main.jpg');
+    background: url('../media/bg/banner_01.jpg');
 
     background-size: cover;
     }
@@ -1106,7 +1124,7 @@ text-align: center;
 
     section.hero{
     /* background: url('../media/img/banner.jpg'); */
-    background: url('../media/bg/main.jpg');
+    background: url('../media/bg/banner_01.jpg');
     background-size: cover;
     }
 
