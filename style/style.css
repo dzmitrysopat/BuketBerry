@@ -1007,6 +1007,7 @@ text-align: center;
 }
 
 .socials > a{
+    font-size: 2rem;
     margin: 0;
     width: 100vw;
     height: 37vh;
