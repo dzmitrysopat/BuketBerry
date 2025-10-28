@@ -127,6 +127,11 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+}
+
 nav a,
 .footer-nav > a{
     margin: 5px 10px;
@@ -189,11 +194,8 @@ li a{
 section.hero {
     height: 93vh;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     text-align: center;
-    /* background: url('../media/img/buket-iz-smesannyh-fruktov.jpg'); */
-    /* background: url('../media/img/banner_01.jpg'); */
     background: url('../media/bg/banner_desk.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -214,9 +216,16 @@ section.hero {
     margin-bottom: 20px;
 }
 
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .hero-content > a{
+    align-self: center;
+    width: fit-content;
     font-size: 25px;
-    /* padding: 10px 45px; */
 }
 
 main{
@@ -479,7 +488,8 @@ border-radius: 10px;
 
 #order,
 #delivery,
-#payment{
+#payment,
+#faq{
     width: 100vw;
     display: flex;
 }
@@ -501,19 +511,23 @@ border-radius: 10px;
     background-image: url('../media/bg/payment_desktop.jpg');
 }
 
+#faq > .info-img{
+    height: auto;
+    width: 173vw;
+    background-size: cover;
+    background-image: url('../media/bg/faq.jpg');
+}
 
-#order > .info-block,
-#delivery > .info-block,
-#payment > .info-block{
+
+.info-block{
     display: flex;
     flex-direction: column;
     padding: 50px 5px;
     background-color: #f3eeea;
 }
 
-#order > .info-block > h3,
-#delivery > .info-block > h3,
-#payment > .info-block > h3{
+.info-block > h3
+{
     /* border-bottom: 2px solid #c7c7c7; */
     font-size: 3rem;
     padding: 15px;
@@ -522,15 +536,11 @@ border-radius: 10px;
     background: #678368 !important;
 }
 
-#order > .info-block > ul,
-#delivery > .info-block > ul,
-#payment > .info-block > ul{
+.info-block > ul{
     list-style: none;
 }
 
-#order > .info-block > ul > li,
-#delivery > .info-block > ul > li,
-#payment > .info-block > ul > li,
+.info-block > ul > li,
 #privacy > p{
     font-size: 20px;
     margin-bottom: 15px;
@@ -742,6 +752,10 @@ font-size: 30px;
     color: #678368;
 }
 
+.person-info{
+    margin: 5px 10px;
+}
+
 @media (max-width: 992px) {
 header > div > a.btn{
         display: none;
@@ -767,9 +781,10 @@ width: 100%;
 max-width: 320px;
 }
 
-    .footer-inner {
+.footer-inner {
+    align-items: flex-start;
 flex-direction: column;
-text-align: center;
+/* text-align: center; */
 }
 
 .burger-btn{
@@ -891,7 +906,6 @@ justify-content: center;
     background-size: cover;
     background-image: url('../media/bg/payment.jpg');
 }
-
 }
 
 @media (max-width: 768px) {
@@ -943,9 +957,10 @@ width: 100%;
 max-width: 320px;
 }
 
-    .footer-inner {
+.footer-inner {
+    align-items: flex-start;
 flex-direction: column;
-text-align: center;
+/* text-align: center; */
 }
 
 .burger-btn{
@@ -1047,23 +1062,30 @@ text-align: center;
 
 #order,
 #delivery,
-#payment{
+#payment,
+#faq{
     flex-direction: column !important;
 }
 
-#delivery{
+#delivery,
+#faq{
     flex-direction: column-reverse !important;
 }
 
 .info-img,
 .info-img:nth-child(2),
 .order:nth-child(3) > .info-img{
-    width: 100vw;
+    width: 100vw !important;
+}
+
+#faq > .info-img{
+    height: 55vh;
 }
 
 #order > .info-block,
 #delivery > .info-block,
-#payment > .info-block{
+#payment > .info-block,
+#faq > .info-block{
     display: flex;
     flex-direction: column;
     padding: 0 50px 50px 0;
@@ -1105,9 +1127,9 @@ text-align: center;
 /* Фото подгоняем по размеру */
 .mySwiper img {
     width: 100%;
-  height: 100%;
-  object-fit: cover; /* сохраняет пропорции, заполняя контейнер */
-  display: block;
+    height: 100%;
+    object-fit: cover; /* сохраняет пропорции, заполняя контейнер */
+    display: block;
 }
 }
 
@@ -1190,13 +1212,12 @@ text-align: center;
     flex-direction: column !important;
 }
 
-#delivery{
+#delivery,
+#faq{
     flex-direction: column-reverse !important;
 }
 
-.info-img,
-.info-img:nth-child(2),
-.order:nth-child(3) > .info-img{
+.info-img{
     width: 100vw;
 }
 
