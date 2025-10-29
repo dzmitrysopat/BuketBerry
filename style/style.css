@@ -537,7 +537,8 @@ border-radius: 10px;
 }
 
 .info-block > ul{
-    list-style: none;
+    list-style: '👉';
+    /* list-style: none; */
 }
 
 .info-block > ul > li,
