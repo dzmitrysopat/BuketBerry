@@ -1139,6 +1139,10 @@ flex-direction: column;
     object-fit: cover; /* сохраняет пропорции, заполняя контейнер */
     display: block;
 }
+
+.footer-inner > .footer-nav{
+    display: none;
+}
 }
 
 @media (max-width: 480px) {
