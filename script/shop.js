@@ -227,7 +227,7 @@ const Fruits = [
   {
     "id": 5,
     "name": "Сумочка длинная #05",
-    "price": "100",
+    "price": "95",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163445_820.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163448_068.jpg",
     "description": "Цветы: хризантемы, зелень <br><br> Зефир с начинками, макаронс, Рафаэлло, орехи в шоколаде, манго, курага, инжир, маракуйя, миндаль <br><br> Заказ 3-5 дней "
@@ -235,7 +235,7 @@ const Fruits = [
   {
     "id": 6,
     "name": "Сумочка длинная #06",
-    "price": "105",
+    "price": "95",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163500_639.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163503_230.jpg",
     "description": "Курага, кумкват, кизил, инжир, финики, манго, маракуйя, макаронс, орех макадами, миндаль, орехи в белом шоколаде, манго кубик, ананас, груша, хурма целая, хурма кусочки. <br><br> Заказ 3-5 дней "
@@ -243,7 +243,7 @@ const Fruits = [
   {
     "id": 7,
     "name": "Сумочка длинная #07",
-    "price": "110",
+    "price": "95",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163512_199.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_20250811_163514_812.jpg",
     "description": "Цветы: хризантемы, зелень <br><br> Курага, кумкват, инжир, финики, хурма кусочки, груша вяленая, хурма целая, манго, маракуйя, ананас, рахат лукум, орех в белом шоколаде <br><br> Заказ 3-5 дней "
@@ -253,7 +253,7 @@ const Fruits = [
 const Premium = [
     {
     "id": 1,
-    "name": "Букет #01",
+    "name": "Корзина #01",
     "price": "305",
     "photo": "./media/compositions/premium/IMG_20250811_163732_860.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163732_956.jpg",
@@ -261,7 +261,7 @@ const Premium = [
   },
   {
     "id": 2,
-    "name": "Букет #02",
+    "name": "Корзина #02",
     "price": "290",
     "photo": "./media/compositions/premium/IMG_20250811_163701_453.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163728_975.jpg",
@@ -269,7 +269,7 @@ const Premium = [
   },
   {
     "id": 3,
-    "name": "Букет #03",
+    "name": "Корзина #03",
     "price": "285",
     "photo": "./media/compositions/premium/IMG_20250811_163733_104.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163733_380.jpg",
@@ -277,7 +277,7 @@ const Premium = [
   },
   {
     "id": 4,
-    "name": "Букет #04",
+    "name": "Корзина #04",
     "price": "250",
     "photo": "./media/compositions/premium/IMG_20250811_163733_123.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163733_553.jpg",
@@ -285,7 +285,7 @@ const Premium = [
   },
   {
     "id": 5,
-    "name": "Букет #05",
+    "name": "Корзина #05",
     "price": "300",
     "photo": "./media/compositions/premium/IMG_20250811_163733_603.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163732_968.jpg",
@@ -293,7 +293,7 @@ const Premium = [
   },
   {
     "id": 6,
-    "name": "Букет #06",
+    "name": "Корзина #06",
     "price": "165",
     "photo": "./media/compositions/premium/IMG_20250811_163728_557.jpg",
     "photo2": "./media/compositions/premium/IMG_20250811_163728_769.jpg",
