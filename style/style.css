@@ -57,6 +57,7 @@ color: #444;
 z-index: 2;
 }
 
+
 h2{
     font-size: 40px;
 }
@@ -876,7 +877,7 @@ p.description{
 }
 
 .about ul li{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .about-img img{
