@@ -391,6 +391,7 @@ border-radius: 10px;
 }
 
 .swiper > .name{
+    text-align: center;
     font-size: 23px;
     font-weight: 900;
     margin: 15px 0;
@@ -537,7 +538,7 @@ border-radius: 10px;
 }
 
 .info-block > ul{
-    list-style: '💠';
+    list-style: '🔹';
     /* list-style: none; */
 }
 
