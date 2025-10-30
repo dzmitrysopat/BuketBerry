@@ -1170,10 +1170,16 @@ flex-direction: column;
         font-size: 22px;
     }
 
-    #about > h2,
-    #privacy > h2{
+    #about > h2{
     font-size: 2rem;
 }
+
+    #privacy > h2,
+    #privacy > h3{
+        width: auto;
+        font-size: 1.8rem;
+        text-align: left;
+    }
 
 .privacy-content{
     text-align:start;
