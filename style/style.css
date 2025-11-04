@@ -434,7 +434,7 @@ border-radius: 10px;
 
 .about-text ul {
     margin-top: 50px;
-    list-style: none;
+    /* list-style: none; */
     padding: 0;
 }
 
@@ -539,7 +539,7 @@ border-radius: 10px;
 }
 
 .info-block > ul{
-    list-style: '⚫ ';
+    /* list-style: '⚫ '; */
     /* list-style: none; */
 }
 
