@@ -539,7 +539,7 @@ border-radius: 10px;
 }
 
 .info-block > ul{
-    list-style: '⚫';
+    list-style: '⚫ ';
     /* list-style: none; */
 }
 
@@ -547,23 +547,6 @@ border-radius: 10px;
 #privacy > p{
     font-size: 20px;
     margin-bottom: 15px;
-}
-
-.info-item > img {
-    margin: 0 auto;
-    max-width: 307px;
-}
-
-.info-item > ul > li{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    list-style: '💎 ';
-    list-style-position: outside;
-}
-
-.info-item > ul{
-    position: relative;
 }
 
 ul > img{
