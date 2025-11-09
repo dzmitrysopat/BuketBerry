@@ -428,13 +428,27 @@ border-radius: 10px;
     gap: 40px;
 }
 
+.about-text{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 150px;
+    grid-row-gap: 0px;
+}
+
 .about-text > h2{
+    grid-area: 1 / 2 / 2 / 3; ;
     font-size: 65px;
 }
 
+.about-text > .description{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
 .about-text ul {
+    grid-area: 3 / 2 / 4 / 3;
+    margin-left: 5%;
     margin-top: 50px;
-    /* list-style: none; */
     padding: 0;
 }
 
@@ -443,9 +457,10 @@ border-radius: 10px;
     font-size: 16px;
 }
 
-.about-img img {
-    border-radius: 50%;
-    width: 27vw;
+.about-img{
+    grid-area: 1 / 1 / 4 / 2;
+    border-radius: 25px;
+    width: 25vw;
 }
 
 .bg-flowers{
@@ -867,7 +882,12 @@ p.description{
     font-size: 1.5rem;
 }
 
-.about-img img{
+.about-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img{
     width: 70vw;
 }
 
@@ -1046,7 +1066,7 @@ flex-direction: column;
     width: inherit;
 }
 
-.about-img img{
+.about-img{
     width: 70vw;
 }
 
@@ -1206,7 +1226,7 @@ flex-direction: column;
     display: none;
 }
 
-.about-img img{
+.about-img{
     width: 90vw;
 }
 
