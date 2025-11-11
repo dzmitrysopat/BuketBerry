@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваша Букетная Мастерская - Buket Berry</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./media/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<header>
+<div class="container header-inner">
+<div class="logo"><img src="./media/img/strawberry.png" alt=""><a href="./index.html" class="logo">Buket Berry</a></div>
+<nav>
+<a href="./catalog.html">Каталог</a>
+<a href="index.html#about">О нас</a>
+<a href="index.html#orders">Заказ</a>
+<a href="index.html#contacts">Контакты</a>
+<a href="index.html#review">Отзывы</a>
+</nav>
+
+<button class="burger-btn" id="burgerBtn" onclick="showBurger()">
+    <img src="./media/icons/menu.svg" alt="">
+</button>
+<div class="burger-nav" id="burgerNav">
+    <a href="./catalog.html">Каталог</a>
+    <a href="index.html#about">О нас</a>
+    <a href="index.html#orders">Заказ</a>
+    <a href="index.html#review">Отзывы</a>
+    <a href="index.html#contacts">Контакты</a>
+    <a href="./public.html" onclick="closeNav()">Договор публичной оферты</a>
+    <a href="./privacy.html" onclick="closeNav()">Политика конфиденциальности</a>
+    
+    <div class="burger-socials">
+    <div class="footer-socials">
+    <a href="https://www.instagram.com/buket_berry.gomel" target="_blank"><i class="ri-instagram-line"></i></a>
+    <a href="https://t.me/Ilonapodterebkova" target="_blank"><i class="ri-telegram-2-fill"></i></a>
+    <a href="tel:+375293975753" target="_blank"><i class="ri-phone-fill"></i></a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> Buket Berry</div>
+    </div>
+    <!-- <button onclick="closeBurgerNav()" class="close-btn">X</button> -->
+</div>
+
+<a href="https://www.instagram.com/buket_berry.gomel" target="_blank" class="btn">Сделать заказ</a>
+</div>
+</header>
+
+
+<section id="privacy" class="privacy container">
+<h2>Договор публичной оферты <hr>
+на изготовление и продажу съедобных композиций
+</h2>
+<h3>
+1. Общие положения
+</h3>
+<br><br>
+<p class="privacy-content">
+1.1. Настоящий документ является официальным предложением (публичной офертой) Индивидуального предпринимателя Подтеребковой Илоны Александровны (далее — «Исполнитель») заключить договор на условиях, изложенных ниже, в соответствии со ст. 405–407 Гражданского кодекса Республики Беларусь. <br>
+1.2. Размещение текста настоящей оферты на сайте Исполнителя является предложением, адресованным неопределённому кругу лиц. <br>
+1.3. Акцептом признаётся оформление и/или оплата заказа Покупателем. С момента акцепта договор считается заключённым. <br>
+</p>
+<br><br>
+<h3>
+2. предмет договора
+</h3>
+<br><br>
+<p class="privacy-content">
+2.1. Исполнитель обязуется изготовить и передать Покупателю съедобную композицию по образцам интернет‑каталога, а Покупатель обязуется принять и оплатить её.  <br>
+2.2. Внешний вид готовой композиции может незначительно отличаться от фотообразца в силу сезонности и индивидуальных особенностей продуктов. <br>
+</p>
+<br><br>
+<h3>
+3. Порядок оформления заказа
+</h3>
+<br><br>
+<p class="privacy-content">
+3.1. Заказ оформляется через сайт, мессенджеры или по телефону.
+3.2. Срок изготовления и условия доставки согласовываются при подтверждении заказа.
+<br><br>
+</p>
+<h3>
+4. Цена и порядок оплаты
+</h3>
+<br><br>
+<p class="privacy-content">
+4.1. Стоимость указывается в интернет‑каталоге на сайте Исполнителя. <br>
+4.2. Оплата производится банковской картой или иным способом, доступным на сайте. <br>
+4.3. Оплата заказа означает согласие Покупателя с условиями настоящей оферты. <br>
+</p>
+<br><br>
+<h3>5. Условия доставки и передачи</h3>
+<br><br>
+<p class="privacy-content">
+5.1. Доставка осуществляется курьером или самовывозом. <br>
+5.2. Риск случайной порчи товара переходит к Покупателю с момента передачи заказа. <br>
+</p>
+<br><br>
+<h3>
+    6. Права и обязанности сторон
+</h3>
+<br><br>
+<p class="privacy-content">
+Исполнитель обязан: <br>
+-использовать свежие продукты; <br>
+-изготовить композицию в согласованный срок;<br>
+-предоставить информацию о составе и сроке хранения. <br>
+<br><br>
+Покупатель обязан: <br>
+-своевременно оплатить заказ; <br>
+-принять заказ в согласованное время. <br>
+</p>
+<br><br>
+<h3>
+    7. Ответственность сторон
+</h3>
+<br><br>
+<p class="privacy-content">
+7.1. Стороны несут ответственность в соответствии с законодательством Республики Беларусь. <br>
+7.2. Исполнитель не несёт ответственности за порчу товара после передачи Покупателю. <br>
+</p>
+<br><br>
+<h3>
+    8. Возврат и отказ
+</h3>
+<br><br>
+<p class="privacy-content">
+8.1. В соответствии с Постановлением Совета Министров РБ № 778 от 14.06.2002 «Об утверждении Правил продажи отдельных видов товаров…» скоропортящиеся товары (в том числе съедобные композиции) возврату и обмену не подлежат, за исключением случаев выявления брака при передаче.
+</p>
+
+<br><br>
+<h3>
+    9. Форс‑мажор
+</h3>
+<br><br>
+<p class="privacy-content">
+9.1. Стороны освобождаются от ответственности за неисполнение обязательств при наступлении обстоятельств непреодолимой силы (форс‑мажор).
+</p>
+<br><br>
+<h3>
+    10. Реквизиты Исполнителя
+</h3>
+<br><br>
+<p class="privacy-content">
+ИП Подтеребкова Илона Александровна <br>
+г. РБ,Гомель. ул. Мазурова, д. 77, кв. 64 <br>
+р/с  BY19MMBN30134000010102609799 <br>
+ОАО «БАНК ДАБРАБЫТ» <br>
+БИК: MMBNBY22 <br>
+УНП 491643756 <br>
+Тел.:+375 29 3975753 <br>
+</p>
+</section>
+</main>
+
+<footer>
+<div class="container footer-inner">
+<div class="footer-nav">
+<a href="#catalog">Каталог</a>
+<a href="#about">О нас</a>
+<a href="#orders">Заказ</a>
+<a href="#review">Отзывы</a>
+<a href="#contacts">Контакты</a>
+<a href="./public.html">Договор публичной оферты</a>
+<a href="./privacy.html">Политика конфиденциальности</a>
+</div>
+<p class="person-info">
+    Студия оригинальных подарков 
+    <br>
+    Buket Berry
+    <br><br>
+    ИП Подтеребкова Илона Александровна 
+    <br>
+    УНП 491643756
+    <br>
+    Свидетельство номер 0867993 от 16.11.2023г
+    <br>
+    Выдано гомельским городским 
+    <br>
+    исполнительным комитетом
+    <br>
+    Регистрация в торговом реестре 
+</p>
+<div class="footer-copy">© <span class="year"></span> Buket Berry</div>
+<div class="footer-socials">
+<a href="https://www.instagram.com/buket_berry.gomel" target="_blank"><i class="ri-instagram-line"></i></a>
+<a href="https://t.me/Ilonapodterebkova" target="_blank"><i class="ri-telegram-2-fill"></i></a>
+<a href="tel:+375293975753" target="_blank"><i class="ri-phone-fill"></i></a>
+
+</div>
+</div>
+</footer>
+    <script src="./script/script.js"></script>
+    <script src="./script/shop.js" defer></script>
+
+</body>
+</html>
