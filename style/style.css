@@ -851,7 +851,8 @@ flex-direction: column;
 }
 
 .burger-nav > .burger-socials > .footer-copy,
-.burger-nav > .burger-socials > .footer-copy > #year{
+.burger-nav > .burger-socials > .footer-copy > #year,
+.burger-nav > .burger-socials > .footer-socials > p{
     font-size: 15px;
     height: 15px;
     color: #ffffff98;
@@ -862,6 +863,10 @@ flex-direction: column;
     margin-right: 25px;
     text-align: left;
 }
+
+/* .burger-socials > .footer-socials > p{
+    color: #f3eeea;
+} */
 
 .about {
 flex-direction: column;
