@@ -352,6 +352,26 @@ const Sea = [
   },
 ];
 
+const newYears = [
+    {
+    "id": 1,
+    "name": "Ёлочка дерево <br> (размер L) #01",
+    "price": "100",
+    "photo": "./media/compositions/newYear/01_01.jpg",
+    "photo2": "./media/compositions/newYear/01_02.jpg",
+    "photo3": "./media/compositions/newYear/01_03.jpg",
+    "description": "Манго, маракуйя, ананас, финик, хурма вяленая, кумкват, кизил, курага, инжир. Орехи: Пекан, макадами, миндаль, фисташка, миндаль/фундук в шоколаде, семена тыквы и др. Шоколад Тоблерон и др.конфеты<br><br>Вес:1500-1700<br><br>Заказ 3-5 дней"
+  },
+  {
+    "id": 2,
+    "name": "Сумочка новогодняя #01",
+    "price": "75",
+    "photo": "./media/compositions/newYear/02_01.jpg",
+    "photo2": "./media/compositions/newYear/02_02.jpg",
+    "description": "Манго, кумкват, финик, курага, инжир, груша вяленая(или ананас), гр.орех, макадами, палочки корицы, дольки апельсина, нобилис(ель)<br><br>Заказ 3-5 дней"
+  }
+];
+
 function displayProducts(products, containerId) {
     const container = document.getElementById(containerId);
 
@@ -373,7 +393,7 @@ function displayProducts(products, containerId) {
                 ${slidesHTML}
             </div>
             <div class="pagination-container">
-             ${photos.length > 1 ? '<div class="swiper-pagination"></div>' : ""}
+            ${photos.length > 1 ? '<div class="swiper-pagination"></div>' : ""}
             </div>
             <p class="name">${product.name}</p>
             <span class="price">от ${product.price} руб.</span>
@@ -382,7 +402,7 @@ function displayProducts(products, containerId) {
             ${product.description}<br><br><a href="https://t.me/Ilonapodterebkova" target="_blank" class="btn buy-link">Заказать</a></details>
         `;
 
-         container.appendChild(card);
+        container.appendChild(card);
 
         // инициализация Swiper только если есть несколько фото
         if (photos.length > 1) {
@@ -417,6 +437,7 @@ if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/BuketBerry/") || 
   displayProducts(Fruits.slice(0, 4), 'oldFruitsItems');
   displayProducts(Premium.slice(0, 4), 'premiumItems');
   displayProducts(Sea.slice(0, 4), 'seaItems');
+  displayProducts(newYears.slice(0, 4), 'newYearItems');
 } else{
   displayProducts(mans, 'manItems');
   displayProducts(womans, 'womanItems');
@@ -424,4 +445,5 @@ if (currentUrl.endsWith("index.html") || currentUrl.endsWith("/BuketBerry/") || 
   displayProducts(Fruits, 'oldFruitsItems');
   displayProducts(Premium, 'premiumItems');
   displayProducts(Sea, 'seaItems');
+  displayProducts(newYears, 'newYearItems');
 }

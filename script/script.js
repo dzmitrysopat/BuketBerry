@@ -42,6 +42,7 @@ function man(){
     document.getElementById("oldFruits").classList.remove("active");
     document.getElementById("premium").classList.remove("active");
     document.getElementById("sea").classList.remove("active");
+    document.getElementById("newYear").classList.remove("active");
 
 
     document.getElementById("manItems").classList.remove("hidden");
@@ -50,6 +51,7 @@ function man(){
     document.getElementById("oldFruitsItems").classList.add("hidden");
     document.getElementById("premiumItems").classList.add("hidden");
     document.getElementById("seaItems").classList.add("hidden");
+    document.getElementById("newYearItems").classList.add("hidden");
   }
 
 function woman(){
@@ -59,6 +61,8 @@ function woman(){
     document.getElementById("oldFruits").classList.remove("active");
     document.getElementById("premium").classList.remove("active");
     document.getElementById("sea").classList.remove("active");
+    document.getElementById("newYear").classList.remove("active");
+
 
     document.getElementById("manItems").classList.add("hidden");
     document.getElementById("womanItems").classList.remove("hidden");
@@ -66,6 +70,7 @@ function woman(){
     document.getElementById("oldFruitsItems").classList.add("hidden");
     document.getElementById("premiumItems").classList.add("hidden");
     document.getElementById("seaItems").classList.add("hidden");
+    document.getElementById("newYearItems").classList.add("hidden");
 }
 
 function baby(){
@@ -75,6 +80,7 @@ function baby(){
     document.getElementById("oldFruits").classList.remove("active");
     document.getElementById("premium").classList.remove("active");
     document.getElementById("sea").classList.remove("active");
+    document.getElementById("newYear").classList.remove("active");
 
 
     document.getElementById("manItems").classList.add("hidden");
@@ -83,6 +89,7 @@ function baby(){
     document.getElementById("oldFruitsItems").classList.add("hidden");
     document.getElementById("premiumItems").classList.add("hidden");
     document.getElementById("seaItems").classList.add("hidden");
+    document.getElementById("newYearItems").classList.add("hidden");
 }
 
 function oldFruits(){
@@ -92,6 +99,7 @@ function oldFruits(){
     document.getElementById("oldFruits").classList.add("active");    
     document.getElementById("premium").classList.remove("active");
     document.getElementById("sea").classList.remove("active");
+    document.getElementById("newYear").classList.remove("active");
 
 
     document.getElementById("manItems").classList.add("hidden");
@@ -100,6 +108,7 @@ function oldFruits(){
     document.getElementById("oldFruitsItems").classList.remove("hidden");
     document.getElementById("premiumItems").classList.add("hidden");
     document.getElementById("seaItems").classList.add("hidden");
+    document.getElementById("newYearItems").classList.add("hidden");
 }
 
 function premium(){
@@ -109,6 +118,8 @@ function premium(){
     document.getElementById("oldFruits").classList.remove("active");
     document.getElementById("premium").classList.add("active");
     document.getElementById("sea").classList.remove("active");
+    document.getElementById("newYear").classList.remove("active");
+
 
     document.getElementById("manItems").classList.add("hidden");
     document.getElementById("womanItems").classList.add("hidden");
@@ -116,6 +127,8 @@ function premium(){
     document.getElementById("oldFruitsItems").classList.add("hidden");
     document.getElementById("premiumItems").classList.remove("hidden");
     document.getElementById("seaItems").classList.add("hidden");
+    document.getElementById("newYearItems").classList.add("hidden");
+
 }
 
 function sea(){
@@ -125,6 +138,7 @@ function sea(){
     document.getElementById("oldFruits").classList.remove("active");
     document.getElementById("premium").classList.remove("active");
     document.getElementById("sea").classList.add("active");
+    document.getElementById("newYear").classList.remove("active");
 
 
     document.getElementById("manItems").classList.add("hidden");
@@ -133,6 +147,26 @@ function sea(){
     document.getElementById("oldFruitsItems").classList.add("hidden");
     document.getElementById("premiumItems").classList.add("hidden");
     document.getElementById("seaItems").classList.remove("hidden");
+    document.getElementById("newYearItems").classList.add("hidden");
+}
+
+function newYear(){
+    document.getElementById("man").classList.remove("active");
+    document.getElementById("woman").classList.remove("active");
+    document.getElementById("baby").classList.remove("active");
+    document.getElementById("oldFruits").classList.remove("active");
+    document.getElementById("premium").classList.remove("active");
+    document.getElementById("sea").classList.remove("active");
+    document.getElementById("newYear").classList.add("active");
+
+
+    document.getElementById("manItems").classList.add("hidden");
+    document.getElementById("womanItems").classList.add("hidden");
+    document.getElementById("babyItems").classList.add("hidden");
+    document.getElementById("oldFruitsItems").classList.add("hidden");
+    document.getElementById("premiumItems").classList.add("hidden");
+    document.getElementById("seaItems").classList.add("hidden");
+    document.getElementById("newYearItems").classList.remove("hidden");
 }
 
 var acc = document.getElementsByClassName("accordion");

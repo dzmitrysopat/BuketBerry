@@ -24,6 +24,7 @@
             case "oldFruits": oldFruits(); break;
             case "premium": premium(); break;
             case "sea": sea(); break;
+            case "newYear": newYear(); break;
             }    
             localStorage.removeItem("selectedCategory");
         }
@@ -79,7 +80,7 @@
     <button class="" id="oldFruits" onclick="oldFruits()">Сухофрукты</button>
     <button class="" id="premium" onclick="premium()">Корзины премиум</button>
     <button class="" id="sea" onclick="sea()">Морские букеты</button>
-
+    <button class="" id="newYear" onclick="newYear()">Новый год</button>
 </div>
 
 <div class="products">
@@ -89,6 +90,7 @@
         <article class="gallery hidden" id="oldFruitsItems"></article>
         <article class="gallery hidden" id="premiumItems"></article>
         <article class="gallery hidden" id="seaItems"></article>
+        <article class="gallery hidden" id="newYearItems"></article>
 </div>
 </div>
 
@@ -123,7 +125,7 @@
     Выдано гомельским городским 
     <br>
     исполнительным комитетом
-    <br>
+    <br><br>
     Регистрация в торговом реестре №762145
 </p>
 <div class="footer-copy">© <span class="year"></span> Buket Berry</div>
