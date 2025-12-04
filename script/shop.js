@@ -271,6 +271,7 @@ const Fruits = [
     "price": "65",
     "photo": "./media/compositions/oldFruits/09_01.jpg",
     "photo2": "./media/compositions/oldFruits/09_02.jpg",
+    "photo3": "./media/compositions/oldFruits/09_03.jpg",
     "description": "Манго, маракуйя, ананас, финик, курага, инжир, хурма вяленая, кумкват, кизил, орехи Пекан, макадами, миндаль, фундук, орехи в шоколаде. <br><br>Коробка 12*12 <br>шапочка 23/25 в диаметре <br><br> Заказ 3-5 дней "
   }
 ];
