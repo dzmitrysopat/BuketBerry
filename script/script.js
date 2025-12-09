@@ -43,7 +43,7 @@ function man(){
     document.getElementById("premium").classList.remove("active");
     document.getElementById("sea").classList.remove("active");
     document.getElementById("newYear").classList.remove("active");
-
+                                                                                                                                                                                                                                                                                                                                              
 
     document.getElementById("manItems").classList.remove("hidden");
     document.getElementById("womanItems").classList.add("hidden");

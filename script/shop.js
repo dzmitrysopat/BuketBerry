@@ -203,7 +203,7 @@ const Fruits = [
   {
     "id": 1,
     "name": "Сумочка мини #01",
-    "price": "43",
+    "price": "45",
     "photo": "./media/compositions/oldFruits/IMG_20250811_163321_594.jpg",
     "photo2": "./media/compositions/oldFruits/IMG_2343.JPG",
     "photo3": "./media/compositions/oldFruits/IMG_20250811_163310_285.jpg",
@@ -212,7 +212,7 @@ const Fruits = [
   {
     "id": 2,
     "name": "Сумочка средняя #02",
-    "price": "53",
+    "price": "55",
     "photo": "./media/compositions/oldFruits/IMG_2340.JPG",
     "photo2": "",
     "description": "Курага, кумкват, кизил, инжир, финики, манго, маракуйя, макаронс, орехи пекан, макадами, миндаль.<br><br> Диаметр 17-18см <br><br> Заказ 3-5 дней "
@@ -220,7 +220,7 @@ const Fruits = [
   {
     "id": 3,
     "name": "Сумочка длинная #03",
-    "price": "67",
+    "price": "70",
     "photo": "./media/compositions/oldFruits/IMG_2341.JPG",
     "photo2": "./media/compositions/oldFruits/IMG_2342.JPG",
     "description": "Курага, кумкват, кизил, инжир, финики, манго, маракуйя, макаронс, орехи пекан, макадами, миндаль, орехи в белом шоколаде, манго кубик. <br><br>Размеры сьедобной части 25*15/16 <br><br>Заказ 3-5 дней "
@@ -374,7 +374,7 @@ const newYears = [
   {
     "id": 3,
     "name": "Елка Сувенирная деревянная мини #03",
-    "price": "60",
+    "price": "67",
     "photo": "./media/compositions/newYear/03_01.jpg",
     "photo2": "./media/compositions/newYear/03_02.jpg",
     "description": "Деревянная ёлка 27*25*5 (вес изделия с ящиком  ~950гр)<br><br>Орехи: Пекан, макадами, грецкий, миндаль, фундук, фундук в шоколаде, фисташки, мёд, конфеты, украшение звоночки, ель<br><br>Заказ 3-5 дней"
@@ -382,7 +382,7 @@ const newYears = [
   {
     "id": 3,
     "name": "Звезда Сувенирная мини",
-    "price": "55",
+    "price": "58",
     "photo": "./media/compositions/newYear/04_01.jpg",
     "photo2": "./media/compositions/newYear/04_02.jpg",
     "description": "Деревянная звезда 24*21*5 ( вес изделия с ящиком ~850~900гр)<br><br>Орехи: Пекан, макадами, грецкий, миндаль, фундук, фундук в шоколаде, фисташки, семена тыквы очищеные, мёд, ель. <br><br>Заказ 3-5 дней"
