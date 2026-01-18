@@ -864,9 +864,9 @@ flex-direction: column;
     text-align: left;
 }
 
-/* .burger-socials > .footer-socials > p{
-    color: #f3eeea;
-} */
+.footer-socials > p{
+    padding-bottom: 25px !important;
+}
 
 .about {
 flex-direction: column;
